@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import fx.custom.StackImageView?>
+<?import fx.custom.Area?>
+<?import javafx.scene.text.Text?>
+<?import fx.custom.SliderSpinner?>
+<SplitPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="fa.control.FocalAdhesionProcessing" orientation="HORIZONTAL" fx:id="rootSplitPane">
+    <VBox prefWidth="300">
+        <fx:define>
+            <ToggleGroup fx:id="tgFilter"/>
+            <ToggleGroup fx:id="tgExport"/>
+        </fx:define>
+        <ButtonBar>
+            <buttons>
+                <RadioButton toggleGroup="$tgFilter" userData="area">Main</RadioButton>
+                <RadioButton toggleGroup="$tgFilter" userData="pre">Pre-Processing(FA)</RadioButton>
+                <RadioButton toggleGroup="$tgFilter" userData="fa" text="Focal Adhesion"/>
+            </buttons>
+        </ButtonBar>
+        <ScrollPane VBox.vgrow="ALWAYS">
+            <VBox fx:id="vBoxChildScrollPane">
+                <Text styleClass="text-medium" fill="red">If values are entered via textfield,</Text>
+                <Text styleClass="text-medium" fill="red">commit your changes with pressing the Return key</Text>
+                <Separator orientation="HORIZONTAL" prefWidth="${vBoxChildScrollPane.width}"/>
+                <VBox fx:id="vBoxAreaParent" VBox.vgrow="ALWAYS" spacing="10">
+                    <Area fx:id="area" prefHeight="100"/>
+                    <Separator orientation="HORIZONTAL" prefWidth="${vBoxAreaParent.width}"/>
+                    <TitledPane text="Post Thresholding (on process FA)" expanded="false">
+                        <VBox>
+                            <Text>Do Closing:</Text>
+                            <CheckBox fx:id="chkDoClosing"/>
+                            <Text>Do Fill-Holes:</Text>
+                            <CheckBox fx:id="chkDoFillHoles"/>
+                        </VBox>
+                    </TitledPane>
+                    <Separator orientation="HORIZONTAL" prefWidth="${vBoxAreaParent.width}"/>
+                    <TitledPane text="FA Separation" expanded="false">
+                        <VBox fx:id="separatorParent">
+                            <Text styleClass="text-medium">
+                                To use the Separation:
+                            </Text>
+                            <Text styleClass="text-medium">click inside the FA-thresholded-image-view.</Text>
+                            <Text styleClass="text-medium">keep the mouse pressed and draw a line, then release.
+                            </Text>
+                            <Text styleClass="text-medium">Those lines can be removed in the table below.
+                            </Text>
+                            <Text styleClass="text-medium">After that: process focal adhesion's again.
+                            </Text>
+                            <TableView fx:id="tableSeparators" prefWidth="300" maxWidth="300">
+                                <columns>
+                                    <TableColumn fx:id="columnSeparatorNumber" text="Id"/>
+                                    <TableColumn fx:id="columnSeparatorDelete" text="Delete"/>
+                                </columns>
+                            </TableView>
+
+                        </VBox>
+                    </TitledPane>
+
+                    <HBox spacing="5">
+                        <Button onAction="#onProcessFocalAdhesion">Process Focal Adhesions</Button>
+                        <Button onAction="#onProcessFilaments">Process Filaments</Button>
+                    </HBox>
+
+                    <Separator orientation="HORIZONTAL" prefWidth="${vBoxAreaParent.width}"/>
+                    <TitledPane text="Result Evaluation" expanded="false">
+                        <VBox spacing="5">
+                            <HBox spacing="5">
+                                <Button onAction="#onEvaluateFa">Evaluate Focal Adhesion's</Button>
+                                <Button onAction="#onEvaluateFiber">Evaluate Fibers</Button>
+                            </HBox>
+                        </VBox>
+                    </TitledPane>
+
+                    <Separator orientation="HORIZONTAL" prefWidth="${vBoxAreaParent.width}"/>
+
+                    <TitledPane text="Verification Parameters" expanded="false">
+                        <VBox>
+                            <HBox>
+                                <Label>Area taken for verification</Label>
+                                <ComboBox fx:id="cbMethod"/>
+                            </HBox>
+                            <Label>Neighborhood which will be checked(tolerance for verification)</Label>
+                            <HBox>
+                                <Text>Neighborhood Size:</Text>
+                                <Text text="${neighborHoodSize.value}"/>
+                            </HBox>
+                            <Slider fx:id="neighborHoodSize" min="1" max="101" majorTickUnit="1" snapToTicks="true"
+                                    minorTickCount="1"
+                                    showTickLabels="true" showTickMarks="true"/>
+
+                            <Text>Check to validate multiple structures along fiber</Text>
+                            <CheckBox fx:id="chkBothEnds">
+                                <tooltip>
+                                    <Tooltip text="validate both sides of the filament(if only one focal adhesion if found for the filament,
+                        it is counted as not validated)"/>
+                                </tooltip>
+                            </CheckBox>
+                            <Text>How many pixels a focal adhesion is allowed to have minimum</Text>
+                            <SliderSpinner fx:id="sMinSize" max="100" min="0" tick="1" type="Integer">
+                                <valueFactory>
+                                    <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="0"
+                                                                                   amountToStepBy="1"/>
+                                </valueFactory>
+                            </SliderSpinner>
+                            <Text>How many pixels a focal adhesion is allowed to have maximum</Text>
+                            <SliderSpinner fx:id="sMaxSize" max="100" min="0" tick="1" type="Integer">
+                                <valueFactory>
+                                    <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="0"
+                                                                                   amountToStepBy="1"/>
+                                </valueFactory>
+                            </SliderSpinner>
+                            <Text>Max Amount of Clusters in one Image (if exceeded image is counted as noise and not
+                                further processed)
+                            </Text>
+                            <SliderSpinner fx:id="sMaxClusterAmount" max="100" min="0" tick="1" type="Integer">
+                                <valueFactory>
+                                    <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="0"
+                                                                                   amountToStepBy="1"/>
+                                </valueFactory>
+                            </SliderSpinner>
+
+                        </VBox>
+                    </TitledPane>
+
+                    <Separator orientation="HORIZONTAL" prefWidth="${vBoxAreaParent.width}"/>
+                    <Button onAction="#onValidateFilaments">Validate Filaments</Button>
+
+
+                    <Separator orientation="HORIZONTAL" prefWidth="${vBoxAreaParent.width}"/>
+                    <TitledPane text="Data Export" expanded="false">
+                        <VBox spacing="5">
+                            <HBox>
+                                <RadioButton fx:id="radioExportAll" toggleGroup="$tgExport" userData="all">All
+                                </RadioButton>
+                                <RadioButton fx:id="radioExportCurrent" toggleGroup="$tgExport" userData="current">
+                                    Current
+                                </RadioButton>
+                            </HBox>
+                            <HBox spacing="5">
+                                <Label>Only show Found FA's</Label>
+                                <CheckBox fx:id="chkOnlyFoundFA"/>
+                            </HBox>
+                            <HBox spacing="5">
+                                <Label>Hide non verified Fibers:</Label>
+                                <CheckBox fx:id="chkHideNonVerifiedFibers"/>
+                            </HBox>
+                            <HBox spacing="5">
+                                <Label>Hide unused FA's:</Label>
+                                <CheckBox fx:id="chkHideUnusedFAs"/>
+                            </HBox>
+
+                            <HBox spacing="5">
+                                <Label>Hide single used FA's:</Label>
+                                <CheckBox fx:id="chkHideSingleUsedFAs"/>
+                            </HBox>
+
+                            <HBox spacing="5">
+                                <Label>Hide single verified Fibers:</Label>
+                                <CheckBox fx:id="chkHideSingleVerifiedFibers"/>
+                            </HBox>
+
+                            <HBox spacing="5">
+                                <Label>Hide multiple used FA's:</Label>
+                                <CheckBox fx:id="chkHideMultiUsedFAs"/>
+                            </HBox>
+
+                            <HBox spacing="5">
+                                <Label>Hide multiple verified Fibers:</Label>
+                                <CheckBox fx:id="chkHideMultiVerifiedFibers"/>
+                            </HBox>
+
+
+                            <HBox spacing="5">
+                                <Label>include focal adhesion number's</Label>
+                                <CheckBox fx:id="chkIncludeNumbers"/>
+                            </HBox>
+                            <Button onAction="#onExportFocalAdhesionImage">Export Focal Adhesion Image</Button>
+                            <Button onAction="#onExportOverlayImage">Export Overlay Filaments Image</Button>
+                            <Button onAction="#onExportFocalAdhesionCsv">Export Focal Adhesion CSV</Button>
+                            <Button onAction="#onExportFocalAdhesionXml">Export Focal Adhesion XML</Button>
+                            <Button onAction="#onExportVerifierTable">Export Verifier Table</Button>
+                            <HBox spacing="5">
+                                <Button onAction="#onExportColorCodedFAFiberImage">Export Color-coded FA/Fiber Image
+                                </Button>
+                                <Button onAction="#onOpenImageLegend">Open Image Legend</Button>
+                            </HBox>
+                            <HBox spacing="5">
+                                <Button onAction="#onOpenPopUpColorCodedOverlay">Open Color-coded Overlay</Button>
+                                <Button onAction="#onExportGroupedCsvs">Export Grouped CSV's</Button>
+                            </HBox>
+
+
+                        </VBox>
+                    </TitledPane>
+
+                </VBox>
+                <fx:include fx:id="faPreProcessing" VBox.vgrow="ALWAYS" source="/view/PreprocessingFilterQueue.fxml"/>
+                <fx:include fx:id="faView" VBox.vgrow="ALWAYS" source="FAView.fxml"/>
+            </VBox>
+        </ScrollPane>
+    </VBox>
+    <VBox>
+        <HBox>
+            <HBox fx:id="containerZoom"/>
+            <Button onAction="#onSplitWindow">Split Window</Button>
+        </HBox>
+        <SplitPane HBox.hgrow="ALWAYS" orientation="VERTICAL">
+            <SplitPane orientation="HORIZONTAL" fx:id="splitPaneImageTop">
+                <StackImageView fx:id="stackViewFAOrig" showControls="false" text="FocalAdhesion Original"/>
+                <StackImageView fx:id="stackViewFAPreProcessed" showControls="false" text="FA Pre-Processed"/>
+            </SplitPane>
+            <SplitPane orientation="HORIZONTAL" fx:id="splitPaneImageBottom">
+                <StackImageView fx:id="stackViewFAThresh" showControls="false" text="FA Thresholded"/>
+                <StackImageView fx:id="stackViewSFOrig" showControls="false" text="Stress-Fibers-Overlay"/>
+            </SplitPane>
+        </SplitPane>
+        <HBox fx:id="containerScroller"/>
+    </VBox>
+
+</SplitPane>

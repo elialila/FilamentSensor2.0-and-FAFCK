@@ -1,0 +1,63 @@
+LineSensor:
+
+
+scanFilaments:
+
+calcWidthMap()
+iterate through diameters of width map, starting with max diameter:{
+
+create a binary image where width_map[x][y] > (currentDiameter-1), only pixels with larger diameters than the current.
+the condition is negated since the sensor interprets false as white pixels
+
+findOrientations() :
+at this point the LineSensor initialises
+SpokeLattices and LineInfo's for every white pixel. --> LineInfo is the class which identifies the lines
+Creates a map of all points lying on lines whose length exceeds minimal_length. (The points are sorted in lists by line length.)
+Run through all remaining lines (longest first) and mark them in m_orientation_field and add the resulting filament to filament-list.
+
+}
+
+
+information: widthMap -> is a matrix.
+for every pixel a circle mask is overlayed and the amout of misses / hits <= tolerance
+miss: a pixel on the binary image which is inside the area of the mask is not white.
+hit: a pixel on the binary image which is inside the area of the mask is white.
+if the condition is met, the diameter of the circle mask is increased
+the max diameter is inserted in the cell(widthMap[x][y]) of the matrix.
+
+
+
+
+CurveTracer:
+
+initSpokeLattice(): is an extended version of initSpokeLattices of LineSensor
+first part does the same (but parameters are different, lineSensor uses constant values)
+second part creates two lattices with different depth's.
+
+getWidthMap(): is an extended version of calcWidthMap: after calculation the widthMap it returns a Map which
+groups all points with the same diameter into a list (Map<Integer,List<Point>>)
+
+as in LineSensor: iterate through diameters of width map, starting with max diameter:{
+
+retrieve all points with current diameter
+for each point:{
+scanFilamentsInitScores(): initialize scores and objects of gatherer class (Gatherer class does the curve sensing)
+gatherer.sense(): Senses points meeting condition starting at m_start, and returns a score( which is the sum of all width's from width_map per point)
+
+getBestPair(): gets best pair of Gatherers base on the score. (Opposite directions and direction change in start point is checked)
+after that the gather method of the best-pair-Gatherers is called and the gatherers are joined and returned. (scanFilamentsGetGathererLine())
+
+gather():Gathers points on curve and add points to m_points
+join(): join two gatherers into one (sum points and scores of both gatherers)
+
+the fused gatherer is added to a scored-line-map and the max_score is updated if the new gatherer's score is higher than current max_score
+if a certain lineCounter is exceeded: cleanUpLines() is called
+cleanUpLines(): runs through the longest lines and marks them
+re-set max_score.
+
+}
+
+}
+
+after that call markLines(): run through lines (longest first) and mark them.
+inside markLines() method drawLine is used which adds the Filament to filament-list and update orientationField's

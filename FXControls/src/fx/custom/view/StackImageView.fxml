@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<fx:root type="javafx.scene.control.TitledPane" xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets top="0" right="0" left="0" bottom="0"/>
+    </padding>
+    <content>
+
+        <VBox HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets top="0" right="0" left="0" bottom="0"/>
+            </padding>
+            <children>
+                <HBox fx:id="hBoxZoom">
+                    <Label>Zoom:</Label>
+                    <Spinner fx:id="spinnerZoom">
+                        <valueFactory>
+                            <SpinnerValueFactory.IntegerSpinnerValueFactory min="1" max="1000"/>
+                        </valueFactory>
+                    </Spinner>
+                </HBox>
+                <ScrollPane fx:id="scrollPane">
+                    <StackPane fx:id="stackPane">
+                        <ImageView fx:id="imageView" preserveRatio="true">
+
+                        </ImageView>
+                    </StackPane>
+                </ScrollPane>
+                <VBox fx:id="paneStackScroller">
+                    <HBox>
+                        <Label>ImageStack Scroller</Label>
+                        <Text fx:id="txtFrom"/>
+                        <Text text="/"/>
+                        <Text fx:id="txtTo"/>
+                    </HBox>
+                    <Slider fx:id="slider" majorTickUnit="1" minorTickCount="1"
+                            showTickMarks="true" snapToTicks="true" min="1"/>
+
+                </VBox>
+            </children>
+        </VBox>
+    </content>
+</fx:root>

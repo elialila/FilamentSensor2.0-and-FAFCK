@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FilamentSensor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FilamentSensor_jar</output-path>
+    <root id="archive" name="Main.jar">
+      <element id="module-output" name="Main" />
+      <element id="module-output" name="GUI" />
+      <element id="module-output" name="Sensor" />
+      <element id="module-output" name="FXControls" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/ij-1.52i.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/commons-io-2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

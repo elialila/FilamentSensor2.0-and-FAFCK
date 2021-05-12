@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox prefHeight="200.0" prefWidth="400.0" stylesheets="@../style/style.css,@../style/buttons.css"
+      xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="control.MainControl">
+    <children>
+        <MenuBar>
+            <menus>
+                <!--<Menu text="Project">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close"/>
+                    </items>
+                </Menu>-->
+                <Menu text="Navigate">
+                    <items>
+                        <MenuItem fx:id="navToStart" onAction="#onNavigateToStart" text="Start"/>
+                        <MenuItem fx:id="navToProject" onAction="#onNavigateToProject" text="Project"/>
+                        <MenuItem fx:id="navToImageOverview" onAction="#onNavigateToImageOverView"
+                                  text="Image Overview"/>
+                        <!-- <MenuItem onAction="#onNavigateToFilterQueue" text="FilterQueue"/>-->
+                        <MenuItem fx:id="navToImageStack" onAction="#onNavigateToImageDetailStack"
+                                  text="ImageDetailStack"/>
+                    </items>
+                </Menu>
+                <!--<Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                    </items>
+                </Menu>-->
+                <Menu text="Preferences">
+                    <items>
+                        <MenuItem text="Batch Processing" onAction="#onPreferencesBatchProcessing"/>
+                    </items>
+                </Menu>
+                <Menu text="Notes/About">
+                    <items>
+                        <MenuItem text="Notes" onAction="#onNotes"/>
+                    </items>
+                </Menu>
+                <!--<Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>-->
+            </menus>
+        </MenuBar>
+
+
+        <VBox fx:id="content" styleClass="body" VBox.vgrow="ALWAYS"/>
+        <HBox VBox.vgrow="NEVER">
+            <TextArea fx:id="taDebug" editable="false" focusTraversable="false" styleClass="text-area" maxHeight="200"
+                      HBox.hgrow="ALWAYS"/>
+            <HBox fx:id="hBoxProgress" minWidth="100">
+                <ProgressBar fx:id="pbProgress" prefWidth="${hBoxProgress.width}"/>
+            </HBox>
+        </HBox>
+
+
+    </children>
+</VBox>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FAThresholdOptimizator/FAThresholdOptimizator.iml" filepath="$PROJECT_DIR$/FAThresholdOptimizator/FAThresholdOptimizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FXControls/FXControls.iml" filepath="$PROJECT_DIR$/FXControls/FXControls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FilamentSensorNew.iml" filepath="$PROJECT_DIR$/.idea/FilamentSensorNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GUIFocalAdhesionOnly/GUIFocalAdhesionOnly.iml" filepath="$PROJECT_DIR$/GUIFocalAdhesionOnly/GUIFocalAdhesionOnly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Main/Main.iml" filepath="$PROJECT_DIR$/Main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sensor/Sensor.iml" filepath="$PROJECT_DIR$/Sensor/Sensor.iml" />
+    </modules>
+  </component>
+</project>

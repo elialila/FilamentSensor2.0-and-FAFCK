@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FAThresholdOptimizator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FAThresholdOptimizator_jar</output-path>
+    <root id="archive" name="FAThresholdOptimizator.jar">
+      <element id="module-output" name="FAThresholdOptimizator" />
+      <element id="module-output" name="Sensor" />
+      <element id="module-output" name="Main" />
+      <element id="module-output" name="GUI" />
+      <element id="module-output" name="FXControls" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/ij-1.52i.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-15/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libraries/commons-io-2.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

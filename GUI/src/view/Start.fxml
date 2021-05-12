@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="20.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@../style/style.css,@../style/buttons.css"
+          xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Start">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="50"/>
+        <ColumnConstraints percentWidth="50"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="100"/>
+    </rowConstraints>
+    <children>
+        <Button fx:id="bNewProject" mnemonicParsing="false" onAction="#handleNewProject" styleClass="round-red"
+                text="New Project" textAlignment="CENTER" GridPane.halignment="RIGHT"/>
+        <Button fx:id="bLoadProject" mnemonicParsing="false" onAction="#handleLoadProject" styleClass="round-red"
+                text="Load Project" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="LEFT"/>
+    </children>
+</GridPane>

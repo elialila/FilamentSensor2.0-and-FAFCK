@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="control.PreferencesBatchProcessing">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="90"/>
+    </rowConstraints>
+    <children>
+        <Text text="Here are the settings/flags for batch processing filaments." GridPane.columnIndex="0"
+              GridPane.rowIndex="0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Text>
+        <ScrollPane GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="10"/>
+                    <ColumnConstraints percentWidth="90"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="10"/>
+                    <RowConstraints percentHeight="10"/>
+                    <RowConstraints percentHeight="10"/>
+                    <RowConstraints percentHeight="10"/>
+                    <RowConstraints percentHeight="10"/>
+                    <RowConstraints percentHeight="10"/>
+                    <RowConstraints percentHeight="10"/>
+                </rowConstraints>
+                <children>
+                    <CheckBox fx:id="chkDetermineOrientationFields" selected="true" GridPane.columnIndex="0"
+                              GridPane.halignment="CENTER" GridPane.rowIndex="0"/>
+                    <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="0">determine
+                        orientation fields
+                    </Label>
+
+                    <CheckBox fx:id="chkPostProcessOrientationFields" selected="true" GridPane.columnIndex="0"
+                              GridPane.halignment="CENTER" GridPane.rowIndex="1"/>
+                    <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">post-process
+                        orientation fields as time series?
+                    </Label>
+
+                    <CheckBox fx:id="chkSaveOrientationFieldImages" GridPane.columnIndex="0"
+                              GridPane.halignment="CENTER" GridPane.rowIndex="2"/>
+                    <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">save orientation
+                        field images?
+                    </Label>
+
+                    <CheckBox fx:id="chkSmallChanges" GridPane.columnIndex="0" GridPane.halignment="CENTER"
+                              GridPane.rowIndex="3"/>
+                    <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">only small
+                        changes in cell shape at each step?
+                    </Label>
+
+                    <CheckBox fx:id="chkFingerprint" GridPane.columnIndex="0" GridPane.halignment="CENTER"
+                              GridPane.rowIndex="4"/>
+                    <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">calculate
+                        fingerprints?
+                    </Label>
+
+                    <CheckBox fx:id="chkExcursionImages" GridPane.columnIndex="0" GridPane.halignment="CENTER"
+                              GridPane.rowIndex="5"/>
+                    <Label GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">save excursion
+                        images?
+                    </Label>
+
+                    <Label GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="6">Color</Label>
+                    <ComboBox fx:id="cbColor" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                              GridPane.rowIndex="6"/>
+                </children>
+
+
+            </GridPane>
+        </ScrollPane>
+    </children>
+</GridPane>

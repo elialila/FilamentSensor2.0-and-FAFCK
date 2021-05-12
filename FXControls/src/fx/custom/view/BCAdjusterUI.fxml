@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import fx.custom.SliderSpinner?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.chart.LineChart?>
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         prefHeight="400.0" prefWidth="600.0"
+         type="javafx.scene.layout.VBox" fx:id="root">
+    <!-- Paint a histogram? -->
+    <StackPane fx:id="stackPane" prefWidth="${root.width}">
+        <LineChart fx:id="bcHistogram" title="Histogram" StackPane.alignment="TOP_LEFT" legendVisible="false">
+            <xAxis>
+                <NumberAxis fx:id="xAxis"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis"/>
+            </yAxis>
+        </LineChart>
+    </StackPane>
+    <Label>Min:</Label>
+    <Slider fx:id="sMin"/>
+    <Label>Max:</Label>
+    <Slider fx:id="sMax"/>
+    <Label>Brightness:</Label>
+    <Slider fx:id="sBrightness"/>
+    <Label>Contrast:</Label>
+    <Slider fx:id="sContrast"/>
+    <HBox>
+        <Label>For the whole stack:</Label>
+        <CheckBox fx:id="chkWholeStack">
+            <tooltip>
+                <Tooltip text="Calculate brightness/contrast for the whole stack and not for each image"/>
+            </tooltip>
+        </CheckBox>
+    </HBox>
+    <HBox>
+        <Button onAction="#onApply">Apply</Button>
+        <Button onAction="#onAuto">Auto</Button>
+        <Button onAction="#onReset">Reset</Button>
+    </HBox>
+</fx:root>

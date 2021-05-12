@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="thopt.control.ThreshOptimizer"
+      prefHeight="400.0" prefWidth="600.0" spacing="5">
+    <HBox spacing="5">
+        <Label>Sample Directory:</Label>
+        <TextField HBox.hgrow="ALWAYS" fx:id="tDirectorySample"/>
+        <Button onAction="#onSearchSample">Search</Button>
+    </HBox>
+
+    <HBox spacing="5">
+        <Label>Truth Directory:</Label>
+        <TextField HBox.hgrow="ALWAYS" fx:id="tDirectoryTruth"/>
+        <Button onAction="#onSearchTruth">Search</Button>
+    </HBox>
+
+    <HBox spacing="5">
+        <Label>Test-Set Directory:</Label>
+        <TextField HBox.hgrow="ALWAYS" fx:id="tDirectoryTestSet"/>
+        <Button onAction="#onSearchTestSet">Search</Button>
+    </HBox>
+
+    <Text>The schemes have 2 parameters: %imgNr% and %cellNr% if a part of the name is optional use (optionalpart)?
+    </Text>
+    <Text>this would be the naming scheme sample: %imgNr%F(cell%cellNr%)?.tif for files like: 1F.tif, 8Fcell1.tif,
+        8Fcell2.tif, 49F.tif, ...
+    </Text>
+    <HBox>
+        <Label>Naming Scheme Sample:</Label>
+        <TextField fx:id="tNamingSample" HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <HBox>
+        <Label>Naming Scheme Truth:</Label>
+        <TextField fx:id="tNamingTruth" HBox.hgrow="ALWAYS"/>
+    </HBox>
+    <HBox>
+        <CheckBox fx:id="chkNoNumberforOne" text="No Number for 1 in truth set" selected="true"/>
+    </HBox>
+    <HBox>
+        <Label>Check Against:</Label>
+        <ComboBox fx:id="cbMethods"/>
+        <Label>Check Against Manual Thresh:</Label>
+        <TextField fx:id="tManualCheckAgainst"/>
+    </HBox>
+
+    <Button onAction="#onProcess">Process</Button>
+    <TableView fx:id="tableResults">
+        <columns>
+            <TableColumn fx:id="colFileName" text="File"/>
+            <TableColumn fx:id="colThresh" text="Threshold"/>
+            <TableColumn fx:id="colHitRate" text="Hits"/>
+            <TableColumn fx:id="colFPRate" text="FP"/>
+            <TableColumn fx:id="colMethod" text="AutoThreshMethod"/>
+            <TableColumn fx:id="colNearest" text="NearestAutoThresh"/>
+            <TableColumn fx:id="colCheckAgainst" text="Method checked Against Auto"/>
+            <TableColumn fx:id="colHitChk" text="Hit CHk"/>
+            <TableColumn fx:id="colFPChk" text="FP CHK"/>
+            <TableColumn fx:id="colHitChkMan" text="Hit CHk Manual"/>
+            <TableColumn fx:id="colFPChkMan" text="FP CHK Manual"/>
+        </columns>
+    </TableView>
+</VBox>

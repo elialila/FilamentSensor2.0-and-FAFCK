@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="fa.control.FAView" prefWidth="600">
+
+
+    <TableView fx:id="tableFocalAdhesion" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="columnNumber" text="Id"/>
+            <TableColumn fx:id="columnKeep" text="Keep"/>
+            <TableColumn fx:id="columnCenterX" text="Center X"/>
+            <TableColumn fx:id="columnCenterY" text="Center Y"/>
+            <TableColumn fx:id="columnLengthMainAxis" text="Length Main Axis"/>
+            <TableColumn fx:id="columnLengthSideAxis" text="Length Side Axis"/>
+            <TableColumn fx:id="columnAngle" text="Angle"/>
+            <TableColumn fx:id="columnArea" text="Area"/>
+            <TableColumn fx:id="columnAreaEllipse" text="Area Ellipse"/>
+        </columns>
+    </TableView>
+    <Separator/>
+    <!-- put a delete button here for focal adhesion's which are "keep"==false -->
+    <Button onAction="#onRemoveFocalAdhesion">Remove(keep=false)</Button>
+
+    <!-- highlight focal adhesion/filament if selected in table (make it larger or just change the color) -->
+
+    <Separator/>
+
+    <TableView fx:id="tableVerifier" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="columnFilamentNumber" text="Filament Id"/>
+            <TableColumn fx:id="columnVerifier" text="Verifier(Focal Adhesion) separated by ','"/>
+        </columns>
+    </TableView>
+    <!-- another table with 3 cols? filament column, column for focal adhesion -->
+    <!-- for the start it would be better to keep it simple, add a number attribute to filaments-->
+    <!-- second column just a text column numbers(id of focal adhesion) separated by a ";" or a "," -->
+    <!-- every filament should have one line in this table and the already validated ones should be already filled in-->
+    <Separator/>
+
+
+</VBox>

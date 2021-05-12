@@ -1,0 +1,89 @@
+/*
+http://fxexperience.com/2011/12/styling-fx-buttons-with-css/
+*/
+.round-red {
+    -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 40px;
+}
+
+.round-red:pressed {
+    -fx-background-color: linear-gradient(#ffae05, #be5300);
+}
+
+/*
+.round-red:hover {
+    -fx-background-color: linear-gradient(#ff0514, #be0059);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}*/
+
+.shiny-orange {
+    -fx-background-color: linear-gradient(#ffd65b, #e68400),
+    linear-gradient(#ffef84, #f2ba44),
+    linear-gradient(#ffea6a, #efaa22),
+    linear-gradient(#ffe657 0%, #f8c202 50%, #eea10b 100%),
+    linear-gradient(from 0% 0% to 15% 50%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 30;
+    -fx-background-insets: 0, 1, 2, 3, 0;
+    -fx-text-fill: #654b00;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.dark-blue {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+
+/*Define the Button Standard with dark-blue */
+Button {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+}
+
+Button:pressed {
+    -fx-background-color: #090a0c,
+    linear-gradient(#4f5962 0%, #33383d 20%, #202429 100%),
+    linear-gradient(#2c3338, #23292e),
+    radial-gradient(center 50% 0%, radius 100%, rgba(138, 156, 173, 0.9), rgba(244, 244, 244, 0));
+}
+
+
+
+.dark-blue:pressed {
+    -fx-background-color: #090a0c,
+    linear-gradient(#4f5962 0%, #33383d 20%, #202429 100%),
+    linear-gradient(#2c3338, #23292e),
+    radial-gradient(center 50% 0%, radius 100%, rgba(138, 156, 173, 0.9), rgba(244, 244, 244, 0));
+}
+
+
+.dark-blue Text {
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.9), 1, 0.0, 0, 1);
+}

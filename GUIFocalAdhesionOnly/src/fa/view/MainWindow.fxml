@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" stylesheets="/style/style.css,/style/buttons.css"
+      xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fa.view.MainWindow">
+    <TabPane VBox.vgrow="ALWAYS" fx:id="tpContainer">
+        <Tab closable="false" text="Project">
+            <VBox>
+                <ScrollPane prefWidth="${tpContainer.width}" prefHeight="200">
+                    <VBox alignment="TOP_LEFT" VBox.vgrow="ALWAYS">
+                        <Text styleClass="text-medium">
+                            This is the prototype of the GUI for Focal Adhesion.
+                        </Text>
+                        <Text styleClass="text-medium">
+                            The input file-format for a image-stack is "ome.tif" (if you got nd2 files use fiji to
+                            convert them), single
+                            file formats:jpg,png,tif.
+                        </Text>
+                        <Text styleClass="text-medium">
+                            Enter the file-path either by copying or with the file chooser which opens on "search".
+                        </Text>
+                        <Text styleClass="text-medium">
+                            If your input is done, press "Load".
+                        </Text>
+                        <Text styleClass="text-medium">
+                            Please note that large files may create OutOfMemoryExceptions.
+                        </Text>
+                        <Text styleClass="text-medium">
+                            Example from test system: TestStack(file size: 107MB,45 Images (each of the two:focal
+                            and stress)), Memory
+                            Usage: 5.7GB
+                        </Text>
+                        <Text styleClass="text-medium">
+                            64Bit Java Version and >=16GB Memory(RAM) recommended.
+                        </Text>
+                    </VBox>
+                </ScrollPane>
+                <ScrollPane prefWidth="${tpContainer.width}" minHeight="400" hbarPolicy="NEVER">
+                    <VBox prefWidth="${tpContainer.width}">
+                        <TitledPane text="FocalAdhesion:" expanded="true">
+                            <VBox spacing="5">
+                                <Text fill="red">
+                                    If Image Stacks are used please name the file extension ".ome.tif" otherwise
+                                    problems may occur
+                                </Text>
+                                <Label>Select Focal Adhesion Image:</Label>
+                                <HBox>
+                                    <TextField fx:id="tFocalAdhesionImagePath" HBox.hgrow="ALWAYS"/>
+                                    <Button onAction="#handleOnSearchFocalAdhesionImage" styleClass="dark-blue">Search
+                                    </Button>
+                                </HBox>
+                                <Label>Select Stress Fibers Image:</Label>
+                                <HBox>
+                                    <TextField fx:id="tStressFibersImagePath" HBox.hgrow="ALWAYS"/>
+                                    <Button onAction="#handleOnSearchStressFibersImage" styleClass="dark-blue">Search
+                                    </Button>
+                                </HBox>
+                                <HBox spacing="5">
+                                    <Button onAction="#onLoad" styleClass="dark-blue">Load Files</Button>
+                                    <Button styleClass="dark-blue" onAction="#onLoadBinaryMask">Load Binary Mask
+                                    </Button>
+                                </HBox>
+                            </VBox>
+                        </TitledPane>
+                        <TitledPane text="Evaluate Only" expanded="false">
+                            <VBox spacing="5">
+                                <Label>Select source binary image:</Label>
+                                <HBox>
+                                    <TextField fx:id="tBinarySourceImagePath" HBox.hgrow="ALWAYS"/>
+                                    <Button onAction="#handleOnSearchBinarySourceImage" styleClass="dark-blue">Search
+                                    </Button>
+                                </HBox>
+                                <Label>Select ground truth binary image:</Label>
+                                <HBox>
+                                    <TextField fx:id="tBinaryTruthImagePath" HBox.hgrow="ALWAYS"/>
+                                    <Button onAction="#handleOnSearchBinaryTruthImage" styleClass="dark-blue">Search
+                                    </Button>
+                                </HBox>
+
+                                <Label>Type of source:</Label>
+                                <ComboBox fx:id="cbType"/>
+                                <Button onAction="#handleOnEvaluate">Evaluate</Button>
+                            </VBox>
+                        </TitledPane>
+                    </VBox>
+                </ScrollPane>
+            </VBox>
+        </Tab>
+        <Tab closable="false" text="Focal Adhesion">
+            <fx:include fx:id="faProcessing" source="/fa/view/FocalAdhesionProcessing.fxml"/>
+        </Tab>
+        <Tab closable="false" text="Filament">
+            <fx:include fx:id="filament" source="/view/ImageDetailStack.fxml"/>
+
+        </Tab>
+    </TabPane>
+    <HBox prefHeight="150">
+        <TextArea fx:id="taDebug" HBox.hgrow="ALWAYS" editable="false"/>
+        <HBox fx:id="hBoxProgress" minWidth="100">
+            <ProgressBar fx:id="pbProgress" prefWidth="${hBoxProgress.width}"/>
+        </HBox>
+    </HBox>
+</VBox>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.CheckBox?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Project">
+    <children>
+        <!--Row 0 -->
+        <TextFlow VBox.vgrow="ALWAYS" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.columnSpan="4"
+                  GridPane.halignment="CENTER"
+                  GridPane.rowIndex="0">
+            <Text styleClass="text-medium">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+                <text>
+                    In the project view, you are able to edit your project-settings (mostly path's),
+
+                    you can go to image overview by clicking on "Load Images"
+
+                    you can also start "Batch Processing" with standard settings by clicking the "Batch Processing"
+                    button
+
+                    or you can use the Illuminate All button to illuminate the different orientation-fields.
+                </text>
+            </Text>
+        </TextFlow>
+
+
+        <!--Row 1 -->
+        <VBox spacing="5" VBox.vgrow="ALWAYS">
+            <Text text="Basic" styleClass="text-medium"/>
+            <Separator GridPane.hgrow="ALWAYS"/>
+            <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                <Label>Image Files Directory(Source Images)</Label>
+                <TextField id="tImagePath" fx:id="tImageDirectory" editable="true" HBox.hgrow="ALWAYS"/>
+                <Button onAction="#handleChooseImagePath" styleClass="dark-blue">
+                    Search
+                </Button>
+            </HBox>
+            <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                <Label>Project File(Optional)</Label>
+                <TextField id="tProjectFile" fx:id="tProjectFile" editable="true" HBox.hgrow="ALWAYS"/>
+                <Button onAction="#handleChooseProjectFile" styleClass="dark-blue">Search
+                </Button>
+            </HBox>
+            <HBox>
+                <Button fx:id="btnLoad" onAction="#handleStartLoading" styleClass="dark-blue"
+                        ButtonBar.buttonData="LEFT">Load Images
+                </Button>
+                <Button fx:id="btnStore" onAction="#handleStoreProject" styleClass="dark-blue"
+                        ButtonBar.buttonData="LEFT">Store Project
+                </Button>
+                <Button fx:id="btnLoadProject" onAction="#handleLoadProject" styleClass="dark-blue"
+                        ButtonBar.buttonData="LEFT">Load Project
+                </Button>
+            </HBox>
+
+        </VBox>
+        <Separator GridPane.hgrow="ALWAYS"/>
+        <ScrollPane VBox.vgrow="ALWAYS">
+            <VBox spacing="5" VBox.vgrow="ALWAYS">
+
+
+                <TitledPane text="Illustrate Orientation Fields" expanded="false">
+                    <VBox spacing="5" VBox.vgrow="ALWAYS">
+                        <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                            <Label>Project File(mandatory)</Label>
+                            <TextField fx:id="tProjectFile2" editable="true" HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseProjectFile" styleClass="dark-blue">Search
+                            </Button>
+                        </HBox>
+                        <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                            <Label>Data Files Directory(XML Output Files)</Label>
+                            <TextField id="tDataPath" fx:id="tDataDirectory" editable="true" HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseDataPath" styleClass="dark-blue" GridPane.columnIndex="3"
+                                    GridPane.rowIndex="2">
+                                Search
+                            </Button>
+                        </HBox>
+                        <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                            <Label>Image Output Directory</Label>
+                            <TextField id="tProjectFile" fx:id="tImageOutputDirectory" editable="true"
+                                       HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseImageOutput" styleClass="dark-blue">Search</Button>
+                        </HBox>
+                        <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                            <Label>Csv Input Directory</Label>
+                            <TextField id="tProjectFile" fx:id="tCsvOutputDirectory" editable="true"
+                                       HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseCSVOutput" styleClass="dark-blue">Search</Button>
+                        </HBox>
+                        <Button fx:id="btnIlluminate" disable="true" onAction="#handleIlluminateAll"
+                                styleClass="dark-blue"
+                                ButtonBar.buttonData="LEFT">
+                            Illustrate All Orientation Fields
+                        </Button>
+                        <GridPane.margin>
+                            <Insets top="5.0"/>
+                        </GridPane.margin>
+                    </VBox>
+                </TitledPane>
+
+                <Separator orientation="HORIZONTAL"/>
+                <TitledPane text="Batch Processing" expanded="false">
+                    <VBox spacing="5" VBox.vgrow="ALWAYS">
+                        <HBox spacing="5" GridPane.hgrow="ALWAYS">
+                            <Label>Root-Folder of Images</Label>
+                            <TextField fx:id="tBatchProcessingRootDirectory" editable="true" HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseBatchProcessingRoot" styleClass="dark-blue">
+                                Search
+                            </Button>
+                        </HBox>
+                        <HBox spacing="5">
+                            <Label>Settings Import(if no imput, default/current settings are used)</Label>
+                            <TextField fx:id="tSettings" editable="true" HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseSettings" styleClass="dark-blue">Search</Button>
+                        </HBox>
+                        <HBox spacing="5">
+                            <Label>Filter List(Pre-Processing)</Label>
+                            <TextField fx:id="tBatchProcessingFilterPre" editable="true" HBox.hgrow="ALWAYS"/>
+                            <Button onAction="#handleChooseFilterPre" styleClass="dark-blue">Search</Button>
+                        </HBox>
+                        <HBox>
+                            <!--Combo Box with Area Plugins -->
+                            <Label>Area-Method:</Label>
+                            <ComboBox fx:id="cbArea"/>
+                        </HBox>
+                        <HBox spacing="5">
+                            <HBox>
+                                <Label>Csv-Folder Name:</Label>
+                                <TextField fx:id="tBatchProcessingCsvFolderName"/>
+                            </HBox>
+                            <HBox>
+                                <Label>XML-Folder Name:</Label>
+                                <TextField fx:id="tBatchProcessingXmlFolderName"/>
+                            </HBox>
+                            <HBox>
+                                <Label>IMG-Folder Name:</Label>
+                                <TextField fx:id="tBatchProcessingImgFolderName"/>
+                            </HBox>
+                        </HBox>
+                        <HBox spacing="5">
+                            <Label>Do Single-Filament Tracking:</Label>
+                            <CheckBox fx:id="chkDoSingleFilamentTracking"/>
+                        </HBox>
+                        <Button fx:id="btnBatchProcessing" disable="true" onAction="#handleBatchProcessing"
+                                styleClass="dark-blue" ButtonBar.buttonData="LEFT">
+                            Batch Processing
+                        </Button>
+                        <Separator orientation="HORIZONTAL"/>
+                        <HBox>
+                            <Label>Current Progress:</Label>
+                            <ProgressBar fx:id="pbProgressBatchProcessing" VBox.vgrow="ALWAYS"/>
+                        </HBox>
+                        <Separator orientation="HORIZONTAL"/>
+                    </VBox>
+                </TitledPane>
+                <Separator orientation="HORIZONTAL"/>
+                <!--
+                             <TitledPane text="Focal Adhesions" expanded="false">
+                                 <VBox>
+                                     <VBox VBox.vgrow="ALWAYS" alignment="CENTER_LEFT">
+                                         <Text styleClass="text-medium">
+                                             This is the prototype of the GUI for Focal Adhesion.
+                                         </Text>
+                                         <Text styleClass="text-medium">
+                                             The input file-format for a image-stack is "ome.tif" (if you got nd2 files use fiji to
+                                             convert them), single
+                                             file formats:jpg,png,tif.
+                                         </Text>
+                                         <Text styleClass="text-medium">
+                                             Enter the file-path either by copying or with the file chooser which opens on "search".
+                                         </Text>
+                                         <Text styleClass="text-medium">
+                                             If your input is done, press "Load".
+                                         </Text>
+                                         <Text styleClass="text-medium">
+                                             Please note that large files may create OutOfMemoryExceptions.
+                                         </Text>
+                                         <Text styleClass="text-medium">
+                                             Example from test system: TestStack(file size: 107MB,45 Images (each of the two:focal
+                                             and stress)), Memory
+                                             Usage: 5.7GB
+                                         </Text>
+                                         <Text styleClass="text-medium">
+                                             64Bit Java Version and >=16GB Memory(RAM) recommended.
+                                         </Text>
+                                     </VBox>
+
+                                     <Label>Select Focal Adhesion Image:</Label>
+                                     <HBox>
+                                         <TextField fx:id="tFocalAdhesionImagePath" HBox.hgrow="ALWAYS"/>
+                                         <Button onAction="#handleOnSearchFocalAdhesionImage" styleClass="dark-blue">Search</Button>
+                                     </HBox>
+                                     <Label>Select Stress Fibers Image:</Label>
+                                     <HBox>
+                                         <TextField fx:id="tStressFibersImagePath" HBox.hgrow="ALWAYS"/>
+                                         <Button onAction="#handleOnSearchStressFibersImage" styleClass="dark-blue">Search</Button>
+                                     </HBox>
+                                     <Button HBox.hgrow="ALWAYS" onAction="#onLoad" styleClass="dark-blue">Load</Button>
+                                 </VBox>
+                             </TitledPane>
+             -->
+            </VBox>
+        </ScrollPane>
+
+        <!--Row 2 -->
+
+
+        <!--Row 3 -->
+        <!--Row 4 -->
+        <!--Row 5 -->
+        <!--Row 6 -->
+
+
+    </children>
+</VBox>

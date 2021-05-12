@@ -1,0 +1,3590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/Andreas/IdeaProjects/FilamentSensorNew/Sensor</OriginalElement>
+  <nodes>
+    <node x="2165.401690972183" y="1988.0">core.filaments.Clusterable</node>
+    <node x="1294.0975243055168" y="0.0">core.FilamentSensor</node>
+    <node x="6095.4644940024855" y="0.0">core.image.IBinaryImage</node>
+    <node x="5490.730178571428" y="800.0">focaladhesion.FocalAdhesionProcessor</node>
+    <node x="527.8095833333332" y="3487.0">core.calculation.OrientationFields</node>
+    <node x="8174.353879870128" y="3853.0">core.cell.plugins.CellPluginTest</node>
+    <node x="6299.321636859629" y="800.0">core.FilterQueue</node>
+    <node x="1724.808486797373" y="1743.0">core.filaments.SingleFilament</node>
+    <node x="1068.5336852100718" y="3102.0">util.ImageFactory</node>
+    <node x="5298.730178571428" y="474.0">focaladhesion.FocalAdhesion</node>
+    <node x="7606.259271088032" y="3966.0">core.OFIllustratorBatch</node>
+    <node x="3097.8449404761905" y="2456.0">core.tracers.Gatherer</node>
+    <node x="6893.011022727273" y="637.0">tracking.area.DynamicArea</node>
+    <node x="6947.511022727273" y="474.0">tracking.area.CellEvent</node>
+    <node x="1970.641820130706" y="1988.0">core.filaments.CurvedFilament</node>
+    <node x="3512.1251785714285" y="637.0">focaladhesion.Verifier</node>
+    <node x="588.3095833333327" y="3610.0">core.calculation.OFCalculator</node>
+    <node x="3742.3017160795725" y="800.0">evaluation.EvaluationData</node>
+    <node x="6524.864092857977" y="0.0">util.ArrayCopy</node>
+    <node x="4208.423129654515" y="2744.0">util.IOUtils</node>
+    <node x="6105.720153464037" y="637.0">util.MixedUtils</node>
+    <node x="1775.8304166666671" y="3487.0">util.io.FilamentCsvExport</node>
+    <node x="3985.1792261904757" y="3102.0">focaladhesion.DataExtractor</node>
+    <node x="1390.7024404761905" y="2323.0">core.filaments.AbstractFilament</node>
+    <node x="6864.381950000834" y="800.0">util.PathScanner</node>
+    <node x="6726.386022727273" y="121.0">core.cell.CellShape</node>
+    <node x="993.5336852100718" y="3207.0">core.calculation.WrappedSiZer</node>
+    <node x="2404.9524404761905" y="3292.0">core.Const</node>
+    <node x="0.0" y="4123.0">util.fuzzy.vector.Int1D</node>
+    <node x="6521.886022727273" y="121.0">core.cell.InteriorContainer</node>
+    <node x="108.0" y="4123.0">util.fuzzy.vector.Boolean1D</node>
+    <node x="3007.1251785714285" y="474.0">tracking.filament.Shortlist</node>
+    <node x="236.1533333333332" y="3487.0">core.calculation.OrientationFieldPostProcessing</node>
+    <node x="6706.886022727273" y="637.0">core.cell.ShapeContainer</node>
+    <node x="5622.458248702133" y="474.0">core.image.CorrelationData</node>
+    <node x="2801.4350494129058" y="121.0">core.filaments.FilamentChain</node>
+    <node x="8340.35387987013" y="3853.0">core.cell.plugins.CellPluginThresholding</node>
+    <node x="7321.672260812617" y="2959.0">core.image.ImageWrapper</node>
+    <node x="2784.6850494129058" y="800.0">tracking.filament.DataTracking</node>
+    <node x="8161.353879870128" y="3610.0">core.ProjectData</node>
+    <node x="4090.529786210279" y="121.0">core.settings</node>
+    <node x="4220.280882746239" y="800.0">util.PointUtils</node>
+    <node x="3073.704320130706" y="3207.0">enums.ImageTypes</node>
+    <node x="3335.404786210279" y="0.0">util.NotImplementedException</node>
+    <node x="7405.746102092351" y="2744.0">core.image.ImageDependency</node>
+    <node x="8245.486711905596" y="3487.0">core.cell.CellPlugin</node>
+    <node x="2695.704320130706" y="1743.0">core.Calc</node>
+    <node x="3108.0949404761905" y="3853.0">core.BatchProcessor</node>
+    <node x="3883.8755004959935" y="2959.0">util.io.FocalAdhesionCSVExport</node>
+    <node x="4626.860882746239" y="637.0">util.LineIterator</node>
+    <node x="3932.8017160795725" y="474.0">core.cell.DataFilaments</node>
+    <node x="297.0" y="4123.0">core.orientationfields.OrientationField</node>
+    <node x="1410.3683576388503" y="2178.0">util.fuzzy.Fuzzy2D</node>
+    <node x="4785.075546536796" y="3610.0">util.ProcessingUtils</node>
+    <node x="2873.704320130706" y="1648.0">core.image.BinaryImage</node>
+    <node x="2985.1251785714285" y="637.0">tracking.filament.TrackFilaments</node>
+    <node x="6372.864092857977" y="0.0">util.Annotations</node>
+    <node x="3332.8751785714285" y="637.0">util.Pair</node>
+    <node x="7017.381950000834" y="800.0">tracking.area.AreaTracker</node>
+    <node x="3263.324320130706" y="3487.0">core.calculation.MeanBrightnessCalc</node>
+    <node x="279.0" y="4042.0">core.orientationfields.OrientationFieldBlock</node>
+    <node x="2275.141820130706" y="2323.0">util.fuzzy.matrix.Boolean2D</node>
+    <node x="323.6533333333332" y="3292.0">core.Misc</node>
+    <node x="1936.4941071428575" y="2093.0">core.filaments.ClusterableFilament</node>
+    <node x="1183.6447963211822" y="2323.0">util.fuzzy.matrix.Int2D</node>
+    <node x="3752.404320130706" y="2456.0">core.cell.OrientationFieldContainer</node>
+    <node x="7932.603879870128" y="3610.0">core.cell.plugins.CellPluginBenjamin</node>
+    <node x="2564.954320130706" y="1988.0">evaluation.Evaluator</node>
+    <node x="2688.4350494129058" y="121.0">core.tracers.Tracer</node>
+    <node x="8458.986711905596" y="3610.0">core.cell.plugins.CellPluginSimple</node>
+    <node x="6322.224234262226" y="2601.0">core.image.Entry</node>
+    <node x="2279.9524404761905" y="2456.0">core.tracers.AbstractTracer</node>
+    <node x="6320.636022727273" y="121.0">filters</node>
+    <node x="54.0" y="4042.0">util.fuzzy.Fuzzy1D</node>
+    <node x="7603.746102092351" y="2744.0">util.StackCreator</node>
+    <node x="2743.8899404761905" y="2601.0">core.tracers.LineSensor</node>
+    <node x="2669.1850494129058" y="637.0">tracking.filament.DynamicFilament</node>
+    <node x="5801.458248702133" y="800.0">util.ImageConversionUtils</node>
+    <node x="5107.4627342914955" y="1513.0">util.ImageExporter</node>
+    <node x="3505.029320130706" y="2601.0">core.tracers.CurveTracer</node>
+    <node x="4958.984692270049" y="637.0">focaladhesion.FocalAdhesionContainer</node>
+    <node x="1692.88085763885" y="2178.0">core.filaments.Filament</node>
+    <node x="6950.299826643588" y="3487.0">util.io.AreaCsvExport</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tracking.area.CellEvent" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="7004.011022727273" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="10.25" y="-15.5" />
+      <point x="2815.6399404761905" y="2529.0" />
+      <point x="2841.204320130706" y="2529.0" />
+      <point x="2841.204320130706" y="1192.0" />
+      <point x="4187.780882746239" y="1192.0" />
+      <point x="4187.780882746239" y="243.0" />
+      <point x="4008.3017160795725" y="243.0" />
+      <point x="4008.3017160795725" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="16.178571428571445" y="-15.5" />
+      <point x="4876.754117965367" y="3589.0" />
+      <point x="4871.595305690798" y="3589.0" />
+      <point x="4871.595305690798" y="2857.0" />
+      <point x="6654.127079870965" y="2857.0" />
+      <point x="6654.127079870965" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginBenjamin" target="core.cell.CellPlugin" relationship="GENERALIZATION">
+      <point x="72.0" y="-15.5" />
+      <point x="8094.603879870128" y="3579.0" />
+      <point x="8304.486711905596" y="3579.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.ProjectData" target="util.PathScanner" relationship="DEPENDENCY">
+      <point x="-26.0" y="-15.5" />
+      <point x="8200.353879870128" y="3569.0" />
+      <point x="8196.986711905598" y="3569.0" />
+      <point x="8196.986711905598" y="1472.0" />
+      <point x="6995.506950000834" y="1472.0" />
+      <point x="6995.506950000834" y="862.0" />
+      <point x="6930.881950000834" y="862.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.filaments.Filament" relationship="DEPENDENCY">
+      <point x="20.85714285714289" y="15.5" />
+      <point x="2895.2921922700484" y="213.0" />
+      <point x="3198.9350494129058" y="213.0" />
+      <point x="3198.9350494129058" y="1022.0" />
+      <point x="1896.308486797373" y="1022.0" />
+      <point x="1896.308486797373" y="1896.0" />
+      <point x="1717.8209867973728" y="1896.0" />
+      <point x="1717.8209867973728" y="2156.0" />
+      <point x="1703.7808576388502" y="2156.0" />
+      <point x="-43.59999999999991" y="-15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.Const" relationship="DEPENDENCY">
+      <point x="62.791666666666515" y="-15.5" />
+      <point x="719.6012499999993" y="3589.0" />
+      <point x="868.3095833333332" y="3589.0" />
+      <point x="868.3095833333332" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.OrientationFieldContainer" relationship="CREATE">
+      <point x="-38.63636363636397" y="-15.5" />
+      <point x="6326.087870625862" y="2569.0" />
+      <point x="3808.1543201307054" y="2569.0" />
+      <point x="-55.75" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="tracking.filament.DynamicFilament" relationship="CREATE">
+      <point x="-56.0" y="-15.5" />
+      <point x="2798.6850494129058" y="779.0" />
+      <point x="2747.8725494129058" y="779.0" />
+      <point x="2747.8725494129058" y="749.0" />
+      <point x="2731.8100494129058" y="749.0" />
+      <point x="-20.875" y="15.5" />
+    </edge>
+    <edge source="core.calculation.WrappedSiZer" target="core.settings" relationship="DEPENDENCY">
+      <point x="61.666666666666515" y="-15.5" />
+      <point x="1129.2003518767383" y="3165.0" />
+      <point x="1731.9762500000006" y="3165.0" />
+      <point x="1731.9762500000006" y="2693.0" />
+      <point x="3304.0677976190473" y="2693.0" />
+      <point x="3304.0677976190473" y="1252.0" />
+      <point x="4599.860882746239" y="1252.0" />
+      <point x="4599.860882746239" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.settings" target="core.calculation.WrappedSiZer" relationship="DEPENDENCY">
+      <point x="12.166666666666629" y="15.5" />
+      <point x="4175.696452876946" y="283.0" />
+      <point x="999.9503518767383" y="283.0" />
+      <point x="999.9503518767383" y="3165.0" />
+      <point x="1005.8670185434053" y="3165.0" />
+      <point x="-61.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="tracking.filament.DynamicFilament" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="20.875" y="15.5" />
+      <point x="2773.5600494129058" y="739.0" />
+      <point x="2772.1251785714285" y="739.0" />
+      <point x="2772.1251785714285" y="962.0" />
+      <point x="1631.5558576388503" y="962.0" />
+      <point x="1631.5558576388503" y="1836.0" />
+      <point x="1527.8683576388503" y="1836.0" />
+      <point x="1527.8683576388503" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="28.0" y="15.5" />
+      <point x="2882.6850494129058" y="932.0" />
+      <point x="6363.821636859629" y="932.0" />
+      <point x="6363.821636859629" y="2579.0" />
+      <point x="6356.996961534953" y="2579.0" />
+      <point x="-7.727272727272975" y="-15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="12.5" y="15.5" />
+      <point x="5194.9627342914955" y="1606.0" />
+      <point x="6363.821636859629" y="1606.0" />
+      <point x="6363.821636859629" y="2579.0" />
+      <point x="6356.996961534953" y="2579.0" />
+      <point x="-7.727272727272975" y="-15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-49.33333333333326" y="-15.5" />
+      <point x="2304.6191071428575" y="2415.0" />
+      <point x="1173.1447963211822" y="2415.0" />
+      <point x="1173.1447963211822" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.Calc" relationship="DEPENDENCY">
+      <point x="0.0" y="15.5" />
+      <point x="4006.3017160795725" y="556.0" />
+      <point x="4031.529786210279" y="556.0" />
+      <point x="4031.529786210279" y="1142.0" />
+      <point x="2642.954320130706" y="1142.0" />
+      <point x="2642.954320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1721.0" />
+      <point x="2709.0376534640395" y="1721.0" />
+      <point x="-26.666666666666742" y="-15.5" />
+    </edge>
+    <edge source="util.PointUtils" target="util.Pair" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="4277.780882746239" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.Pair" relationship="CREATE">
+      <point x="-36.48000000000002" y="-15.5" />
+      <point x="3147.614940476191" y="3772.0" />
+      <point x="36.47999999999956" y="3772.0" />
+      <point x="36.47999999999956" y="1482.0" />
+      <point x="560.8095833333332" y="1482.0" />
+      <point x="560.8095833333332" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DynamicFilament" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="-62.625" y="15.5" />
+      <point x="2690.0600494129058" y="749.0" />
+      <point x="1356.3683576388503" y="749.0" />
+      <point x="1356.3683576388503" y="2241.0" />
+      <point x="1358.620986797373" y="2241.0" />
+      <point x="1358.620986797373" y="2301.0" />
+      <point x="1404.369107142857" y="2301.0" />
+      <point x="-68.33333333333348" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesion" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-37.25" y="-15.5" />
+      <point x="5335.980178571428" y="363.0" />
+      <point x="5805.995947681305" y="363.0" />
+      <point x="5805.995947681305" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="util.Pair" relationship="DEPENDENCY">
+      <point x="-17.125" y="-15.5" />
+      <point x="639.6845833333327" y="3549.0" />
+      <point x="514.6533333333332" y="3549.0" />
+      <point x="514.6533333333332" y="2723.0" />
+      <point x="582.8095833333332" y="2723.0" />
+      <point x="582.8095833333332" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="util.io.FocalAdhesionCSVExport" target="focaladhesion.FocalAdhesionContainer" relationship="DEPENDENCY">
+      <point x="54.5" y="-15.5" />
+      <point x="4047.3755004959935" y="2907.0" />
+      <point x="4007.904320130706" y="2907.0" />
+      <point x="4007.904320130706" y="1352.0" />
+      <point x="4999.777549412906" y="1352.0" />
+      <point x="4999.777549412906" y="769.0" />
+      <point x="5240.458248702134" y="769.0" />
+      <point x="5240.458248702134" y="709.0" />
+      <point x="5065.484692270049" y="709.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.DynamicArea" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="-47.0" y="-15.5" />
+      <point x="6917.073522727273" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.filaments.Filament" relationship="CREATE">
+      <point x="-64.58333333333348" y="15.5" />
+      <point x="1983.5584867973726" y="2051.0" />
+      <point x="1717.8209867973728" y="2051.0" />
+      <point x="1717.8209867973728" y="2156.0" />
+      <point x="1703.7808576388502" y="2156.0" />
+      <point x="-43.59999999999991" y="-15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="filters" relationship="DEPENDENCY">
+      <point x="58.799999999999955" y="-15.5" />
+      <point x="4065.1017160795723" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="util.NotImplementedException" relationship="CREATE">
+      <point x="-21.800000000000182" y="-15.5" />
+      <point x="1725.58085763885" y="2156.0" />
+      <point x="1734.3209867973728" y="2156.0" />
+      <point x="1734.3209867973728" y="1906.0" />
+      <point x="1912.808486797373" y="1906.0" />
+      <point x="1912.808486797373" y="1042.0" />
+      <point x="3220.9350494129058" y="1042.0" />
+      <point x="3220.9350494129058" y="253.0" />
+      <point x="4039.029786210279" y="253.0" />
+      <point x="4039.029786210279" y="101.0" />
+      <point x="3450.904786210279" y="101.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="49.33333333333326" y="-15.5" />
+      <point x="2403.285773809524" y="2415.0" />
+      <point x="2444.641820130706" y="2415.0" />
+      <point x="2444.641820130706" y="1711.0" />
+      <point x="3618.029320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="79.5" y="15.5" />
+      <point x="5676.230178571428" y="892.0" />
+      <point x="7395.246102092351" y="892.0" />
+      <point x="7395.246102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.image.BinaryImage" relationship="DEPENDENCY">
+      <point x="-46.44444444444434" y="-15.5" />
+      <point x="7351.227816368173" y="2897.0" />
+      <point x="7323.968324314574" y="2897.0" />
+      <point x="7323.968324314574" y="1711.0" />
+      <point x="3618.0293201307063" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="65.77777777777777" y="-15.5" />
+      <point x="2419.730218253969" y="2435.0" />
+      <point x="2475.641820130706" y="2435.0" />
+      <point x="2475.641820130706" y="2375.0" />
+      <point x="1513.7024404761905" y="2375.0" />
+      <point x="41.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="core.settings" relationship="DEPENDENCY">
+      <point x="18.71428571428578" y="-15.5" />
+      <point x="7101.59623571512" y="709.0" />
+      <point x="7132.886022727273" y="709.0" />
+      <point x="7132.886022727273" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginThresholding" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="68.0" y="-15.5" />
+      <point x="8510.35387987013" y="3832.0" />
+      <point x="8633.486711905596" y="3832.0" />
+      <point x="8633.486711905596" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="56.0" y="15.5" />
+      <point x="2910.6850494129053" y="902.0" />
+      <point x="7389.746102092351" y="902.0" />
+      <point x="7389.746102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="util.ImageFactory" target="util.Pair" relationship="DEPENDENCY">
+      <point x="-11.833333333333485" y="-15.5" />
+      <point x="1127.7003518767383" y="3081.0" />
+      <point x="1115.0336852100713" y="3081.0" />
+      <point x="1115.0336852100713" y="1032.0" />
+      <point x="3209.9350494129053" y="1032.0" />
+      <point x="3209.9350494129058" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.cell.CellPlugin" relationship="DEPENDENCY">
+      <point x="38.0" y="15.5" />
+      <point x="7435.672260812617" y="3081.0" />
+      <point x="8261.153378572264" y="3081.0" />
+      <point x="8261.153378572264" y="3465.0" />
+      <point x="8274.986711905596" y="3465.0" />
+      <point x="-29.5" y="-15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-72.1875" y="-15.5" />
+      <point x="538.1220833333332" y="3455.0" />
+      <point x="527.8095833333332" y="3455.0" />
+      <point x="527.8095833333332" y="413.0" />
+      <point x="276.15159556957633" y="413.0" />
+      <point x="276.15159556957633" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="core.image.CorrelationData" relationship="DEPENDENCY">
+      <point x="66.25" y="-15.5" />
+      <point x="5662.980178571428" y="729.0" />
+      <point x="5701.458248702133" y="729.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-79.5" y="15.5" />
+      <point x="5517.230178571428" y="1402.0" />
+      <point x="1958.56835763885" y="1402.0" />
+      <point x="1958.56835763885" y="1926.0" />
+      <point x="1812.38085763885" y="1926.0" />
+      <point x="1812.38085763885" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="util.fuzzy.matrix.Boolean2D" target="util.fuzzy.Fuzzy2D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2338.141820130706" y="2281.0" />
+      <point x="1463.8683576388503" y="2281.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginTest" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="8246.853879870128" y="3812.0" />
+      <point x="8401.486711905596" y="3812.0" />
+      <point x="8401.486711905596" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="60.799999999999955" y="-15.5" />
+      <point x="3244.8949404761906" y="3772.0" />
+      <point x="7905.023879870129" y="3772.0" />
+      <point x="7905.023879870128" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.tracers.CurveTracer" relationship="CREATE">
+      <point x="6.080000000000041" y="-15.5" />
+      <point x="3190.174940476191" y="3682.0" />
+      <point x="3252.824320130706" y="3682.0" />
+      <point x="3252.824320130706" y="2917.0" />
+      <point x="3301.1349404761904" y="2917.0" />
+      <point x="3301.1349404761904" y="2713.0" />
+      <point x="3570.029320130706" y="2713.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.InteriorContainer" relationship="TO_ONE">
+      <point x="23.181818181818016" y="-15.5" />
+      <point x="6387.906052444044" y="2559.0" />
+      <point x="6608.614092857977" y="2559.0" />
+      <point x="6608.614092857977" y="403.0" />
+      <point x="6644.886022727273" y="403.0" />
+      <point x="41.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.settings" relationship="DEPENDENCY">
+      <point x="-30.9375" y="-15.5" />
+      <point x="579.3720833333332" y="3455.0" />
+      <point x="593.8095833333332" y="3455.0" />
+      <point x="593.8095833333332" y="1462.0" />
+      <point x="802.3095833333332" y="1462.0" />
+      <point x="802.3095833333332" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="util.LineIterator" relationship="CREATE">
+      <point x="16.44444444444457" y="-15.5" />
+      <point x="2370.3968849206353" y="2395.0" />
+      <point x="2422.641820130706" y="2395.0" />
+      <point x="2422.641820130706" y="1182.0" />
+      <point x="4176.780882746239" y="1182.0" />
+      <point x="4176.780882746239" y="779.0" />
+      <point x="4690.860882746239" y="779.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.orientationfields.OrientationField" target="core.orientationfields.OrientationFieldBlock" relationship="TO_MANY">
+      <point x="-39.75" y="-15.5" />
+      <point x="336.75" y="4098.0" />
+      <point x="327.75" y="4098.0" />
+      <point x="-48.75" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-51.5625" y="-15.5" />
+      <point x="558.7470833333332" y="3455.0" />
+      <point x="549.8095833333332" y="3455.0" />
+      <point x="549.8095833333332" y="223.0" />
+      <point x="1055.8929166666671" y="223.0" />
+      <point x="1055.8929166666671" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="32.75" y="15.5" />
+      <point x="7115.631950000834" y="862.0" />
+      <point x="7593.246102092351" y="862.0" />
+      <point x="7593.246102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="filters" relationship="DEPENDENCY">
+      <point x="32.0" y="-15.5" />
+      <point x="6395.321636859629" y="729.0" />
+      <point x="6379.821636859629" y="729.0" />
+      <point x="6379.821636859629" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="focaladhesion.FocalAdhesionContainer" relationship="DEPENDENCY">
+      <point x="14.399999999999977" y="-15.5" />
+      <point x="4270.8231296545155" y="2663.0" />
+      <point x="5657.355178571428" y="2663.0" />
+      <point x="5657.355178571428" y="1352.0" />
+      <point x="5276.980178571428" y="1352.0" />
+      <point x="5276.980178571428" y="769.0" />
+      <point x="5240.458248702134" y="769.0" />
+      <point x="5240.458248702134" y="709.0" />
+      <point x="5065.484692270049" y="709.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.OFIllustratorBatch" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="70.83333333333303" y="-15.5" />
+      <point x="7762.092604421365" y="3945.0" />
+      <point x="8658.986711905596" y="3945.0" />
+      <point x="8658.986711905596" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.Const" relationship="DEPENDENCY">
+      <point x="-12.5" y="15.5" />
+      <point x="5169.9627342914955" y="1606.0" />
+      <point x="3025.454320130706" y="1606.0" />
+      <point x="3025.454320130706" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.cell.CellShape" target="core.image.IBinaryImage" relationship="TO_ONE">
+      <point x="29.5" y="-15.5" />
+      <point x="6814.886022727273" y="101.0" />
+      <point x="6670.59679919729" y="101.0" />
+      <point x="6670.59679919729" y="51.0" />
+      <point x="6211.2978273358185" y="51.0" />
+      <point x="46.33333333333326" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="51.5625" y="-15.5" />
+      <point x="661.8720833333332" y="3455.0" />
+      <point x="668.1533333333332" y="3455.0" />
+      <point x="668.1533333333332" y="2693.0" />
+      <point x="791.3095833333332" y="2693.0" />
+      <point x="791.3095833333332" y="2549.0" />
+      <point x="2475.641820130706" y="2549.0" />
+      <point x="2475.641820130706" y="2375.0" />
+      <point x="1513.7024404761905" y="2375.0" />
+      <point x="41.0" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="tracking.area.AreaTracker" relationship="DEPENDENCY">
+      <point x="-9.25" y="-15.5" />
+      <point x="7015.049826643588" y="3415.0" />
+      <point x="7261.02387987013" y="3415.0" />
+      <point x="7261.02387987013" y="1482.0" />
+      <point x="6957.256950000834" y="1482.0" />
+      <point x="6957.256950000834" y="852.0" />
+      <point x="7050.131950000834" y="852.0" />
+      <point x="-32.75" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="39.958333333333485" y="-15.5" />
+      <point x="696.7679166666662" y="3569.0" />
+      <point x="747.3095833333332" y="3569.0" />
+      <point x="747.3095833333332" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="-37.4285714285714" y="-15.5" />
+      <point x="7045.453378572262" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="30.9375" y="-15.5" />
+      <point x="641.2470833333332" y="3445.0" />
+      <point x="657.1533333333332" y="3445.0" />
+      <point x="657.1533333333332" y="2529.0" />
+      <point x="747.3095833333332" y="2529.0" />
+      <point x="747.3095833333332" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="45.833333333333485" y="-15.5" />
+      <point x="5228.296067624829" y="1462.0" />
+      <point x="6437.821636859629" y="1462.0" />
+      <point x="6437.821636859629" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="filters" target="core.image.ImageWrapper" relationship="TO_ONE">
+      <point x="56.57142857142844" y="15.5" />
+      <point x="6443.207451298701" y="383.0" />
+      <point x="7844.13499098124" y="383.0" />
+      <point x="7844.13499098124" y="596.0" />
+      <point x="7812.412768759018" y="596.0" />
+      <point x="7812.412768759018" y="709.0" />
+      <point x="7766.746102092351" y="709.0" />
+      <point x="7766.746102092351" y="1462.0" />
+      <point x="7750.246102092351" y="1462.0" />
+      <point x="7750.246102092351" y="2817.0" />
+      <point x="7716.246102092351" y="2817.0" />
+      <point x="7716.246102092351" y="2937.0" />
+      <point x="7435.672260812617" y="2937.0" />
+      <point x="38.0" y="-15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="evaluation.EvaluationData" relationship="CREATE">
+      <point x="-35.625" y="-15.5" />
+      <point x="2586.329320130706" y="1886.0" />
+      <point x="2549.954320130706" y="1886.0" />
+      <point x="2549.954320130706" y="1112.0" />
+      <point x="3818.8017160795725" y="1112.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.DynamicArea" target="tracking.area.CellEvent" relationship="DEPENDENCY">
+      <point x="47.0" y="-15.5" />
+      <point x="7010.511022727273" y="596.0" />
+      <point x="7105.886022727273" y="596.0" />
+      <point x="7105.886022727273" y="576.0" />
+      <point x="7032.261022727273" y="576.0" />
+      <point x="28.25" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginSimple" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="61.5" y="-15.5" />
+      <point x="8602.486711905596" y="3579.0" />
+      <point x="8542.486711905596" y="3579.0" />
+      <point x="8542.486711905596" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="core.settings" relationship="DEPENDENCY">
+      <point x="-7.125" y="-15.5" />
+      <point x="2614.829320130706" y="1896.0" />
+      <point x="2609.954320130706" y="1896.0" />
+      <point x="2609.954320130706" y="1172.0" />
+      <point x="4134.968382746239" y="1172.0" />
+      <point x="4134.968382746239" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.Const" relationship="DEPENDENCY">
+      <point x="68.35714285714266" y="-15.5" />
+      <point x="1931.1875595238098" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="-53.33333333333326" y="-15.5" />
+      <point x="6309.988303526296" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.OFIllustratorBatch" target="core.BatchProcessor" relationship="CREATE">
+      <point x="-70.83333333333326" y="-15.5" />
+      <point x="7620.425937754699" y="3945.0" />
+      <point x="3184.0949404761905" y="3945.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.DynamicArea" target="tracking.area.CellEvent" relationship="TO_MANY">
+      <point x="0.0" y="-15.5" />
+      <point x="6963.511022727273" y="576.0" />
+      <point x="6975.761022727273" y="576.0" />
+      <point x="-28.25" y="15.5" />
+    </edge>
+    <edge source="core.calculation.WrappedSiZer" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="12.333333333333485" y="-15.5" />
+      <point x="1079.8670185434053" y="3155.0" />
+      <point x="1058.0336852100718" y="3155.0" />
+      <point x="1058.0336852100718" y="2673.0" />
+      <point x="1137.0336852100713" y="2673.0" />
+      <point x="1137.0336852100713" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionContainer" target="core.image.CorrelationData" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="5065.484692270049" y="576.0" />
+      <point x="5648.7915820354665" y="576.0" />
+      <point x="-52.66666666666663" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="28.0" y="-15.5" />
+      <point x="2882.6850494129058" y="729.0" />
+      <point x="2974.6251785714285" y="729.0" />
+      <point x="2974.6251785714285" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageFactory" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="35.5" y="-15.5" />
+      <point x="1175.0336852100718" y="3071.0" />
+      <point x="1690.8095833333336" y="3071.0" />
+      <point x="1690.8095833333336" y="2917.0" />
+      <point x="3099.0549404761905" y="2917.0" />
+      <point x="3099.0549404761905" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="util.LineIterator" relationship="CREATE">
+      <point x="-66.25" y="-15.5" />
+      <point x="5530.480178571428" y="779.0" />
+      <point x="4690.860882746239" y="779.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.AbstractFilament" target="focaladhesion.Verifier" relationship="DEPENDENCY">
+      <point x="41.0" y="-15.5" />
+      <point x="1513.7024404761905" y="2261.0" />
+      <point x="2301.901690972183" y="2261.0" />
+      <point x="2301.901690972183" y="1082.0" />
+      <point x="3587.1251785714285" y="1082.0" />
+      <point x="25.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="-41.71428571428578" y="15.5" />
+      <point x="2832.7207636986195" y="243.0" />
+      <point x="1356.3683576388503" y="243.0" />
+      <point x="1356.3683576388503" y="2241.0" />
+      <point x="1358.620986797373" y="2241.0" />
+      <point x="1358.620986797373" y="2301.0" />
+      <point x="1404.369107142857" y="2301.0" />
+      <point x="-68.33333333333348" y="-15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="tracking.filament.DynamicFilament" relationship="TO_MANY">
+      <point x="-28.0" y="-15.5" />
+      <point x="2826.6850494129058" y="739.0" />
+      <point x="2815.3100494129058" y="739.0" />
+      <point x="62.625" y="15.5" />
+    </edge>
+    <edge source="util.ImageFactory" target="core.tracers.Tracer" relationship="DEPENDENCY">
+      <point x="-59.16666666666697" y="-15.5" />
+      <point x="1080.3670185434048" y="3081.0" />
+      <point x="1074.7003518767378" y="3081.0" />
+      <point x="1074.7003518767378" y="443.0" />
+      <point x="2851.9350494129058" y="443.0" />
+      <point x="2851.9350494129058" y="213.0" />
+      <point x="2734.9350494129058" y="213.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.MeanBrightnessCalc" target="core.Const" relationship="DEPENDENCY">
+      <point x="-46.25" y="-15.5" />
+      <point x="3309.574320130706" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="53.33333333333337" y="-15.5" />
+      <point x="6416.654970192962" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.Calc" relationship="DEPENDENCY">
+      <point x="17.125" y="-15.5" />
+      <point x="673.9345833333327" y="3549.0" />
+      <point x="725.3095833333332" y="3549.0" />
+      <point x="725.3095833333332" y="2415.0" />
+      <point x="791.3095833333332" y="2415.0" />
+      <point x="791.3095833333332" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-65.77777777777777" y="-15.5" />
+      <point x="2288.174662698413" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.settings" relationship="DEPENDENCY">
+      <point x="-28.541666666666515" y="-15.5" />
+      <point x="628.2679166666662" y="3559.0" />
+      <point x="503.6533333333332" y="3559.0" />
+      <point x="503.6533333333332" y="2579.0" />
+      <point x="571.8095833333332" y="2579.0" />
+      <point x="571.8095833333332" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.CellPlugin" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="49.16666666666697" y="-15.5" />
+      <point x="8353.653378572264" y="3435.0" />
+      <point x="8318.736711905598" y="3435.0" />
+      <point x="8318.736711905598" y="1492.0" />
+      <point x="8367.320045238932" y="1492.0" />
+      <point x="8367.320045238932" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Const" target="core.calculation.WrappedSiZer" relationship="DEPENDENCY">
+      <point x="-29.666666666666742" y="-15.5" />
+      <point x="2419.785773809524" y="3270.0" />
+      <point x="1030.5336852100718" y="3270.0" />
+      <point x="-37.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.WrappedSiZer" target="core.Const" relationship="DEPENDENCY">
+      <point x="37.0" y="15.5" />
+      <point x="1104.5336852100718" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginBenjamin" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="36.0" y="-15.5" />
+      <point x="8058.603879870128" y="3579.0" />
+      <point x="8052.486711905598" y="3579.0" />
+      <point x="8052.486711905598" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.ProjectData" target="core.cell.CellPlugin" relationship="TO_ONE">
+      <point x="26.0" y="-15.5" />
+      <point x="8252.353879870128" y="3559.0" />
+      <point x="8343.82004523893" y="3559.0" />
+      <point x="39.33333333333337" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.image.CorrelationData" relationship="DEPENDENCY">
+      <point x="15.321428571428555" y="-15.5" />
+      <point x="4072.000654761904" y="3031.0" />
+      <point x="4143.9995582259435" y="3031.0" />
+      <point x="4143.9995582259435" y="2797.0" />
+      <point x="6074.7915820354665" y="2797.0" />
+      <point x="6074.7915820354665" y="606.0" />
+      <point x="5701.458248702133" y="606.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="filters" relationship="TO_MANY">
+      <point x="10.666666666666515" y="-15.5" />
+      <point x="6373.988303526296" y="729.0" />
+      <point x="6368.821636859629" y="729.0" />
+      <point x="6368.821636859629" y="393.0" />
+      <point x="6386.636022727273" y="393.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="util.fuzzy.matrix.Boolean2D" relationship="CREATE">
+      <point x="-16.444444444444443" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="-31.07142857142844" y="-15.5" />
+      <point x="1831.7589880952387" y="3415.0" />
+      <point x="824.3095833333332" y="3415.0" />
+      <point x="824.3095833333332" y="749.0" />
+      <point x="1017.8929166666671" y="749.0" />
+      <point x="1017.8929166666671" y="576.0" />
+      <point x="4466.428025603382" y="576.0" />
+      <point x="4466.428025603382" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="core.OFIllustratorBatch" target="core.ProjectData" relationship="DEPENDENCY">
+      <point x="-14.16666666666697" y="-15.5" />
+      <point x="7677.092604421365" y="3915.0" />
+      <point x="7976.986711905598" y="3915.0" />
+      <point x="7976.986711905598" y="3772.0" />
+      <point x="8226.353879870128" y="3772.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.CellPlugin" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="-9.83333333333303" y="-15.5" />
+      <point x="8294.653378572264" y="3465.0" />
+      <point x="8285.736711905598" y="3465.0" />
+      <point x="8285.736711905598" y="1711.0" />
+      <point x="3618.029320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="filters" target="core.Const" relationship="DEPENDENCY">
+      <point x="-18.857142857143117" y="15.5" />
+      <point x="6367.7788798701295" y="383.0" />
+      <point x="4455.428025603382" y="383.0" />
+      <point x="4455.428025603382" y="1222.0" />
+      <point x="3141.5949404761905" y="1222.0" />
+      <point x="3141.5949404761905" y="1576.0" />
+      <point x="2863.204320130706" y="1576.0" />
+      <point x="2863.204320130706" y="2549.0" />
+      <point x="2518.5149404761905" y="2549.0" />
+      <point x="2518.5149404761905" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="66.39285714285711" y="-15.5" />
+      <point x="4123.072083333333" y="3081.0" />
+      <point x="4860.809591405085" y="3081.0" />
+      <point x="4860.809591405085" y="3071.0" />
+      <point x="7359.672260812617" y="3071.0" />
+      <point x="-38.0" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.DataFilaments" relationship="DEPENDENCY">
+      <point x="-23.181818181818016" y="-15.5" />
+      <point x="6341.542416080408" y="2549.0" />
+      <point x="6238.220153464037" y="2549.0" />
+      <point x="6238.220153464037" y="586.0" />
+      <point x="5210.230178571428" y="586.0" />
+      <point x="5210.230178571428" y="526.0" />
+      <point x="4048.3017160795725" y="526.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="18.24000000000001" y="-15.5" />
+      <point x="3202.3349404761907" y="3702.0" />
+      <point x="3458.824320130706" y="3702.0" />
+      <point x="3458.824320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="32.5" y="-15.5" />
+      <point x="3602.529320130706" y="2559.0" />
+      <point x="3607.029320130706" y="2559.0" />
+      <point x="3607.029320130706" y="1272.0" />
+      <point x="4765.360882746239" y="1272.0" />
+      <point x="4765.360882746239" y="303.0" />
+      <point x="4551.928025603382" y="303.0" />
+      <point x="4551.928025603382" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="tracking.area.DynamicArea" relationship="TO_MANY">
+      <point x="-18.714285714285694" y="-15.5" />
+      <point x="7064.167664286548" y="729.0" />
+      <point x="6998.761022727273" y="729.0" />
+      <point x="35.25" y="15.5" />
+    </edge>
+    <edge source="util.ImageFactory" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-35.5" y="-15.5" />
+      <point x="1104.0336852100718" y="3081.0" />
+      <point x="1085.7003518767378" y="3081.0" />
+      <point x="1085.7003518767378" y="263.0" />
+      <point x="4050.029786210279" y="263.0" />
+      <point x="4050.029786210279" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="tracking.area.CellEvent" relationship="DEPENDENCY">
+      <point x="27.75" y="-15.5" />
+      <point x="7052.049826643588" y="3435.0" />
+      <point x="7809.857213203462" y="3435.0" />
+      <point x="7809.857213203462" y="689.0" />
+      <point x="7484.481578282828" y="689.0" />
+      <point x="7484.481578282828" y="596.0" />
+      <point x="7105.886022727273" y="596.0" />
+      <point x="7105.886022727273" y="576.0" />
+      <point x="7032.261022727273" y="576.0" />
+      <point x="28.25" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-62.5" y="15.5" />
+      <point x="5119.9627342914955" y="1586.0" />
+      <point x="1958.56835763885" y="1586.0" />
+      <point x="1958.56835763885" y="1936.0" />
+      <point x="1812.38085763885" y="1936.0" />
+      <point x="1812.38085763885" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="tracking.filament.DynamicFilament" target="core.filaments.FilamentChain" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="2752.6850494129058" y="453.0" />
+      <point x="2799.6850494129058" y="453.0" />
+      <point x="2799.6850494129058" y="203.0" />
+      <point x="2874.4350494129058" y="203.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="tracking.area.DynamicArea" relationship="DEPENDENCY">
+      <point x="37.5" y="-15.5" />
+      <point x="5219.9627342914955" y="1452.0" />
+      <point x="6024.624915368799" y="1452.0" />
+      <point x="6024.624915368799" y="779.0" />
+      <point x="6866.886022727273" y="779.0" />
+      <point x="6866.886022727273" y="719.0" />
+      <point x="6928.261022727273" y="719.0" />
+      <point x="-35.25" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.InteriorContainer" relationship="CREATE">
+      <point x="15.454545454545496" y="-15.5" />
+      <point x="6380.178779716771" y="2549.0" />
+      <point x="6598.614092857977" y="2549.0" />
+      <point x="6598.614092857977" y="403.0" />
+      <point x="6562.886022727273" y="403.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.AbstractFilament" target="focaladhesion.Verifier" relationship="TO_ONE">
+      <point x="-13.666666666666515" y="-15.5" />
+      <point x="1459.035773809524" y="2241.0" />
+      <point x="1399.8683576388503" y="2241.0" />
+      <point x="1399.8683576388503" y="1826.0" />
+      <point x="1562.0558576388503" y="1826.0" />
+      <point x="1562.0558576388503" y="952.0" />
+      <point x="2758.8725494129058" y="952.0" />
+      <point x="2758.8725494129058" y="749.0" />
+      <point x="3537.1251785714285" y="749.0" />
+      <point x="-25.0" y="15.5" />
+    </edge>
+    <edge source="core.ProjectData" target="core.settings" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="8226.353879870128" y="3569.0" />
+      <point x="8234.986711905598" y="3569.0" />
+      <point x="8234.986711905598" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-14.399999999999977" y="-15.5" />
+      <point x="4242.023129654515" y="2693.0" />
+      <point x="4214.277643353136" y="2693.0" />
+      <point x="4214.277643353136" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.filaments.FilamentChain" relationship="DEPENDENCY">
+      <point x="-60.799999999999955" y="-15.5" />
+      <point x="3123.2949404761907" y="3812.0" />
+      <point x="12.159999999999854" y="3812.0" />
+      <point x="12.159999999999854" y="453.0" />
+      <point x="2799.6850494129058" y="453.0" />
+      <point x="2799.6850494129058" y="203.0" />
+      <point x="2874.4350494129058" y="203.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="focaladhesion.FocalAdhesionContainer" relationship="CREATE">
+      <point x="5.10714285714289" y="-15.5" />
+      <point x="4061.786369047619" y="3021.0" />
+      <point x="4122.589786210279" y="3021.0" />
+      <point x="4122.589786210279" y="1362.0" />
+      <point x="5035.913511904761" y="1362.0" />
+      <point x="5035.913511904761" y="769.0" />
+      <point x="5240.458248702134" y="769.0" />
+      <point x="5240.458248702134" y="709.0" />
+      <point x="5065.484692270049" y="709.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.BinaryImage" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-33.75" y="15.5" />
+      <point x="2907.454320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1721.0" />
+      <point x="2709.0376534640395" y="1721.0" />
+      <point x="-26.666666666666742" y="-15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="util.ImageConversionUtils" relationship="DEPENDENCY">
+      <point x="-54.16666666666663" y="-15.5" />
+      <point x="5128.2960676248285" y="1472.0" />
+      <point x="4254.394310019803" y="1472.0" />
+      <point x="4254.394310019803" y="882.0" />
+      <point x="5850.458248702133" y="882.0" />
+      <point x="-49.0" y="15.5" />
+    </edge>
+    <edge source="core.settings" target="core.settings" relationship="TO_MANY">
+      <point x="-36.5" y="15.5" />
+      <point x="4127.029786210279" y="182.0" />
+      <point x="4060.529786210279" y="182.0" />
+      <point x="4060.529786210279" y="128.75" />
+      <point x="-73.0" y="-7.75" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-21.375" y="-15.5" />
+      <point x="2600.579320130706" y="1896.0" />
+      <point x="2598.954320130706" y="1896.0" />
+      <point x="2598.954320130706" y="1122.0" />
+      <point x="3905.8017160795725" y="1122.0" />
+      <point x="3905.8017160795725" y="566.0" />
+      <point x="4090.3017160795725" y="566.0" />
+      <point x="4090.3017160795725" y="323.0" />
+      <point x="4593.656095734088" y="323.0" />
+      <point x="4593.656095734088" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.calculation.OFCalculator" relationship="DEPENDENCY">
+      <point x="-18.23999999999998" y="-15.5" />
+      <point x="3165.8549404761907" y="3742.0" />
+      <point x="656.8095833333327" y="3742.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="43.5" y="-15.5" />
+      <point x="1906.3304166666671" y="3355.0" />
+      <point x="943.3670185434048" y="3355.0" />
+      <point x="943.3670185434048" y="2907.0" />
+      <point x="1690.8095833333336" y="2907.0" />
+      <point x="1690.8095833333336" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="tracking.area.CellEvent" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="7082.881950000834" y="699.0" />
+      <point x="7105.886022727273" y="699.0" />
+      <point x="7105.886022727273" y="576.0" />
+      <point x="7032.261022727273" y="576.0" />
+      <point x="28.25" y="15.5" />
+    </edge>
+    <edge source="filters" target="util.Annotations" relationship="DEPENDENCY">
+      <point x="16.5" y="-15.5" />
+      <point x="6403.136022727273" y="61.0" />
+      <point x="6438.864092857977" y="61.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="tracking.area.DynamicArea" relationship="CREATE">
+      <point x="-56.14285714285711" y="-15.5" />
+      <point x="7026.739092857977" y="779.0" />
+      <point x="6866.886022727273" y="779.0" />
+      <point x="6866.886022727273" y="719.0" />
+      <point x="6928.261022727273" y="719.0" />
+      <point x="-35.25" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.filaments.SingleFilament" relationship="DEPENDENCY">
+      <point x="-6.214285714285779" y="-15.5" />
+      <point x="1856.6161309523814" y="3395.0" />
+      <point x="846.3095833333332" y="3395.0" />
+      <point x="846.3095833333332" y="2415.0" />
+      <point x="1010.9503518767383" y="2415.0" />
+      <point x="1010.9503518767383" y="1966.0" />
+      <point x="1523.8058576388503" y="1966.0" />
+      <point x="1523.8058576388503" y="1796.0" />
+      <point x="1743.558486797373" y="1796.0" />
+      <point x="-56.25" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageDependency" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="-22.125" y="15.5" />
+      <point x="7472.121102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.image.ImageDependency" relationship="DEPENDENCY">
+      <point x="-38.0" y="-15.5" />
+      <point x="7359.672260812617" y="2937.0" />
+      <point x="7334.468324314574" y="2937.0" />
+      <point x="7334.468324314574" y="2837.0" />
+      <point x="7427.871102092351" y="2837.0" />
+      <point x="-66.375" y="15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="core.Calc" relationship="DEPENDENCY">
+      <point x="21.800000000000182" y="-15.5" />
+      <point x="1769.1808576388503" y="2156.0" />
+      <point x="1757.2024404761905" y="2156.0" />
+      <point x="1757.2024404761905" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginThresholding" target="core.cell.CellPlugin" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="8442.35387987013" y="3792.0" />
+      <point x="8301.85387987013" y="3792.0" />
+      <point x="8301.85387987013" y="3589.0" />
+      <point x="8166.986711905598" y="3589.0" />
+      <point x="8166.986711905598" y="3549.0" />
+      <point x="8265.153378572264" y="3549.0" />
+      <point x="-39.33333333333337" y="15.5" />
+    </edge>
+    <edge source="core.cell.ShapeContainer" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-58.875" y="-15.5" />
+      <point x="6726.511022727273" y="576.0" />
+      <point x="6701.198522727273" y="576.0" />
+      <point x="6701.198522727273" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FocalAdhesionCSVExport" target="core.image.CorrelationData" relationship="DEPENDENCY">
+      <point x="-18.16666666666663" y="-15.5" />
+      <point x="3974.708833829327" y="2917.0" />
+      <point x="3985.904320130706" y="2917.0" />
+      <point x="3985.904320130706" y="1342.0" />
+      <point x="4983.277549412906" y="1342.0" />
+      <point x="4983.277549412906" y="749.0" />
+      <point x="5240.958248702134" y="749.0" />
+      <point x="5240.958248702134" y="606.0" />
+      <point x="5701.458248702133" y="606.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginTest" target="core.cell.CellPlugin" relationship="DEPENDENCY">
+      <point x="-48.333333333333485" y="-15.5" />
+      <point x="8198.520546536794" y="3782.0" />
+      <point x="8123.103879870128" y="3782.0" />
+      <point x="8123.103879870128" y="3589.0" />
+      <point x="8166.986711905598" y="3589.0" />
+      <point x="8166.986711905598" y="3549.0" />
+      <point x="8265.153378572264" y="3549.0" />
+      <point x="-39.33333333333337" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="25.535714285714334" y="-15.5" />
+      <point x="4082.21494047619" y="3041.0" />
+      <point x="4573.686214781707" y="3041.0" />
+      <point x="4573.686214781707" y="2807.0" />
+      <point x="6085.005867749753" y="2807.0" />
+      <point x="6085.005867749753" y="363.0" />
+      <point x="6177.748576839827" y="363.0" />
+      <point x="6177.748576839827" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="0.0" y="15.5" />
+      <point x="2854.6850494129058" y="982.0" />
+      <point x="1674.058486797373" y="982.0" />
+      <point x="1674.058486797373" y="1846.0" />
+      <point x="1570.370986797373" y="1846.0" />
+      <point x="1570.370986797373" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.settings" relationship="DEPENDENCY">
+      <point x="-25.53571428571422" y="-15.5" />
+      <point x="4031.1435119047615" y="3031.0" />
+      <point x="3709.69003441642" y="3031.0" />
+      <point x="3709.69003441642" y="1302.0" />
+      <point x="4823.56326369862" y="1302.0" />
+      <point x="4823.56326369862" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="33.60000000000002" y="-15.5" />
+      <point x="4290.023129654515" y="2683.0" />
+      <point x="6054.191582035466" y="2683.0" />
+      <point x="6054.191582035466" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesion" target="core.image.IBinaryImage" relationship="TO_ONE">
+      <point x="37.25" y="-15.5" />
+      <point x="5410.480178571428" y="403.0" />
+      <point x="6511.386022727273" y="403.0" />
+      <point x="6511.386022727273" y="101.0" />
+      <point x="6670.59679919729" y="101.0" />
+      <point x="6670.59679919729" y="51.0" />
+      <point x="6211.2978273358185" y="51.0" />
+      <point x="46.33333333333326" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.cell.DataFilaments" relationship="CREATE">
+      <point x="4.222222222222172" y="-15.5" />
+      <point x="7401.894483034839" y="2847.0" />
+      <point x="7378.746102092351" y="2847.0" />
+      <point x="7378.746102092351" y="729.0" />
+      <point x="7495.481578282828" y="729.0" />
+      <point x="7495.481578282828" y="586.0" />
+      <point x="5210.230178571428" y="586.0" />
+      <point x="5210.230178571428" y="526.0" />
+      <point x="4048.3017160795725" y="526.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="util.IOUtils" relationship="DEPENDENCY">
+      <point x="55.928571428571104" y="-15.5" />
+      <point x="1918.7589880952382" y="3345.0" />
+      <point x="954.3670185434048" y="3345.0" />
+      <point x="954.3670185434048" y="3175.0" />
+      <point x="3099.0549404761905" y="3175.0" />
+      <point x="3099.0549404761905" y="2927.0" />
+      <point x="4256.423129654515" y="2927.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFieldPostProcessing" target="core.Const" relationship="DEPENDENCY">
+      <point x="85.66666666666652" y="-15.5" />
+      <point x="450.3199999999997" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="core.Calc" relationship="DEPENDENCY">
+      <point x="49.875" y="-15.5" />
+      <point x="2671.829320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.tracers.LineSensor" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="3184.0949404761905" y="3672.0" />
+      <point x="3233.284320130706" y="3672.0" />
+      <point x="3233.284320130706" y="2723.0" />
+      <point x="3505.3150344164205" y="2723.0" />
+      <point x="3505.3150344164205" y="2673.0" />
+      <point x="2836.1399404761905" y="2673.0" />
+      <point x="30.75" y="15.5" />
+    </edge>
+    <edge source="core.calculation.WrappedSiZer" target="util.Pair" relationship="CREATE">
+      <point x="-37.0" y="-15.5" />
+      <point x="1030.5336852100718" y="3165.0" />
+      <point x="1021.9503518767383" y="3165.0" />
+      <point x="1021.9503518767383" y="1482.0" />
+      <point x="1102.9762500000006" y="1482.0" />
+      <point x="1102.9762500000006" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.filaments.FilamentChain" relationship="DEPENDENCY">
+      <point x="-58.80000000000001" y="-15.5" />
+      <point x="3947.5017160795724" y="453.0" />
+      <point x="2799.6850494129058" y="453.0" />
+      <point x="2799.6850494129058" y="203.0" />
+      <point x="2874.4350494129058" y="203.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.ProjectData" relationship="DEPENDENCY">
+      <point x="72.96000000000004" y="-15.5" />
+      <point x="3257.0549404761905" y="3782.0" />
+      <point x="7976.986711905598" y="3782.0" />
+      <point x="7976.986711905598" y="3772.0" />
+      <point x="8226.353879870128" y="3772.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.cell.DataFilaments" relationship="DEPENDENCY">
+      <point x="18.642857142857338" y="-15.5" />
+      <point x="1881.4732738095245" y="3375.0" />
+      <point x="921.3670185434048" y="3375.0" />
+      <point x="921.3670185434048" y="2673.0" />
+      <point x="1010.9503518767383" y="2673.0" />
+      <point x="1010.9503518767383" y="2559.0" />
+      <point x="3217.3449404761905" y="2559.0" />
+      <point x="3217.3449404761905" y="1232.0" />
+      <point x="4466.428025603382" y="1232.0" />
+      <point x="4466.428025603382" y="586.0" />
+      <point x="5210.230178571428" y="586.0" />
+      <point x="5210.230178571428" y="526.0" />
+      <point x="4048.3017160795725" y="526.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.OrientationFieldContainer" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="55.75" y="-15.5" />
+      <point x="3919.654320130706" y="2435.0" />
+      <point x="2475.641820130706" y="2435.0" />
+      <point x="2475.641820130706" y="2375.0" />
+      <point x="1513.7024404761905" y="2375.0" />
+      <point x="41.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="util.Pair" relationship="CREATE">
+      <point x="-10.3125" y="-15.5" />
+      <point x="599.9970833333332" y="3455.0" />
+      <point x="604.8095833333332" y="3455.0" />
+      <point x="604.8095833333332" y="1936.0" />
+      <point x="791.3095833333332" y="1936.0" />
+      <point x="791.3095833333332" y="1472.0" />
+      <point x="1023.3929166666671" y="1472.0" />
+      <point x="1023.3929166666671" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.calculation.MeanBrightnessCalc" relationship="DEPENDENCY">
+      <point x="-70.10714285714289" y="-15.5" />
+      <point x="4790.4684036796525" y="3589.0" />
+      <point x="3355.824320130706" y="3589.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="-12.5" y="-15.5" />
+      <point x="5169.9627342914955" y="1372.0" />
+      <point x="5458.230178571428" y="1372.0" />
+      <point x="5458.230178571428" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginSimple" target="core.cell.CellPlugin" relationship="GENERALIZATION">
+      <point x="-61.5" y="-15.5" />
+      <point x="8479.486711905596" y="3579.0" />
+      <point x="8304.486711905596" y="3579.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="-42.666666666666515" y="15.5" />
+      <point x="6320.654970192962" y="912.0" />
+      <point x="6363.821636859629" y="912.0" />
+      <point x="6363.821636859629" y="2579.0" />
+      <point x="6356.996961534953" y="2579.0" />
+      <point x="-7.727272727272975" y="-15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="80.78571428571422" y="-15.5" />
+      <point x="1943.6161309523814" y="3455.0" />
+      <point x="3216.204320130706" y="3455.0" />
+      <point x="3216.204320130706" y="3175.0" />
+      <point x="4138.679226190476" y="3175.0" />
+      <point x="4138.679226190476" y="3081.0" />
+      <point x="4860.809591405085" y="3081.0" />
+      <point x="4860.809591405085" y="3071.0" />
+      <point x="7359.672260812617" y="3071.0" />
+      <point x="-38.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="util.IOUtils" relationship="DEPENDENCY">
+      <point x="-71.77777777777783" y="-15.5" />
+      <point x="7325.894483034839" y="2927.0" />
+      <point x="4256.423129654515" y="2927.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-10.25" y="-15.5" />
+      <point x="2795.1399404761905" y="2519.0" />
+      <point x="2830.204320130706" y="2519.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.ClusterableFilament" target="core.filaments.CurvedFilament" relationship="GENERALIZATION">
+      <point x="-22.875" y="-15.5" />
+      <point x="2005.1191071428575" y="2071.0" />
+      <point x="2035.2251534640395" y="2071.0" />
+      <point x="-12.916666666666686" y="15.5" />
+    </edge>
+    <edge source="core.Calc" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="2735.704320130706" y="1162.0" />
+      <point x="4117.5517160795725" y="1162.0" />
+      <point x="4117.5517160795725" y="333.0" />
+      <point x="4593.656095734088" y="333.0" />
+      <point x="4593.656095734088" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.MeanBrightnessCalc" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="46.25" y="-15.5" />
+      <point x="3402.074320130706" y="3455.0" />
+      <point x="3320.574320130706" y="3455.0" />
+      <point x="3320.574320130706" y="2907.0" />
+      <point x="3275.699320130706" y="2907.0" />
+      <point x="3275.699320130706" y="1242.0" />
+      <point x="4477.428025603382" y="1242.0" />
+      <point x="4477.428025603382" y="343.0" />
+      <point x="5750.370947681305" y="343.0" />
+      <point x="5750.370947681305" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.filaments.Filament" relationship="CREATE">
+      <point x="-30.75" y="-15.5" />
+      <point x="2774.6399404761905" y="2529.0" />
+      <point x="2559.6399404761905" y="2529.0" />
+      <point x="2559.6399404761905" y="2271.0" />
+      <point x="2312.901690972183" y="2271.0" />
+      <point x="2312.901690972183" y="2231.0" />
+      <point x="1783.7141909721836" y="2231.0" />
+      <point x="36.33333333333337" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.io.FilamentCsvExport" relationship="DEPENDENCY">
+      <point x="-12.159999999999968" y="-15.5" />
+      <point x="3171.9349404761906" y="3732.0" />
+      <point x="1862.8304166666671" y="3732.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="tracking.filament.DynamicFilament" relationship="DEPENDENCY">
+      <point x="-45.83333333333326" y="-15.5" />
+      <point x="5136.6294009581625" y="942.0" />
+      <point x="2747.8725494129058" y="942.0" />
+      <point x="2747.8725494129058" y="749.0" />
+      <point x="2731.8100494129058" y="749.0" />
+      <point x="-20.875" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="45.964285714285666" y="-15.5" />
+      <point x="4102.643511904761" y="3061.0" />
+      <point x="4624.757643353136" y="3061.0" />
+      <point x="4624.757643353136" y="2827.0" />
+      <point x="6166.720153464037" y="2827.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="core.Const" relationship="DEPENDENCY">
+      <point x="-36.333333333333485" y="15.5" />
+      <point x="1711.0475243055166" y="2251.0" />
+      <point x="1148.0336852100713" y="2251.0" />
+      <point x="1148.0336852100713" y="2539.0" />
+      <point x="983.0336852100718" y="2539.0" />
+      <point x="983.0336852100718" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.cell.CellPlugin" target="core.Const" relationship="DEPENDENCY">
+      <point x="-49.166666666666515" y="-15.5" />
+      <point x="8255.32004523893" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.ImageFactory" relationship="DEPENDENCY">
+      <point x="-6.079999999999927" y="-15.5" />
+      <point x="3178.0149404761905" y="3662.0" />
+      <point x="3227.204320130706" y="3662.0" />
+      <point x="3227.204320130706" y="3185.0" />
+      <point x="1139.5336852100718" y="3185.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="5.39285714285711" y="-15.5" />
+      <point x="4865.9684036796525" y="3589.0" />
+      <point x="4860.809591405085" y="3589.0" />
+      <point x="4860.809591405085" y="3071.0" />
+      <point x="7359.672260812617" y="3071.0" />
+      <point x="-38.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginBenjamin" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-72.0" y="-15.5" />
+      <point x="7950.603879870128" y="3579.0" />
+      <point x="7966.853879870128" y="3579.0" />
+      <point x="7966.853879870128" y="1946.0" />
+      <point x="2830.2043201307065" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="core.cell.CellShape" relationship="TO_MANY">
+      <point x="56.14285714285734" y="-15.5" />
+      <point x="7139.024807143691" y="729.0" />
+      <point x="7154.886022727273" y="729.0" />
+      <point x="7154.886022727273" y="403.0" />
+      <point x="6795.386022727273" y="403.0" />
+      <point x="6795.386022727273" y="263.0" />
+      <point x="6814.886022727273" y="263.0" />
+      <point x="29.5" y="15.5" />
+    </edge>
+    <edge source="evaluation.EvaluationData" target="util.Pair" relationship="TO_MANY">
+      <point x="38.25" y="-15.5" />
+      <point x="3857.0517160795725" y="739.0" />
+      <point x="3424.3751785714285" y="739.0" />
+      <point x="30.5" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.IOUtils" relationship="DEPENDENCY">
+      <point x="24.319999999999936" y="-15.5" />
+      <point x="3208.4149404761906" y="3712.0" />
+      <point x="3464.904320130706" y="3712.0" />
+      <point x="3464.904320130706" y="2927.0" />
+      <point x="4256.423129654515" y="2927.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.tracers.Gatherer" relationship="CREATE">
+      <point x="-32.5" y="-15.5" />
+      <point x="3537.529320130706" y="2549.0" />
+      <point x="3179.5949404761905" y="2549.0" />
+      <point x="27.25" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="62.5" y="15.5" />
+      <point x="5244.9627342914955" y="1596.0" />
+      <point x="7389.746102092351" y="1596.0" />
+      <point x="7389.746102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="util.ImageExporter" relationship="DEPENDENCY">
+      <point x="-29.555555555555657" y="-15.5" />
+      <point x="7368.116705257062" y="2887.0" />
+      <point x="7344.968324314574" y="2887.0" />
+      <point x="7344.968324314574" y="1616.0" />
+      <point x="7201.31887987013" y="1616.0" />
+      <point x="7201.31887987013" y="1586.0" />
+      <point x="5219.9627342914955" y="1586.0" />
+      <point x="37.5" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.DataFilaments" relationship="TO_ONE">
+      <point x="0.0" y="-15.5" />
+      <point x="6364.724234262226" y="2529.0" />
+      <point x="6448.821636859629" y="2529.0" />
+      <point x="6448.821636859629" y="536.0" />
+      <point x="4069.3017160795725" y="536.0" />
+      <point x="63.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="30.75" y="-15.5" />
+      <point x="2836.1399404761905" y="2539.0" />
+      <point x="2852.204320130706" y="2539.0" />
+      <point x="2852.204320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="core.cell.ShapeContainer" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="-19.625" y="-15.5" />
+      <point x="6765.761022727273" y="576.0" />
+      <point x="6775.386022727273" y="576.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-20.833333333333258" y="-15.5" />
+      <point x="5161.6294009581625" y="1362.0" />
+      <point x="5288.230178571428" y="1362.0" />
+      <point x="5288.230178571428" y="353.0" />
+      <point x="5778.116433982684" y="353.0" />
+      <point x="5778.116433982684" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="focaladhesion.Verifier" relationship="DEPENDENCY">
+      <point x="-92.75" y="-15.5" />
+      <point x="5503.980178571428" y="719.0" />
+      <point x="3587.1251785714285" y="719.0" />
+      <point x="25.0" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.tracers.LineSensor" relationship="DEPENDENCY">
+      <point x="-43.19999999999993" y="-15.5" />
+      <point x="4213.223129654515" y="2723.0" />
+      <point x="3505.3150344164205" y="2723.0" />
+      <point x="3505.3150344164205" y="2673.0" />
+      <point x="2836.1399404761905" y="2673.0" />
+      <point x="30.75" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.ProcessingUtils" relationship="DEPENDENCY">
+      <point x="30.399999999999977" y="-15.5" />
+      <point x="3214.4949404761905" y="3722.0" />
+      <point x="4860.575546536796" y="3722.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.cell.CellPlugin" relationship="DEPENDENCY">
+      <point x="70.10714285714289" y="-15.5" />
+      <point x="4930.682689393939" y="3589.0" />
+      <point x="8166.986711905598" y="3589.0" />
+      <point x="8166.986711905598" y="3549.0" />
+      <point x="8265.153378572264" y="3549.0" />
+      <point x="-39.33333333333337" y="15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="42.666666666666515" y="15.5" />
+      <point x="6405.988303526296" y="872.0" />
+      <point x="7593.246102092351" y="872.0" />
+      <point x="7593.246102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.Const" relationship="DEPENDENCY">
+      <point x="-30.75" y="15.5" />
+      <point x="2774.6399404761905" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginBenjamin" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="-36.0" y="-15.5" />
+      <point x="7986.603879870128" y="3579.0" />
+      <point x="7977.853879870128" y="3579.0" />
+      <point x="7977.853879870128" y="1711.0" />
+      <point x="3618.0293201307063" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="core.cell.CellPlugin" target="core.cell.CellShape" relationship="CREATE">
+      <point x="29.5" y="-15.5" />
+      <point x="8333.986711905596" y="3445.0" />
+      <point x="8307.736711905598" y="3445.0" />
+      <point x="8307.736711905598" y="1482.0" />
+      <point x="8356.320045238932" y="1482.0" />
+      <point x="8356.320045238932" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.image.BinaryImage" relationship="DEPENDENCY">
+      <point x="-37.5" y="15.5" />
+      <point x="5144.9627342914955" y="1596.0" />
+      <point x="2973.6399404761905" y="1596.0" />
+      <point x="2973.6399404761905" y="1626.0" />
+      <point x="2941.204320130706" y="1626.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.image.BinaryImage" target="util.ImageExporter" relationship="DEPENDENCY">
+      <point x="45.0" y="-15.5" />
+      <point x="2986.204320130706" y="1616.0" />
+      <point x="7201.318879870129" y="1616.0" />
+      <point x="7201.31887987013" y="1586.0" />
+      <point x="5219.9627342914955" y="1586.0" />
+      <point x="37.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-51.375" y="-15.5" />
+      <point x="605.4345833333327" y="3579.0" />
+      <point x="225.6533333333332" y="3579.0" />
+      <point x="225.6533333333332" y="1472.0" />
+      <point x="372.3095833333332" y="1472.0" />
+      <point x="372.3095833333332" y="433.0" />
+      <point x="490.6533333333332" y="433.0" />
+      <point x="490.6533333333332" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="filters" relationship="CREATE">
+      <point x="12.5" y="-15.5" />
+      <point x="5194.9627342914955" y="1422.0" />
+      <point x="5790.958248702133" y="1422.0" />
+      <point x="5790.958248702133" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.cell.DataFilaments" relationship="DEPENDENCY">
+      <point x="-37.5" y="-15.5" />
+      <point x="5144.9627342914955" y="1342.0" />
+      <point x="5210.230178571428" y="1342.0" />
+      <point x="5210.230178571428" y="526.0" />
+      <point x="4048.3017160795725" y="526.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.calculation.OrientationFields" relationship="CREATE">
+      <point x="-5.708333333333314" y="-15.5" />
+      <point x="651.1012499999993" y="3539.0" />
+      <point x="610.3095833333332" y="3539.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageDependency" target="core.image.ImageWrapper" relationship="TO_ONE">
+      <point x="66.375" y="15.5" />
+      <point x="7560.621102092351" y="2817.0" />
+      <point x="7716.246102092351" y="2817.0" />
+      <point x="7716.246102092351" y="2937.0" />
+      <point x="7435.672260812617" y="2937.0" />
+      <point x="38.0" y="-15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.ImageExporter" relationship="DEPENDENCY">
+      <point x="42.559999999999945" y="-15.5" />
+      <point x="3226.654940476191" y="3742.0" />
+      <point x="5145.496734262227" y="3742.0" />
+      <point x="5145.496734262227" y="2897.0" />
+      <point x="7201.31887987013" y="2897.0" />
+      <point x="7201.31887987013" y="1586.0" />
+      <point x="5219.9627342914955" y="1586.0" />
+      <point x="37.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.filaments.CurvedFilament" relationship="CREATE">
+      <point x="-21.0" y="15.5" />
+      <point x="3985.3017160795725" y="556.0" />
+      <point x="3465.3751785714285" y="556.0" />
+      <point x="3465.3751785714285" y="1072.0" />
+      <point x="2046.31835763885" y="1072.0" />
+      <point x="2046.31835763885" y="1866.0" />
+      <point x="2027.558486797373" y="1866.0" />
+      <point x="2027.558486797373" y="1966.0" />
+      <point x="2048.141820130706" y="1966.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="filters" relationship="CREATE">
+      <point x="48.535714285714334" y="-15.5" />
+      <point x="4909.11126082251" y="3569.0" />
+      <point x="5109.791734262227" y="3569.0" />
+      <point x="5109.791734262227" y="2887.0" />
+      <point x="7181.886022727273" y="2887.0" />
+      <point x="7181.886022727273" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="focaladhesion.FocalAdhesionProcessor" relationship="DEPENDENCY">
+      <point x="4.166666666666629" y="-15.5" />
+      <point x="5186.6294009581625" y="1412.0" />
+      <point x="5570.230178571428" y="1412.0" />
+      <point x="-26.5" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-10.833333333333371" y="-15.5" />
+      <point x="3559.195986797373" y="2559.0" />
+      <point x="3553.8626534640393" y="2559.0" />
+      <point x="3553.8626534640393" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="focaladhesion.FocalAdhesion" relationship="DEPENDENCY">
+      <point x="13.25" y="-15.5" />
+      <point x="5609.980178571428" y="729.0" />
+      <point x="5600.958248702133" y="729.0" />
+      <point x="5600.958248702133" y="616.0" />
+      <point x="5410.480178571428" y="616.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.ProjectData" target="core.settings" relationship="TO_ONE">
+      <point x="52.0" y="-15.5" />
+      <point x="8278.353879870128" y="3569.0" />
+      <point x="8373.986711905596" y="3569.0" />
+      <point x="8373.986711905596" y="1462.0" />
+      <point x="8309.986711905596" y="1462.0" />
+      <point x="8309.986711905596" y="403.0" />
+      <point x="7872.023879870128" y="403.0" />
+      <point x="7872.023879870128" y="273.0" />
+      <point x="4224.363119543612" y="273.0" />
+      <point x="60.83333333333326" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.FilterQueue" relationship="DEPENDENCY">
+      <point x="48.639999999999986" y="-15.5" />
+      <point x="3232.734940476191" y="3752.0" />
+      <point x="5153.786734262227" y="3752.0" />
+      <point x="5153.786734262227" y="2907.0" />
+      <point x="7211.81887987013" y="2907.0" />
+      <point x="7211.81887987013" y="1492.0" />
+      <point x="6374.321636859629" y="1492.0" />
+      <point x="6374.321636859629" y="872.0" />
+      <point x="6363.321636859629" y="872.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.orientationfields.OrientationField" target="core.orientationfields.OrientationFieldBlock" relationship="DEPENDENCY">
+      <point x="39.75" y="-15.5" />
+      <point x="416.25" y="4098.0" />
+      <point x="425.25" y="4098.0" />
+      <point x="48.75" y="15.5" />
+    </edge>
+    <edge source="util.ImageConversionUtils" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="49.0" y="15.5" />
+      <point x="5948.458248702133" y="882.0" />
+      <point x="7395.246102092351" y="882.0" />
+      <point x="7395.246102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="26.96428571428578" y="-15.5" />
+      <point x="4887.539832251081" y="3589.0" />
+      <point x="4882.381019976513" y="3589.0" />
+      <point x="4882.381019976513" y="2867.0" />
+      <point x="6696.386022727273" y="2867.0" />
+      <point x="6696.386022727273" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.filaments.FilamentChain" relationship="DEPENDENCY">
+      <point x="-68.35714285714266" y="-15.5" />
+      <point x="1794.4732738095245" y="3445.0" />
+      <point x="780.3095833333332" y="3445.0" />
+      <point x="780.3095833333332" y="453.0" />
+      <point x="2799.6850494129058" y="453.0" />
+      <point x="2799.6850494129058" y="203.0" />
+      <point x="2874.4350494129058" y="203.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.tracers.Tracer" relationship="REALIZATION">
+      <point x="-32.888888888888914" y="-15.5" />
+      <point x="2321.063551587302" y="2405.0" />
+      <point x="1282.1447963211822" y="2405.0" />
+      <point x="1282.1447963211822" y="223.0" />
+      <point x="2703.9350494129058" y="223.0" />
+      <point x="-31.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="26.5" y="15.5" />
+      <point x="5623.230178571428" y="922.0" />
+      <point x="6363.821636859629" y="922.0" />
+      <point x="6363.821636859629" y="2579.0" />
+      <point x="6356.996961534953" y="2579.0" />
+      <point x="-7.727272727272975" y="-15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.OrientationFieldContainer" relationship="TO_ONE">
+      <point x="-30.90909090909099" y="-15.5" />
+      <point x="6333.815143353135" y="2559.0" />
+      <point x="3919.654320130706" y="2559.0" />
+      <point x="55.75" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="-63.0" y="15.5" />
+      <point x="3943.3017160795725" y="536.0" />
+      <point x="1356.3683576388503" y="536.0" />
+      <point x="1356.3683576388503" y="2241.0" />
+      <point x="1358.620986797373" y="2241.0" />
+      <point x="1358.620986797373" y="2301.0" />
+      <point x="1404.369107142857" y="2301.0" />
+      <point x="-68.33333333333348" y="-15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="21.0" y="15.5" />
+      <point x="4027.3017160795725" y="546.0" />
+      <point x="4345.780882746239" y="546.0" />
+      <point x="4345.780882746239" y="1212.0" />
+      <point x="2973.6399404761905" y="1212.0" />
+      <point x="2973.6399404761905" y="1626.0" />
+      <point x="2941.204320130706" y="1626.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.Const" relationship="DEPENDENCY">
+      <point x="38.75" y="15.5" />
+      <point x="2086.891820130706" y="2051.0" />
+      <point x="2486.641820130706" y="2051.0" />
+      <point x="2486.641820130706" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="util.Pair" relationship="DEPENDENCY">
+      <point x="-35.75" y="-15.5" />
+      <point x="4020.9292261904757" y="3041.0" />
+      <point x="3699.4757487021343" y="3041.0" />
+      <point x="3699.4757487021343" y="1292.0" />
+      <point x="4813.348977984335" y="1292.0" />
+      <point x="4813.348977984335" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.Const" relationship="DEPENDENCY">
+      <point x="-62.57142857142867" y="15.5" />
+      <point x="2811.863620841477" y="233.0" />
+      <point x="983.0336852100718" y="233.0" />
+      <point x="983.0336852100718" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.tracers.Gatherer" target="core.filaments.CurvedFilament" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="3152.3449404761905" y="2041.0" />
+      <point x="2112.7251534640395" y="2041.0" />
+      <point x="64.58333333333331" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.calculation.MeanBrightnessCalc" relationship="DEPENDENCY">
+      <point x="12.160000000000082" y="-15.5" />
+      <point x="3196.2549404761908" y="3692.0" />
+      <point x="3355.824320130706" y="3692.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="tracking.filament.DataTracking" relationship="CREATE">
+      <point x="-30.399999999999864" y="-15.5" />
+      <point x="3153.694940476191" y="3762.0" />
+      <point x="42.55999999999949" y="3762.0" />
+      <point x="42.55999999999949" y="2559.0" />
+      <point x="383.3095833333332" y="2559.0" />
+      <point x="383.3095833333332" y="1492.0" />
+      <point x="802.3095833333332" y="1492.0" />
+      <point x="802.3095833333332" y="932.0" />
+      <point x="2798.6850494129058" y="932.0" />
+      <point x="-56.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FocalAdhesionCSVExport" target="core.settings" relationship="DEPENDENCY">
+      <point x="-90.83333333333337" y="-15.5" />
+      <point x="3902.04216716266" y="2917.0" />
+      <point x="3730.904320130706" y="2917.0" />
+      <point x="3730.904320130706" y="1322.0" />
+      <point x="4844.777549412906" y="1322.0" />
+      <point x="4844.777549412906" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="util.fuzzy.vector.Int1D" target="util.fuzzy.Fuzzy1D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="44.0" y="4098.0" />
+      <point x="107.5" y="4098.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.TrackFilaments" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="0.0" y="15.5" />
+      <point x="3060.1251785714285" y="729.0" />
+      <point x="3073.6850494129058" y="729.0" />
+      <point x="3073.6850494129058" y="1002.0" />
+      <point x="1714.308486797373" y="1002.0" />
+      <point x="1714.308486797373" y="1856.0" />
+      <point x="1610.620986797373" y="1856.0" />
+      <point x="1610.620986797373" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-10.666666666666515" y="-15.5" />
+      <point x="6352.654970192962" y="719.0" />
+      <point x="6290.136022727273" y="719.0" />
+      <point x="6290.136022727273" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-24.319999999999936" y="-15.5" />
+      <point x="3159.7749404761907" y="3752.0" />
+      <point x="48.63999999999942" y="3752.0" />
+      <point x="48.63999999999942" y="2723.0" />
+      <point x="370.1533333333332" y="2723.0" />
+      <point x="370.1533333333332" y="2569.0" />
+      <point x="538.8095833333332" y="2569.0" />
+      <point x="538.8095833333332" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-42.0" y="15.5" />
+      <point x="3964.3017160795725" y="546.0" />
+      <point x="3267.3751785714285" y="546.0" />
+      <point x="3267.3751785714285" y="1052.0" />
+      <point x="1958.56835763885" y="1052.0" />
+      <point x="1958.56835763885" y="1916.0" />
+      <point x="1812.38085763885" y="1916.0" />
+      <point x="1812.38085763885" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.FilterQueue" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-32.0" y="-15.5" />
+      <point x="6331.321636859629" y="729.0" />
+      <point x="6258.2193560606065" y="729.0" />
+      <point x="6258.2193560606065" y="333.0" />
+      <point x="5739.370947681305" y="333.0" />
+      <point x="5739.370947681305" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.image.ImageDependency" relationship="CREATE">
+      <point x="59.321428571428555" y="-15.5" />
+      <point x="4919.896975108224" y="3579.0" />
+      <point x="5120.5774485479415" y="3579.0" />
+      <point x="5120.5774485479415" y="2937.0" />
+      <point x="7334.468324314574" y="2937.0" />
+      <point x="7334.468324314574" y="2837.0" />
+      <point x="7427.871102092351" y="2837.0" />
+      <point x="-66.375" y="15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.filaments.ClusterableFilament" relationship="CREATE">
+      <point x="12.916666666666515" y="15.5" />
+      <point x="2061.0584867973726" y="2061.0" />
+      <point x="2045.7251534640395" y="2061.0" />
+      <point x="2045.7251534640395" y="2071.0" />
+      <point x="2050.8691071428575" y="2071.0" />
+      <point x="22.875" y="-15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="7.125" y="-15.5" />
+      <point x="2629.079320130706" y="1916.0" />
+      <point x="2786.204320130706" y="1916.0" />
+      <point x="2786.204320130706" y="1382.0" />
+      <point x="5469.230178571428" y="1382.0" />
+      <point x="5469.230178571428" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.InteriorContainer" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-41.0" y="-15.5" />
+      <point x="6562.886022727273" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="6.214285714285779" y="-15.5" />
+      <point x="1869.044702380953" y="3385.0" />
+      <point x="857.3095833333332" y="3385.0" />
+      <point x="857.3095833333332" y="2529.0" />
+      <point x="1010.9503518767383" y="2529.0" />
+      <point x="1010.9503518767383" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.cell.CellPlugin" relationship="DEPENDENCY">
+      <point x="66.88" y="-15.5" />
+      <point x="3250.9749404761906" y="3792.0" />
+      <point x="8123.103879870128" y="3792.0" />
+      <point x="8123.103879870128" y="3589.0" />
+      <point x="8166.986711905598" y="3589.0" />
+      <point x="8166.986711905598" y="3549.0" />
+      <point x="8265.153378572264" y="3549.0" />
+      <point x="-39.33333333333337" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="util.PathScanner" relationship="DEPENDENCY">
+      <point x="-21.111111111111313" y="-15.5" />
+      <point x="7376.561149701506" y="2877.0" />
+      <point x="7353.412768759019" y="2877.0" />
+      <point x="7353.412768759019" y="1472.0" />
+      <point x="6995.506950000834" y="1472.0" />
+      <point x="6995.506950000834" y="862.0" />
+      <point x="6930.881950000834" y="862.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="tracking.filament.TrackFilaments" relationship="CREATE">
+      <point x="56.0" y="-15.5" />
+      <point x="2910.6850494129058" y="739.0" />
+      <point x="3010.1251785714285" y="739.0" />
+      <point x="-50.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FocalAdhesionCSVExport" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="18.16666666666663" y="-15.5" />
+      <point x="4011.04216716266" y="2917.0" />
+      <point x="3996.904320130706" y="2917.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="util.Pair" relationship="CREATE">
+      <point x="-12.666666666666515" y="-15.5" />
+      <point x="7385.00559414595" y="2867.0" />
+      <point x="7361.857213203462" y="2867.0" />
+      <point x="7361.857213203462" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.Calc" relationship="DEPENDENCY">
+      <point x="51.666666666666515" y="-15.5" />
+      <point x="2099.8084867973726" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="filters" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-49.5" y="-15.5" />
+      <point x="6337.136022727273" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionContainer" target="focaladhesion.FocalAdhesion" relationship="DEPENDENCY">
+      <point x="85.20000000000005" y="-15.5" />
+      <point x="5150.684692270049" y="616.0" />
+      <point x="5410.480178571428" y="616.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.Calc" relationship="DEPENDENCY">
+      <point x="62.57142857142867" y="15.5" />
+      <point x="2937.006477984334" y="193.0" />
+      <point x="3922.3017160795725" y="193.0" />
+      <point x="3922.3017160795725" y="1132.0" />
+      <point x="2620.954320130706" y="1132.0" />
+      <point x="2620.954320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1721.0" />
+      <point x="2709.0376534640395" y="1721.0" />
+      <point x="-26.666666666666742" y="-15.5" />
+    </edge>
+    <edge source="core.tracers.Tracer" target="util.NotImplementedException" relationship="CREATE">
+      <point x="-23.25" y="-15.5" />
+      <point x="2711.6850494129058" y="101.0" />
+      <point x="3450.904786210279" y="101.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="filters" relationship="CREATE">
+      <point x="63.333333333333485" y="-15.5" />
+      <point x="7461.00559414595" y="2907.0" />
+      <point x="7790.412768759018" y="2907.0" />
+      <point x="7790.412768759018" y="719.0" />
+      <point x="7831.857213203462" y="719.0" />
+      <point x="7831.857213203462" y="606.0" />
+      <point x="7863.579435425685" y="606.0" />
+      <point x="7863.579435425685" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.tracers.AbstractTracer" relationship="GENERALIZATION">
+      <point x="-54.16666666666674" y="-15.5" />
+      <point x="3515.8626534640393" y="2579.0" />
+      <point x="3152.8449404761905" y="2579.0" />
+      <point x="3152.8449404761905" y="2509.0" />
+      <point x="2390.9524404761905" y="2509.0" />
+      <point x="37.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.filaments.CurvedFilament" relationship="CREATE">
+      <point x="41.71428571428578" y="15.5" />
+      <point x="2916.149335127191" y="203.0" />
+      <point x="3322.3751785714285" y="203.0" />
+      <point x="3322.3751785714285" y="1062.0" />
+      <point x="1974.81835763885" y="1062.0" />
+      <point x="1974.81835763885" y="1866.0" />
+      <point x="2027.558486797373" y="1866.0" />
+      <point x="2027.558486797373" y="1966.0" />
+      <point x="2048.141820130706" y="1966.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-66.39285714285711" y="-15.5" />
+      <point x="3990.286369047619" y="3071.0" />
+      <point x="3668.8328915592774" y="3071.0" />
+      <point x="3668.8328915592774" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="core.ProjectData" target="core.cell.CellPlugin" relationship="DEPENDENCY">
+      <point x="-52.0" y="-15.5" />
+      <point x="8174.353879870128" y="3589.0" />
+      <point x="8166.986711905598" y="3589.0" />
+      <point x="8166.986711905598" y="3549.0" />
+      <point x="8265.153378572264" y="3549.0" />
+      <point x="-39.33333333333337" y="15.5" />
+    </edge>
+    <edge source="core.settings" target="core.Const" relationship="DEPENDENCY">
+      <point x="-12.166666666666629" y="15.5" />
+      <point x="4151.363119543612" y="273.0" />
+      <point x="983.0336852100718" y="273.0" />
+      <point x="983.0336852100718" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-80.78571428571422" y="-15.5" />
+      <point x="1782.044702380953" y="3455.0" />
+      <point x="769.3095833333332" y="3455.0" />
+      <point x="769.3095833333332" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.TrackFilaments" target="tracking.filament.Shortlist" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.CellShape" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-29.5" y="-15.5" />
+      <point x="6755.886022727273" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginSimple" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-20.5" y="-15.5" />
+      <point x="8520.486711905596" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="util.fuzzy.vector.Boolean1D" target="util.fuzzy.Fuzzy1D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="171.0" y="4098.0" />
+      <point x="107.5" y="4098.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.ClusterableFilament" target="core.filaments.Clusterable" relationship="REALIZATION">
+      <point x="68.625" y="-15.5" />
+      <point x="2096.6191071428575" y="2071.0" />
+      <point x="2228.401690972183" y="2071.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="29.16666666666663" y="-15.5" />
+      <point x="5211.6294009581625" y="1442.0" />
+      <point x="6016.291582035466" y="1442.0" />
+      <point x="6016.291582035466" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="-4.222222222222172" y="-15.5" />
+      <point x="7393.450038590396" y="2857.0" />
+      <point x="7370.301657647908" y="2857.0" />
+      <point x="7370.301657647908" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="util.StackCreator" relationship="CREATE">
+      <point x="29.555555555555657" y="-15.5" />
+      <point x="7427.227816368173" y="2877.0" />
+      <point x="7671.746102092351" y="2877.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="core.Const" relationship="DEPENDENCY">
+      <point x="-64.75" y="-15.5" />
+      <point x="6959.549826643588" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginSimple" target="filters" relationship="CREATE">
+      <point x="20.5" y="-15.5" />
+      <point x="8561.486711905596" y="3589.0" />
+      <point x="8531.486711905596" y="3589.0" />
+      <point x="8531.486711905596" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="54.88888888888869" y="-15.5" />
+      <point x="7452.561149701506" y="2897.0" />
+      <point x="7781.968324314574" y="2897.0" />
+      <point x="7781.968324314574" y="699.0" />
+      <point x="7640.672260812617" y="699.0" />
+      <point x="7640.672260812617" y="606.0" />
+      <point x="7672.394483034839" y="606.0" />
+      <point x="7672.394483034839" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="util.PointUtils" relationship="DEPENDENCY">
+      <point x="32.888888888888914" y="-15.5" />
+      <point x="2386.8413293650797" y="2405.0" />
+      <point x="2433.641820130706" y="2405.0" />
+      <point x="2433.641820130706" y="1482.0" />
+      <point x="2934.3899404761905" y="1482.0" />
+      <point x="2934.3899404761905" y="892.0" />
+      <point x="4277.780882746239" y="892.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="tracking.filament.DynamicFilament" relationship="DEPENDENCY">
+      <point x="-18.642857142857338" y="-15.5" />
+      <point x="1844.1875595238098" y="3405.0" />
+      <point x="835.3095833333332" y="3405.0" />
+      <point x="835.3095833333332" y="1936.0" />
+      <point x="1010.9503518767383" y="1936.0" />
+      <point x="1010.9503518767383" y="779.0" />
+      <point x="2747.8725494129058" y="779.0" />
+      <point x="2747.8725494129058" y="749.0" />
+      <point x="2731.8100494129058" y="749.0" />
+      <point x="-20.875" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="filters" relationship="CREATE">
+      <point x="35.75" y="-15.5" />
+      <point x="4092.4292261904757" y="3051.0" />
+      <point x="4583.900500495994" y="3051.0" />
+      <point x="4583.900500495994" y="2817.0" />
+      <point x="6095.220153464037" y="2817.0" />
+      <point x="6095.220153464037" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="core.cell.ShapeContainer" target="core.image.IBinaryImage" relationship="TO_ONE">
+      <point x="58.875" y="-15.5" />
+      <point x="6844.261022727273" y="576.0" />
+      <point x="6906.073522727273" y="576.0" />
+      <point x="6906.073522727273" y="101.0" />
+      <point x="6670.59679919729" y="101.0" />
+      <point x="6670.59679919729" y="51.0" />
+      <point x="6211.2978273358185" y="51.0" />
+      <point x="46.33333333333326" y="15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="util.PointUtils" relationship="DEPENDENCY">
+      <point x="21.375" y="-15.5" />
+      <point x="2643.329320130706" y="1926.0" />
+      <point x="2797.204320130706" y="1926.0" />
+      <point x="2797.204320130706" y="1482.0" />
+      <point x="2934.3899404761905" y="1482.0" />
+      <point x="2934.3899404761905" y="892.0" />
+      <point x="4277.780882746239" y="892.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-66.87999999999988" y="-15.5" />
+      <point x="3117.214940476191" y="3822.0" />
+      <point x="6.079999999999927" y="3822.0" />
+      <point x="6.079999999999927" y="423.0" />
+      <point x="490.6533333333332" y="423.0" />
+      <point x="490.6533333333332" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="tracking.area.AreaTracker" relationship="DEPENDENCY">
+      <point x="62.5" y="-15.5" />
+      <point x="5244.9627342914955" y="1482.0" />
+      <point x="6957.256950000834" y="1482.0" />
+      <point x="6957.256950000834" y="852.0" />
+      <point x="7050.131950000834" y="852.0" />
+      <point x="-32.75" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.Const" relationship="DEPENDENCY">
+      <point x="-37.0" y="15.5" />
+      <point x="2316.9524404761905" y="2539.0" />
+      <point x="1742.9762500000006" y="2539.0" />
+      <point x="1742.9762500000006" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.settings" relationship="DEPENDENCY">
+      <point x="4.7999999999999545" y="-15.5" />
+      <point x="4261.223129654515" y="2673.0" />
+      <point x="4233.477643353136" y="2673.0" />
+      <point x="4233.477643353136" y="1372.0" />
+      <point x="5073.063511904761" y="1372.0" />
+      <point x="5073.063511904761" y="729.0" />
+      <point x="4866.777549412906" y="729.0" />
+      <point x="4866.777549412906" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="37.75" y="-15.5" />
+      <point x="4898.325546536796" y="3559.0" />
+      <point x="4951.89887711937" y="3559.0" />
+      <point x="4951.89887711937" y="2877.0" />
+      <point x="6853.881950000834" y="2877.0" />
+      <point x="6853.881950000834" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.TrackFilaments" target="core.filaments.Filament" relationship="DEPENDENCY">
+      <point x="50.0" y="15.5" />
+      <point x="3110.1251785714285" y="729.0" />
+      <point x="3164.6850494129058" y="729.0" />
+      <point x="3164.6850494129058" y="1012.0" />
+      <point x="1885.308486797373" y="1012.0" />
+      <point x="1885.308486797373" y="1886.0" />
+      <point x="1706.8209867973728" y="1886.0" />
+      <point x="1706.8209867973728" y="2146.0" />
+      <point x="1717.8209867973728" y="2146.0" />
+      <point x="1717.8209867973728" y="2156.0" />
+      <point x="1703.7808576388502" y="2156.0" />
+      <point x="-43.59999999999991" y="-15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.cell.OrientationFieldContainer" relationship="DEPENDENCY">
+      <point x="31.071428571428896" y="-15.5" />
+      <point x="1893.901845238096" y="3365.0" />
+      <point x="932.3670185434048" y="3365.0" />
+      <point x="932.3670185434048" y="2683.0" />
+      <point x="3176.7199404761905" y="2683.0" />
+      <point x="3176.7199404761905" y="2569.0" />
+      <point x="3808.154320130706" y="2569.0" />
+      <point x="-55.75" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.Const" relationship="DEPENDENCY">
+      <point x="-59.321428571428555" y="-15.5" />
+      <point x="4801.254117965367" y="3579.0" />
+      <point x="3483.743605844992" y="3579.0" />
+      <point x="3483.743605844992" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.tracers.CurveTracer" relationship="CREATE">
+      <point x="-26.96428571428578" y="-15.5" />
+      <point x="4833.61126082251" y="3549.0" />
+      <point x="3570.029320130706" y="3549.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="-5.10714285714289" y="-15.5" />
+      <point x="4051.5720833333326" y="3011.0" />
+      <point x="4112.375500495993" y="3011.0" />
+      <point x="4112.375500495993" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="util.io.FocalAdhesionCSVExport" target="focaladhesion.FocalAdhesion" relationship="DEPENDENCY">
+      <point x="-54.5" y="-15.5" />
+      <point x="3938.3755004959935" y="2907.0" />
+      <point x="3741.904320130706" y="2907.0" />
+      <point x="3741.904320130706" y="1332.0" />
+      <point x="4855.777549412906" y="1332.0" />
+      <point x="4855.777549412906" y="749.0" />
+      <point x="4877.777549412906" y="749.0" />
+      <point x="4877.777549412906" y="616.0" />
+      <point x="5410.480178571428" y="616.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="92.75" y="-15.5" />
+      <point x="5689.480178571428" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Const" target="enums.ImageTypes" relationship="DEPENDENCY">
+      <point x="29.666666666666742" y="-15.5" />
+      <point x="2479.1191071428575" y="3270.0" />
+      <point x="3139.704320130706" y="3270.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="focaladhesion.FocalAdhesionContainer" relationship="DEPENDENCY">
+      <point x="-29.16666666666663" y="-15.5" />
+      <point x="5153.2960676248285" y="1352.0" />
+      <point x="5219.646845238094" y="1352.0" />
+      <point x="5219.646845238094" y="769.0" />
+      <point x="5240.458248702134" y="769.0" />
+      <point x="5240.458248702134" y="709.0" />
+      <point x="5065.484692270049" y="709.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.tracers.LineSensor" relationship="CREATE">
+      <point x="-37.75" y="-15.5" />
+      <point x="4822.825546536796" y="3559.0" />
+      <point x="3505.3150344164205" y="3559.0" />
+      <point x="3505.3150344164205" y="2673.0" />
+      <point x="2836.1399404761905" y="2673.0" />
+      <point x="30.75" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="28.541666666666515" y="-15.5" />
+      <point x="685.3512499999993" y="3559.0" />
+      <point x="736.3095833333332" y="3559.0" />
+      <point x="736.3095833333332" y="2539.0" />
+      <point x="791.3095833333332" y="2539.0" />
+      <point x="791.3095833333332" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="evaluation.EvaluationData" target="util.Pair" relationship="DEPENDENCY">
+      <point x="-38.25" y="-15.5" />
+      <point x="3780.5517160795725" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="util.ImageFactory" target="util.ImageConversionUtils" relationship="DEPENDENCY">
+      <point x="11.83333333333303" y="-15.5" />
+      <point x="1151.3670185434048" y="3071.0" />
+      <point x="1126.0336852100713" y="3071.0" />
+      <point x="1126.0336852100713" y="1472.0" />
+      <point x="4254.394310019803" y="1472.0" />
+      <point x="4254.394310019803" y="882.0" />
+      <point x="5850.458248702133" y="882.0" />
+      <point x="-49.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.ClusterableFilament" target="core.filaments.SingleFilament" relationship="DEPENDENCY">
+      <point x="-68.625" y="-15.5" />
+      <point x="1959.3691071428575" y="2041.0" />
+      <point x="1843.308486797373" y="2041.0" />
+      <point x="1843.308486797373" y="1966.0" />
+      <point x="1523.8058576388503" y="1966.0" />
+      <point x="1523.8058576388503" y="1796.0" />
+      <point x="1743.558486797373" y="1796.0" />
+      <point x="-56.25" y="15.5" />
+    </edge>
+    <edge source="core.filaments.SingleFilament" target="core.filaments.ClusterableFilament" relationship="DEPENDENCY">
+      <point x="56.25" y="15.5" />
+      <point x="1856.058486797373" y="1876.0" />
+      <point x="2154.901690972183" y="1876.0" />
+      <point x="2154.901690972183" y="2061.0" />
+      <point x="2045.7251534640395" y="2061.0" />
+      <point x="2045.7251534640395" y="2071.0" />
+      <point x="2050.8691071428575" y="2071.0" />
+      <point x="22.875" y="-15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.image.CorrelationData" relationship="TO_ONE">
+      <point x="7.727272727272975" y="-15.5" />
+      <point x="6372.451506989499" y="2539.0" />
+      <point x="6456.548909586902" y="2539.0" />
+      <point x="6456.548909586902" y="526.0" />
+      <point x="5754.1249153687995" y="526.0" />
+      <point x="52.66666666666674" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="util.PointUtils" relationship="DEPENDENCY">
+      <point x="-62.5" y="-15.5" />
+      <point x="5119.9627342914955" y="1482.0" />
+      <point x="2934.3899404761905" y="1482.0" />
+      <point x="2934.3899404761905" y="892.0" />
+      <point x="4277.780882746239" y="892.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.settings" relationship="DEPENDENCY">
+      <point x="-16.178571428571445" y="-15.5" />
+      <point x="4844.396975108224" y="3539.0" />
+      <point x="3655.529320130706" y="3539.0" />
+      <point x="3655.529320130706" y="1282.0" />
+      <point x="4787.0275494129055" y="1282.0" />
+      <point x="4787.0275494129055" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-62.791666666666515" y="-15.5" />
+      <point x="594.0179166666662" y="3589.0" />
+      <point x="59.63999999999942" y="3589.0" />
+      <point x="59.63999999999942" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Calc" target="core.Const" relationship="DEPENDENCY">
+      <point x="-20.0" y="15.5" />
+      <point x="2715.704320130706" y="1906.0" />
+      <point x="2486.641820130706" y="1906.0" />
+      <point x="2486.641820130706" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.image.ImageWrapper" relationship="CREATE">
+      <point x="36.48000000000002" y="-15.5" />
+      <point x="3220.574940476191" y="3732.0" />
+      <point x="5139.416734262227" y="3732.0" />
+      <point x="5139.416734262227" y="3081.0" />
+      <point x="4860.809591405085" y="3081.0" />
+      <point x="4860.809591405085" y="3071.0" />
+      <point x="7359.672260812617" y="3071.0" />
+      <point x="-38.0" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="-24.0" y="-15.5" />
+      <point x="4232.423129654515" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="tracking.filament.DynamicFilament" relationship="DEPENDENCY">
+      <point x="-42.559999999999945" y="-15.5" />
+      <point x="3141.534940476191" y="3782.0" />
+      <point x="30.399999999999636" y="3782.0" />
+      <point x="30.399999999999636" y="1472.0" />
+      <point x="211.79624999999942" y="1472.0" />
+      <point x="211.79624999999942" y="779.0" />
+      <point x="2747.8725494129058" y="779.0" />
+      <point x="2747.8725494129058" y="749.0" />
+      <point x="2731.8100494129058" y="749.0" />
+      <point x="-20.875" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionContainer" target="focaladhesion.FocalAdhesion" relationship="TO_MANY">
+      <point x="-42.59999999999991" y="-15.5" />
+      <point x="5022.884692270049" y="566.0" />
+      <point x="5335.980178571428" y="566.0" />
+      <point x="-37.25" y="15.5" />
+    </edge>
+    <edge source="util.io.FocalAdhesionCSVExport" target="util.IOUtils" relationship="DEPENDENCY">
+      <point x="90.83333333333326" y="-15.5" />
+      <point x="4083.708833829327" y="2927.0" />
+      <point x="4256.423129654515" y="2927.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="core.cell.DataFilaments" relationship="DEPENDENCY">
+      <point x="-13.25" y="-15.5" />
+      <point x="5583.480178571428" y="729.0" />
+      <point x="5589.958248702133" y="729.0" />
+      <point x="5589.958248702133" y="586.0" />
+      <point x="5210.230178571428" y="586.0" />
+      <point x="5210.230178571428" y="526.0" />
+      <point x="4048.3017160795725" y="526.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFieldPostProcessing" target="core.Misc" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="tracking.filament.DataTracking" relationship="DEPENDENCY">
+      <point x="-55.92857142857156" y="-15.5" />
+      <point x="1806.9018452380956" y="3435.0" />
+      <point x="802.3095833333332" y="3435.0" />
+      <point x="802.3095833333332" y="932.0" />
+      <point x="2798.6850494129058" y="932.0" />
+      <point x="-56.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionContainer" target="core.settings" relationship="DEPENDENCY">
+      <point x="-85.19999999999993" y="-15.5" />
+      <point x="4980.284692270049" y="556.0" />
+      <point x="5032.362762400755" y="556.0" />
+      <point x="5032.362762400755" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="util.ImageExporter" relationship="DEPENDENCY">
+      <point x="5.708333333333485" y="-15.5" />
+      <point x="662.5179166666662" y="3539.0" />
+      <point x="703.3095833333332" y="3539.0" />
+      <point x="703.3095833333327" y="1616.0" />
+      <point x="7201.318879870129" y="1616.0" />
+      <point x="7201.31887987013" y="1586.0" />
+      <point x="5219.9627342914955" y="1586.0" />
+      <point x="37.5" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.ShapeContainer" relationship="DEPENDENCY">
+      <point x="38.63636363636397" y="-15.5" />
+      <point x="6403.36059789859" y="2579.0" />
+      <point x="6626.84136558525" y="2579.0" />
+      <point x="6626.84136558525" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.settings" relationship="TO_ONE">
+      <point x="71.77777777777783" y="-15.5" />
+      <point x="7469.450038590396" y="2917.0" />
+      <point x="7798.857213203462" y="2917.0" />
+      <point x="7798.857213203462" y="729.0" />
+      <point x="7840.301657647907" y="729.0" />
+      <point x="7840.301657647907" y="616.0" />
+      <point x="7872.023879870128" y="616.0" />
+      <point x="7872.023879870128" y="273.0" />
+      <point x="4224.363119543612" y="273.0" />
+      <point x="60.83333333333326" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="4006.3017160795725" y="303.0" />
+      <point x="4311.508952876945" y="303.0" />
+      <point x="4311.508952876945" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.tracers.Tracer" relationship="DEPENDENCY">
+      <point x="-48.535714285714334" y="-15.5" />
+      <point x="4812.039832251081" y="3569.0" />
+      <point x="3494.5293201307063" y="3569.0" />
+      <point x="3494.529320130706" y="1262.0" />
+      <point x="4616.360882746239" y="1262.0" />
+      <point x="4616.360882746239" y="443.0" />
+      <point x="2851.9350494129058" y="443.0" />
+      <point x="2851.9350494129058" y="213.0" />
+      <point x="2734.9350494129058" y="213.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-4.7999999999999545" y="-15.5" />
+      <point x="4251.623129654516" y="2683.0" />
+      <point x="4223.877643353137" y="2683.0" />
+      <point x="4223.877643353137" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="core.settings" relationship="DEPENDENCY">
+      <point x="46.25" y="-15.5" />
+      <point x="7070.549826643588" y="3445.0" />
+      <point x="7856.801657647907" y="3445.0" />
+      <point x="7856.801657647907" y="586.0" />
+      <point x="7661.394483034839" y="586.0" />
+      <point x="7661.394483034839" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginBenjamin" target="filters" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="8022.603879870128" y="413.0" />
+      <point x="6785.386022727273" y="413.0" />
+      <point x="6785.386022727273" y="263.0" />
+      <point x="6405.493165584416" y="263.0" />
+      <point x="18.85714285714289" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="util.ImageFactory" relationship="DEPENDENCY">
+      <point x="51.375" y="-15.5" />
+      <point x="708.1845833333327" y="3579.0" />
+      <point x="758.3095833333332" y="3579.0" />
+      <point x="758.3095833333332" y="3185.0" />
+      <point x="1139.5336852100718" y="3185.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="35.625" y="-15.5" />
+      <point x="2657.579320130706" y="1936.0" />
+      <point x="2819.204320130706" y="1936.0" />
+      <point x="2819.204320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="util.IOUtils" relationship="DEPENDENCY">
+      <point x="-27.75" y="-15.5" />
+      <point x="6996.549826643588" y="3445.0" />
+      <point x="5197.241734262227" y="3445.0" />
+      <point x="5197.241734262227" y="2927.0" />
+      <point x="4256.423129654515" y="2927.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginTest" target="core.cell.plugins.CellPluginSimple" relationship="GENERALIZATION">
+      <point x="48.33333333333337" y="-15.5" />
+      <point x="8295.187213203462" y="3822.0" />
+      <point x="8427.10387987013" y="3822.0" />
+      <point x="8427.10387987013" y="3782.0" />
+      <point x="8540.986711905596" y="3782.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.OFIllustratorBatch" target="util.IOUtils" relationship="DEPENDENCY">
+      <point x="-42.5" y="-15.5" />
+      <point x="7648.759271088032" y="3905.0" />
+      <point x="7922.103879870128" y="3905.0" />
+      <point x="7922.103879870128" y="2927.0" />
+      <point x="4256.423129654515" y="2927.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.image.CorrelationData" relationship="DEPENDENCY">
+      <point x="-4.166666666666629" y="-15.5" />
+      <point x="5178.2960676248285" y="1392.0" />
+      <point x="5480.230178571428" y="1392.0" />
+      <point x="5480.230178571428" y="606.0" />
+      <point x="5701.458248702133" y="606.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters" target="util.ArrayCopy" relationship="DEPENDENCY">
+      <point x="49.5" y="-15.5" />
+      <point x="6436.136022727273" y="71.0" />
+      <point x="6585.364092857977" y="71.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="tracking.area.DynamicArea" relationship="DEPENDENCY">
+      <point x="9.25" y="-15.5" />
+      <point x="7033.549826643588" y="3425.0" />
+      <point x="7283.02387987013" y="3425.0" />
+      <point x="7283.02387987013" y="779.0" />
+      <point x="6866.886022727273" y="779.0" />
+      <point x="6866.886022727273" y="719.0" />
+      <point x="6928.261022727273" y="719.0" />
+      <point x="-35.25" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.image.Entry" relationship="CREATE">
+      <point x="-63.333333333333485" y="-15.5" />
+      <point x="7334.338927479284" y="2917.0" />
+      <point x="7305.02387987013" y="2917.0" />
+      <point x="7305.02387987013" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="core.Calc" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="26.666666666666742" y="-15.5" />
+      <point x="2762.370986797373" y="1711.0" />
+      <point x="3618.029320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginThresholding" target="core.cell.plugins.CellPluginSimple" relationship="GENERALIZATION">
+      <point x="-68.0" y="-15.5" />
+      <point x="8374.35387987013" y="3822.0" />
+      <point x="8427.10387987013" y="3822.0" />
+      <point x="8427.10387987013" y="3782.0" />
+      <point x="8540.986711905596" y="3782.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.image.CorrelationData" relationship="DEPENDENCY">
+      <point x="24.0" y="-15.5" />
+      <point x="4280.423129654515" y="2673.0" />
+      <point x="6044.591582035466" y="2673.0" />
+      <point x="6044.591582035466" y="606.0" />
+      <point x="5701.458248702133" y="606.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="util.PathScanner" relationship="DEPENDENCY">
+      <point x="70.83333333333337" y="-15.5" />
+      <point x="5253.296067624829" y="1472.0" />
+      <point x="6995.506950000834" y="1472.0" />
+      <point x="6995.506950000834" y="862.0" />
+      <point x="6930.881950000834" y="862.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings" target="core.settings" relationship="DEPENDENCY">
+      <point x="-60.83333333333333" y="15.5" />
+      <point x="4102.696452876945" y="172.0" />
+      <point x="4070.529786210279" y="172.0" />
+      <point x="4070.529786210279" y="144.25" />
+      <point x="-73.0" y="7.75" />
+    </edge>
+    <edge source="core.tracers.Tracer" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="31.0" y="15.5" />
+      <point x="2765.9350494129058" y="223.0" />
+      <point x="3187.9350494129058" y="223.0" />
+      <point x="3187.9350494129058" y="739.0" />
+      <point x="3073.6850494129058" y="739.0" />
+      <point x="3073.6850494129058" y="992.0" />
+      <point x="1714.308486797373" y="992.0" />
+      <point x="1714.308486797373" y="1866.0" />
+      <point x="1610.620986797373" y="1866.0" />
+      <point x="1610.620986797373" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="core.filaments.AbstractFilament" relationship="TO_MANY">
+      <point x="-28.0" y="15.5" />
+      <point x="2826.6850494129058" y="972.0" />
+      <point x="1534.8058576388503" y="972.0" />
+      <point x="1534.8058576388503" y="1806.0" />
+      <point x="1358.620986797373" y="1806.0" />
+      <point x="1358.620986797373" y="2301.0" />
+      <point x="1404.369107142857" y="2301.0" />
+      <point x="-68.33333333333348" y="-15.5" />
+    </edge>
+    <edge source="util.fuzzy.matrix.Int2D" target="util.fuzzy.Fuzzy2D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1227.6447963211822" y="2281.0" />
+      <point x="1463.8683576388503" y="2281.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="util.PointUtils" relationship="DEPENDENCY">
+      <point x="-45.964285714285666" y="-15.5" />
+      <point x="4010.71494047619" y="3051.0" />
+      <point x="3689.2614629878485" y="3051.0" />
+      <point x="3689.2614629878485" y="1482.0" />
+      <point x="2934.3899404761905" y="1482.0" />
+      <point x="2934.3899404761905" y="892.0" />
+      <point x="4277.780882746239" y="892.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.settings" relationship="DEPENDENCY">
+      <point x="-48.6400000000001" y="-15.5" />
+      <point x="3135.4549404761906" y="3792.0" />
+      <point x="24.31999999999971" y="3792.0" />
+      <point x="24.31999999999971" y="749.0" />
+      <point x="566.3095833333332" y="749.0" />
+      <point x="566.3095833333332" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.Const" relationship="DEPENDENCY">
+      <point x="72.1875" y="-15.5" />
+      <point x="682.4970833333332" y="3465.0" />
+      <point x="2449.4524404761905" y="3465.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="util.MixedUtils" relationship="DEPENDENCY">
+      <point x="54.72000000000003" y="-15.5" />
+      <point x="3238.8149404761907" y="3762.0" />
+      <point x="5159.866734262227" y="3762.0" />
+      <point x="5159.866734262227" y="2917.0" />
+      <point x="7217.89887987013" y="2917.0" />
+      <point x="7217.89887987013" y="739.0" />
+      <point x="6166.720153464037" y="739.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-37.71428571428578" y="15.5" />
+      <point x="6348.921737012987" y="373.0" />
+      <point x="4101.3017160795725" y="373.0" />
+      <point x="4101.3017160795725" y="1152.0" />
+      <point x="2721.454320130706" y="1152.0" />
+      <point x="2721.454320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1701.0" />
+      <point x="2631.954320130706" y="1721.0" />
+      <point x="2709.0376534640395" y="1721.0" />
+      <point x="-26.666666666666742" y="-15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.cell.ShapeContainer" relationship="TO_ONE">
+      <point x="30.90909090909099" y="-15.5" />
+      <point x="6395.633325171317" y="2569.0" />
+      <point x="6619.114092857977" y="2569.0" />
+      <point x="6619.114092857977" y="729.0" />
+      <point x="6746.136022727273" y="729.0" />
+      <point x="-39.25" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="tracking.filament.DataTracking" relationship="DEPENDENCY">
+      <point x="-70.83333333333326" y="-15.5" />
+      <point x="5111.6294009581625" y="1492.0" />
+      <point x="802.3095833333332" y="1492.0" />
+      <point x="802.3095833333332" y="932.0" />
+      <point x="2798.6850494129058" y="932.0" />
+      <point x="-56.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.image.Entry" relationship="TO_MANY">
+      <point x="-54.88888888888869" y="-15.5" />
+      <point x="7342.783371923729" y="2907.0" />
+      <point x="7313.468324314574" y="2907.0" />
+      <point x="7313.468324314574" y="2693.0" />
+      <point x="6385.974234262226" y="2693.0" />
+      <point x="21.25" y="15.5" />
+    </edge>
+    <edge source="core.cell.CellPlugin" target="core.cell.ShapeContainer" relationship="CREATE">
+      <point x="9.83333333333303" y="-15.5" />
+      <point x="8314.32004523893" y="3455.0" />
+      <point x="8296.736711905598" y="3455.0" />
+      <point x="8296.736711905598" y="1472.0" />
+      <point x="8320.986711905596" y="1472.0" />
+      <point x="8320.986711905596" y="749.0" />
+      <point x="6876.886022727273" y="749.0" />
+      <point x="6876.886022727273" y="729.0" />
+      <point x="6824.636022727273" y="729.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="2874.4350494129058" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="focaladhesion.FocalAdhesion" relationship="CREATE">
+      <point x="-15.321428571428555" y="-15.5" />
+      <point x="4041.3577976190472" y="3021.0" />
+      <point x="3719.904320130706" y="3021.0" />
+      <point x="3719.904320130706" y="1312.0" />
+      <point x="4833.777549412906" y="1312.0" />
+      <point x="4833.777549412906" y="739.0" />
+      <point x="4877.777549412906" y="739.0" />
+      <point x="4877.777549412906" y="616.0" />
+      <point x="5410.480178571428" y="616.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.FilterQueue" relationship="CREATE">
+      <point x="56.178571428571445" y="-15.5" />
+      <point x="4112.857797619047" y="3071.0" />
+      <point x="4651.001149846643" y="3071.0" />
+      <point x="4651.001149846643" y="2837.0" />
+      <point x="6176.934439178323" y="2837.0" />
+      <point x="6176.934439178323" y="1492.0" />
+      <point x="6374.321636859629" y="1492.0" />
+      <point x="6374.321636859629" y="872.0" />
+      <point x="6363.321636859629" y="872.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.settings" relationship="DEPENDENCY">
+      <point x="46.44444444444434" y="-15.5" />
+      <point x="7444.116705257062" y="2887.0" />
+      <point x="7761.246102092351" y="2887.0" />
+      <point x="7761.246102092351" y="852.0" />
+      <point x="7572.746102092351" y="852.0" />
+      <point x="7572.746102092351" y="729.0" />
+      <point x="7614.190546536796" y="729.0" />
+      <point x="7614.190546536796" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.WrappedSiZer" target="core.Calc" relationship="DEPENDENCY">
+      <point x="-12.333333333333485" y="-15.5" />
+      <point x="1055.2003518767383" y="3165.0" />
+      <point x="1047.0336852100718" y="3165.0" />
+      <point x="1047.0336852100718" y="2415.0" />
+      <point x="1137.0336852100713" y="2415.0" />
+      <point x="1137.0336852100713" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="64.75" y="-15.5" />
+      <point x="7089.049826643588" y="3455.0" />
+      <point x="7894.023879870128" y="3455.0" />
+      <point x="7894.023879870128" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.filaments.AbstractFilament" relationship="GENERALIZATION">
+      <point x="-20.85714285714289" y="15.5" />
+      <point x="2853.5779065557626" y="253.0" />
+      <point x="1545.8058576388503" y="253.0" />
+      <point x="1545.8058576388503" y="1816.0" />
+      <point x="1378.3683576388503" y="1816.0" />
+      <point x="1378.3683576388503" y="2291.0" />
+      <point x="1431.7024404761905" y="2291.0" />
+      <point x="-41.0" y="-15.5" />
+    </edge>
+    <edge source="core.calculation.WrappedSiZer" target="util.ImageFactory" relationship="DEPENDENCY">
+      <point x="37.0" y="-15.5" />
+      <point x="1104.5336852100718" y="3185.0" />
+      <point x="1139.5336852100718" y="3185.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.OFIllustratorBatch" target="util.ImageExporter" relationship="DEPENDENCY">
+      <point x="42.5" y="-15.5" />
+      <point x="7733.759271088032" y="3935.0" />
+      <point x="8329.85387987013" y="3935.0" />
+      <point x="8329.85387987013" y="3832.0" />
+      <point x="8448.486711905596" y="3832.0" />
+      <point x="8448.486711905596" y="1616.0" />
+      <point x="7201.31887987013" y="1616.0" />
+      <point x="7201.31887987013" y="1586.0" />
+      <point x="5219.9627342914955" y="1586.0" />
+      <point x="37.5" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.tracers.AbstractTracer" relationship="GENERALIZATION">
+      <point x="51.25" y="-15.5" />
+      <point x="2856.6399404761905" y="2579.0" />
+      <point x="3152.8449404761905" y="2579.0" />
+      <point x="3152.8449404761905" y="2509.0" />
+      <point x="2390.9524404761905" y="2509.0" />
+      <point x="37.0" y="15.5" />
+    </edge>
+    <edge source="util.io.FilamentCsvExport" target="core.settings" relationship="DEPENDENCY">
+      <point x="-43.5" y="-15.5" />
+      <point x="1819.3304166666671" y="3425.0" />
+      <point x="813.3095833333332" y="3425.0" />
+      <point x="813.3095833333332" y="566.0" />
+      <point x="1017.8929166666671" y="566.0" />
+      <point x="1017.8929166666671" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="util.PathScanner" relationship="DEPENDENCY">
+      <point x="43.200000000000045" y="-15.5" />
+      <point x="4299.623129654516" y="2693.0" />
+      <point x="6063.7915820354665" y="2693.0" />
+      <point x="6063.7915820354665" y="1472.0" />
+      <point x="6995.506950000834" y="1472.0" />
+      <point x="6995.506950000834" y="862.0" />
+      <point x="6930.881950000834" y="862.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="core.filaments.SingleFilament" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1747.38085763885" y="2156.0" />
+      <point x="1745.3209867973728" y="2156.0" />
+      <point x="1745.3209867973728" y="1956.0" />
+      <point x="1923.808486797373" y="1956.0" />
+      <point x="1923.808486797373" y="1866.0" />
+      <point x="1818.558486797373" y="1866.0" />
+      <point x="18.75" y="15.5" />
+    </edge>
+    <edge source="core.cell.InteriorContainer" target="core.image.IBinaryImage" relationship="TO_ONE">
+      <point x="41.0" y="-15.5" />
+      <point x="6644.886022727273" y="101.0" />
+      <point x="6670.59679919729" y="101.0" />
+      <point x="6670.59679919729" y="51.0" />
+      <point x="6211.2978273358185" y="51.0" />
+      <point x="46.33333333333326" y="15.5" />
+    </edge>
+    <edge source="util.io.AreaCsvExport" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="-46.25" y="-15.5" />
+      <point x="6978.049826643588" y="3455.0" />
+      <point x="5186.241734262227" y="3455.0" />
+      <point x="5186.241734262227" y="3081.0" />
+      <point x="4860.809591405085" y="3081.0" />
+      <point x="4860.809591405085" y="3071.0" />
+      <point x="7359.672260812617" y="3071.0" />
+      <point x="-38.0" y="15.5" />
+    </edge>
+    <edge source="util.ProcessingUtils" target="core.FilterQueue" relationship="CREATE">
+      <point x="-5.39285714285711" y="-15.5" />
+      <point x="4855.182689393939" y="3589.0" />
+      <point x="4850.02387711937" y="3589.0" />
+      <point x="4850.02387711937" y="2847.0" />
+      <point x="6637.84136558525" y="2847.0" />
+      <point x="6637.84136558525" y="1492.0" />
+      <point x="6374.321636859629" y="1492.0" />
+      <point x="6374.321636859629" y="872.0" />
+      <point x="6363.321636859629" y="872.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFieldPostProcessing" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-85.66666666666652" y="-15.5" />
+      <point x="278.9866666666667" y="3465.0" />
+      <point x="274.9033333333332" y="3465.0" />
+      <point x="274.9033333333332" y="1462.0" />
+      <point x="108.88999999999942" y="1462.0" />
+      <point x="108.88999999999942" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageFactory" target="core.image.ImageWrapper" relationship="CREATE">
+      <point x="59.16666666666674" y="-15.5" />
+      <point x="1198.7003518767388" y="3081.0" />
+      <point x="4860.809591405085" y="3081.0" />
+      <point x="4860.809591405085" y="3071.0" />
+      <point x="7359.672260812617" y="3071.0" />
+      <point x="-38.0" y="15.5" />
+    </edge>
+    <edge source="core.OFIllustratorBatch" target="core.image.Entry" relationship="DEPENDENCY">
+      <point x="14.16666666666697" y="-15.5" />
+      <point x="7705.425937754699" y="3925.0" />
+      <point x="7987.986711905598" y="3925.0" />
+      <point x="7987.986711905598" y="3802.0" />
+      <point x="8384.986711905596" y="3802.0" />
+      <point x="8384.986711905596" y="2703.0" />
+      <point x="3996.904320130706" y="2703.0" />
+      <point x="3996.904320130706" y="2653.0" />
+      <point x="6343.474234262226" y="2653.0" />
+      <point x="-21.25" y="15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="core.filaments.ClusterableFilament" relationship="CREATE">
+      <point x="43.59999999999991" y="-15.5" />
+      <point x="1790.98085763885" y="2156.0" />
+      <point x="1982.2441071428575" y="2156.0" />
+      <point x="-45.75" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.tracers.Tracer" relationship="DEPENDENCY">
+      <point x="-54.72000000000003" y="-15.5" />
+      <point x="3129.3749404761907" y="3802.0" />
+      <point x="18.23999999999978" y="3802.0" />
+      <point x="18.23999999999978" y="443.0" />
+      <point x="2851.9350494129058" y="443.0" />
+      <point x="2851.9350494129058" y="213.0" />
+      <point x="2734.9350494129058" y="213.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator" target="util.Pair" relationship="CREATE">
+      <point x="-49.875" y="-15.5" />
+      <point x="2572.079320130706" y="1896.0" />
+      <point x="2500.954320130706" y="1896.0" />
+      <point x="2500.954320130706" y="1102.0" />
+      <point x="3731.8017160795725" y="1102.0" />
+      <point x="3731.8017160795725" y="759.0" />
+      <point x="3383.103248702135" y="759.0" />
+      <point x="3383.103248702135" y="739.0" />
+      <point x="3363.3751785714285" y="739.0" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="core.cell.ShapeContainer" target="core.cell.CellShape" relationship="TO_MANY">
+      <point x="19.625" y="-15.5" />
+      <point x="6805.011022727273" y="576.0" />
+      <point x="6795.386022727273" y="576.0" />
+      <point x="6795.386022727273" y="263.0" />
+      <point x="6814.886022727273" y="263.0" />
+      <point x="29.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OFCalculator" target="core.calculation.OrientationFieldPostProcessing" relationship="CREATE">
+      <point x="-39.958333333333286" y="-15.5" />
+      <point x="616.8512499999993" y="3569.0" />
+      <point x="364.6533333333332" y="3569.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.filaments.SingleFilament" relationship="GENERALIZATION">
+      <point x="-51.666666666666515" y="-15.5" />
+      <point x="1996.4751534640395" y="1956.0" />
+      <point x="1923.808486797373" y="1956.0" />
+      <point x="1923.808486797373" y="1866.0" />
+      <point x="1818.558486797373" y="1866.0" />
+      <point x="18.75" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.Calc" relationship="DEPENDENCY">
+      <point x="10.833333333333371" y="-15.5" />
+      <point x="3580.8626534640393" y="2559.0" />
+      <point x="3564.8626534640393" y="2559.0" />
+      <point x="3564.8626534640393" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="54.16666666666663" y="-15.5" />
+      <point x="3624.195986797373" y="2559.0" />
+      <point x="3618.029320130706" y="2559.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-38.75" y="15.5" />
+      <point x="2009.391820130706" y="2061.0" />
+      <point x="1821.120986797373" y="2061.0" />
+      <point x="1821.120986797373" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.filaments.ClusterableFilament" target="core.Const" relationship="DEPENDENCY">
+      <point x="45.75" y="15.5" />
+      <point x="2073.7441071428575" y="2156.0" />
+      <point x="2486.641820130706" y="2156.0" />
+      <point x="2486.641820130706" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="core.settings" relationship="DEPENDENCY">
+      <point x="39.75" y="-15.5" />
+      <point x="5636.480178571428" y="719.0" />
+      <point x="5611.958248702133" y="719.0" />
+      <point x="5611.958248702133" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields" target="core.Calc" relationship="DEPENDENCY">
+      <point x="10.3125" y="-15.5" />
+      <point x="620.6220833333332" y="3455.0" />
+      <point x="615.8095833333332" y="3455.0" />
+      <point x="615.8095833333332" y="2405.0" />
+      <point x="736.3095833333332" y="2405.0" />
+      <point x="736.3095833333332" y="1946.0" />
+      <point x="2830.204320130706" y="1946.0" />
+      <point x="2830.204320130706" y="1906.0" />
+      <point x="2755.704320130706" y="1906.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionContainer" target="core.cell.DataFilaments" relationship="DEPENDENCY">
+      <point x="42.59999999999991" y="-15.5" />
+      <point x="5108.084692270048" y="586.0" />
+      <point x="5210.230178571428" y="586.0" />
+      <point x="5210.230178571428" y="526.0" />
+      <point x="4048.3017160795725" y="526.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="tracking.filament.DataTracking" target="core.filaments.FilamentChain" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="2854.6850494129058" y="739.0" />
+      <point x="2852.6251785714285" y="739.0" />
+      <point x="2852.6251785714285" y="453.0" />
+      <point x="2799.6850494129058" y="453.0" />
+      <point x="2799.6850494129058" y="203.0" />
+      <point x="2874.4350494129058" y="203.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.Entry" target="core.image.CorrelationData" relationship="DEPENDENCY">
+      <point x="-15.454545454545496" y="-15.5" />
+      <point x="6349.269688807681" y="2539.0" />
+      <point x="6245.947426191311" y="2539.0" />
+      <point x="6245.947426191311" y="606.0" />
+      <point x="5701.458248702133" y="606.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.area.AreaTracker" target="core.cell.CellShape" relationship="DEPENDENCY">
+      <point x="37.42857142857156" y="-15.5" />
+      <point x="7120.3105214294055" y="719.0" />
+      <point x="7143.886022727273" y="719.0" />
+      <point x="7143.886022727273" y="423.0" />
+      <point x="6775.386022727273" y="423.0" />
+      <point x="6775.386022727273" y="253.0" />
+      <point x="6755.886022727273" y="253.0" />
+      <point x="-29.5" y="15.5" />
+    </edge>
+    <edge source="filters" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="-16.5" y="-15.5" />
+      <point x="6370.136022727273" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor" target="focaladhesion.FocalAdhesionContainer" relationship="DEPENDENCY">
+      <point x="-39.75" y="-15.5" />
+      <point x="5556.980178571428" y="769.0" />
+      <point x="5240.458248702134" y="769.0" />
+      <point x="5240.458248702134" y="709.0" />
+      <point x="5065.484692270049" y="709.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.IOUtils" target="core.tracers.CurveTracer" relationship="DEPENDENCY">
+      <point x="-33.59999999999991" y="-15.5" />
+      <point x="4222.8231296545155" y="2713.0" />
+      <point x="3570.029320130706" y="2713.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-51.25" y="-15.5" />
+      <point x="2754.1399404761905" y="2539.0" />
+      <point x="2548.6399404761905" y="2539.0" />
+      <point x="2548.6399404761905" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.image.ImageWrapper" target="core.image.ImageDependency" relationship="TO_MANY">
+      <point x="21.111111111111313" y="-15.5" />
+      <point x="7418.783371923729" y="2867.0" />
+      <point x="7516.371102092351" y="2867.0" />
+      <point x="22.125" y="15.5" />
+    </edge>
+    <edge source="core.tracers.Gatherer" target="core.Const" relationship="DEPENDENCY">
+      <point x="-27.25" y="15.5" />
+      <point x="3125.0949404761905" y="2549.0" />
+      <point x="3063.204320130706" y="2549.0" />
+      <point x="3063.204320130706" y="3260.0" />
+      <point x="2449.4524404761905" y="3260.0" />
+      <point x="0.0" y="-15.5" />
+    </edge>
+    <edge source="focaladhesion.DataExtractor" target="core.image.BinaryImage" relationship="CREATE">
+      <point x="-56.17857142857133" y="-15.5" />
+      <point x="4000.500654761904" y="3061.0" />
+      <point x="3679.0471772735627" y="3061.0" />
+      <point x="3679.0471772735627" y="1711.0" />
+      <point x="3618.029320130706" y="1711.0" />
+      <point x="3618.029320130706" y="1701.0" />
+      <point x="2974.954320130706" y="1701.0" />
+      <point x="33.75" y="15.5" />
+    </edge>
+    <edge source="core.filaments.SingleFilament" target="core.filaments.AbstractFilament" relationship="GENERALIZATION">
+      <point x="-18.75" y="15.5" />
+      <point x="1781.058486797373" y="1876.0" />
+      <point x="1378.3683576388503" y="1876.0" />
+      <point x="1378.3683576388503" y="2291.0" />
+      <point x="1431.7024404761905" y="2291.0" />
+      <point x="-41.0" y="-15.5" />
+    </edge>
+    <edge source="filters" target="filters" relationship="CREATE">
+      <point x="-56.57142857142844" y="15.5" />
+      <point x="6330.064594155844" y="172.0" />
+      <point x="6300.636022727273" y="172.0" />
+      <point x="6300.636022727273" y="136.5" />
+      <point x="-66.0" y="-0.0" />
+    </edge>
+    <edge source="core.tracers.Tracer" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="23.25" y="-15.5" />
+      <point x="2758.1850494129058" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="tracking.area.CellEvent" relationship="DEPENDENCY">
+      <point x="20.83333333333337" y="-15.5" />
+      <point x="5203.2960676248285" y="1432.0" />
+      <point x="6007.958248702133" y="1432.0" />
+      <point x="6007.958248702133" y="596.0" />
+      <point x="7105.886022727273" y="596.0" />
+      <point x="7105.886022727273" y="576.0" />
+      <point x="7032.261022727273" y="576.0" />
+      <point x="28.25" y="15.5" />
+    </edge>
+    <edge source="core.cell.OrientationFieldContainer" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="-55.75" y="-15.5" />
+      <point x="3808.154320130706" y="2425.0" />
+      <point x="1162.6447963211822" y="2425.0" />
+      <point x="1162.6447963211822" y="2395.0" />
+      <point x="1431.7024404761905" y="2395.0" />
+      <point x="-41.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.image.IBinaryImage" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="2353.9524404761905" y="2385.0" />
+      <point x="2411.641820130706" y="2385.0" />
+      <point x="2411.641820130706" y="1092.0" />
+      <point x="3681.2183827462386" y="1092.0" />
+      <point x="3681.2183827462386" y="293.0" />
+      <point x="4247.029786210279" y="293.0" />
+      <point x="4247.029786210279" y="81.0" />
+      <point x="6164.9644940024855" y="81.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.BinaryImage" target="core.image.IBinaryImage" relationship="REALIZATION">
+      <point x="-45.0" y="-15.5" />
+      <point x="2896.204320130706" y="1566.0" />
+      <point x="2895.1399404761905" y="1566.0" />
+      <point x="2895.1399404761905" y="1202.0" />
+      <point x="4209.780882746239" y="1202.0" />
+      <point x="4209.780882746239" y="313.0" />
+      <point x="4582.656095734088" y="313.0" />
+      <point x="4582.656095734088" y="71.0" />
+      <point x="6118.631160669152" y="71.0" />
+      <point x="-46.33333333333326" y="15.5" />
+    </edge>
+    <edge source="util.ImageExporter" target="core.FilterQueue" relationship="CREATE">
+      <point x="54.16666666666663" y="-15.5" />
+      <point x="5236.629400958162" y="1492.0" />
+      <point x="6374.321636859629" y="1492.0" />
+      <point x="6374.321636859629" y="872.0" />
+      <point x="6363.321636859629" y="872.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.tracers.Tracer" relationship="DEPENDENCY">
+      <point x="-29.400000000000034" y="-15.5" />
+      <point x="3976.9017160795725" y="443.0" />
+      <point x="2851.9350494129058" y="443.0" />
+      <point x="2851.9350494129058" y="213.0" />
+      <point x="2734.9350494129058" y="213.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.DataFilaments" target="core.settings" relationship="DEPENDENCY">
+      <point x="29.399999999999977" y="-15.5" />
+      <point x="4035.701716079572" y="433.0" />
+      <point x="4843.291333829327" y="433.0" />
+      <point x="4843.291333829327" y="283.0" />
+      <point x="4200.029786210279" y="283.0" />
+      <point x="36.5" y="15.5" />
+    </edge>
+    <edge source="core.BatchProcessor" target="core.FilamentSensor" relationship="DEPENDENCY">
+      <point x="-72.96000000000004" y="-15.5" />
+      <point x="3111.1349404761904" y="3832.0" />
+      <point x="0.0" y="3832.0" />
+      <point x="0.0" y="91.0" />
+      <point x="1370.5975243055168" y="91.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters" target="core.image.ImageWrapper" relationship="DEPENDENCY">
+      <point x="37.71428571428578" y="15.5" />
+      <point x="6424.350308441559" y="393.0" />
+      <point x="7683.394483034839" y="393.0" />
+      <point x="7683.394483034839" y="616.0" />
+      <point x="7651.672260812617" y="616.0" />
+      <point x="7651.672260812617" y="729.0" />
+      <point x="7682.746102092351" y="729.0" />
+      <point x="7682.746102092351" y="1462.0" />
+      <point x="7593.246102092351" y="1462.0" />
+      <point x="7593.246102092351" y="2827.0" />
+      <point x="7433.683602092351" y="2827.0" />
+      <point x="7433.683602092351" y="2937.0" />
+      <point x="7410.338927479284" y="2937.0" />
+      <point x="12.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="core.filaments.AbstractFilament" relationship="DEPENDENCY">
+      <point x="0.0" y="15.5" />
+      <point x="1747.38085763885" y="2241.0" />
+      <point x="1730.2024404761905" y="2241.0" />
+      <point x="1730.2024404761905" y="2301.0" />
+      <point x="1486.369107142857" y="2301.0" />
+      <point x="13.666666666666515" y="-15.5" />
+    </edge>
+    <edge source="core.filaments.AbstractFilament" target="core.filaments.Filament" relationship="DEPENDENCY">
+      <point x="68.33333333333348" y="-15.5" />
+      <point x="1541.035773809524" y="2271.0" />
+      <point x="2312.901690972183" y="2271.0" />
+      <point x="2312.901690972183" y="2231.0" />
+      <point x="1783.7141909721836" y="2231.0" />
+      <point x="36.33333333333337" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.211660329531052" showDependencies="true" x="4329.499999999999" y="2077.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

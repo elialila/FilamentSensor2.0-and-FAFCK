@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FAOnly" type="Application" factoryName="Application">
+    <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+    <option name="MAIN_CLASS_NAME" value="fa.view.MainWindow" />
+    <module name="GUIFocalAdhesionOnly" />
+    <option name="VM_PARAMETERS" value="--module-path C:\PROGRA~1\Java\javafx-sdk-15\lib --add-modules javafx.controls,javafx.graphics,javafx.fxml,javafx.swing" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

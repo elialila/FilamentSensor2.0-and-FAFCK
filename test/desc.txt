@@ -1,0 +1,25 @@
+in this test directory a set of test data is placed
+
+Test24hSet contains a 144 movie of the same cells time-range(24h).
+this dataset is used for default testing and performance testing, it has rather good quality images, so its
+ok for prototype testing if a new functionality "could" work. if the test shouldn't take to long
+the dataset "TestSmallSet" could be taken, its a small subset of Test24hSet(5 images) for faster testing when there has
+to be a lot of testing for observing changes in code this is the better set for less waiting.
+
+TestAdhesions contains images of cut out focal adhesions for directly testing the measuring of those.
+This are binary images of different size.
+
+TestFilm is a 144 image movie of a single cell.
+
+TestFixedCells is a dataset with different shaped cells and different sized images to test the "flexibility" of the program.
+For testing how it can handle different sizes and shapes. (a good start for testing new area algorithms)
+
+TestFocalAdhesion: this dataset contains stressfiber images + the focal adhesion images for filament verification testing and
+integration of the focal adhesion processing.
+
+TestNetwork: this dataset is for testing the ability, how good or bad the filament sensor can handle network images.
+Only a small dataset i could be extended.
+
+TestSmallSet: a small subset of Test24hSet for less waiting time during simple but often repeated testing.
+
+

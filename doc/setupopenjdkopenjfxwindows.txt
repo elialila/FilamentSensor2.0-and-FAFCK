@@ -1,0 +1,51 @@
+Anleitung für Windows.
+Mit OpenJDK und OpenJFX geht die installation wie folgt:
+
+Beide zips runterladen
+an den gewünschten Ort kopieren und entpacken
+
+Systemvariablen setzen für JAVA_HOME und JAVA_FX_HOME
+und jdk\bin ordner der PATH Variable hinzufügen
+
+danach in der IDE die JAVAFX jars aus JAVA_FX_HOME\lib als lib einbinden danach geht das ausführen in der IDE normalerweise problemlos
+
+anschließend kann man die erzeugten jars mit folgendem cmd befehl starten:
+java --module-path %JAVA_FX_HOME%\lib --add-modules javafx.controls,javafx.fxml,javafx.swing,javafx.swt -jar GUIFocalAdhesionOnly.jar
+
+modules:
+javafx.base 	
+Defines the base APIs for the JavaFX UI toolkit, including APIs for bindings, properties, collections, and events.
+javafx.controls 	
+Defines the UI controls, charts, and skins that are available for the JavaFX UI toolkit.
+javafx.fxml 	
+Defines the FXML APIs for the JavaFX UI toolkit.
+javafx.graphics 	
+Defines the core scenegraph APIs for the JavaFX UI toolkit (such as layout containers, application lifecycle, shapes, transformations, canvas, input, painting, image handling, and effects), as well as APIs for animation, css, concurrency, geometry, printing, and windowing.
+javafx.media 	
+Defines APIs for playback of media and audio content, as part of the JavaFX UI toolkit, including MediaView and MediaPlayer.
+javafx.swing 	
+Defines APIs for the JavaFX / Swing interop support included with the JavaFX UI toolkit, including SwingNode (for embedding Swing inside a JavaFX application) and JFXPanel (for embedding JavaFX inside a Swing application).
+javafx.web 	
+Defines APIs for the WebView functionality contained within the the JavaFX UI toolkit.
+
+
+
+wenn man es wie gewohnt per doppelklick machen möchte: cmd als admin öffnen und folgendes eintippen:
+
+ftype jarfileterm=%JAVA_HOME%\bin\javaw.exe --module-path %JAVA_FX_HOME%\lib --add-modules javafx.controls,javafx.fxml,javafx.swing,javafx.swt -jar "%1" %*
+
+assoc .jar=jarfileterm
+
+
+
+
+das erste kommando erstellt die aktion was beim öffnen geschehen soll (javaw soll aufgerufen werden, die javafx module eingebunden und danach das jeweilige jar als parameter übergeben)
+das zweite kommando assoziiert den file typ .jar mit unserer definierten "aktion".
+danach kann man die .jar dateien wieder mit doppelklick öffnen
+
+diese aktionen sind für windows 10 rechner
+
+to set a jar icon for jar files: open regedit
+go to key Computer\HKEY_CLASSES_ROOT\jarfileterm
+
+add a key "DefaultIcon" and set the standard value to a icon path of your joice (for example you can place the icon in the java home directory)

@@ -1,0 +1,33 @@
+.body {
+    /*-fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+    */
+    -fx-alignment: center;
+    -fx-padding: 10;
+    /* doesn't work */
+}
+
+.text-area > .scroll-pane {
+    -fx-vbar-policy: always; /* Control the vertical ScrollBar (always,needed,never) */
+    /*-fx-hbar-policy:always;*/ /* Control the horizontal ScrollBar (always,needed,never) */
+}
+
+.text-area {
+    -fx-font-size: 18pt;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+
+    -fx-background-color: white;
+}
+
+.text-area:disabled {
+    -fx-opacity: 1.0;
+}
+
+.text-area .scroll-pane:disabled {
+    -fx-opacity: 1.0;
+}
+
+.text-medium {
+    -fx-font-size: 14pt;
+}

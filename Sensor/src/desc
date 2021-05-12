@@ -1,0 +1,17 @@
+all source-packages are here
+
+
+
+some classes are created although already existing in java
+
+like Pair<>
+
+Function
+
+addUnique ... if unique is necessary use "Set" ... unique by default
+
+
+Class Misc is mostly useless
+
+
+HierarchicalClusterer ... private class ... use? find use of it and remove it or replace it by framework class

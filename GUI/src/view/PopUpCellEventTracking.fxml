@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import fx.custom.StackImageView?>
+<?import fx.custom.SliderSpinner?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="control.PopUpCellEventTracking"
+      prefHeight="600.0" prefWidth="800.0"
+      stylesheets="@../style/style.css,@../style/buttons.css" fx:id="root">
+
+    <SplitPane dividerPositions="0.3" VBox.vgrow="ALWAYS" fx:id="splitPane">
+        <ScrollPane fx:id="rootParams" prefHeight="${splitPane.height}">
+            <VBox spacing="5">
+                <fx:define>
+                    <ToggleGroup fx:id="tgFilter"/>
+                </fx:define>
+                <ButtonBar>
+                    <buttons>
+                        <RadioButton alignment="CENTER_LEFT" fx:id="radioParam" toggleGroup="$tgFilter"
+                                     userData="param">
+                            Parameters
+                        </RadioButton>
+                        <RadioButton alignment="CENTER_LEFT" fx:id="radioAreas" toggleGroup="$tgFilter"
+                                     userData="fil">
+                            Cells
+                        </RadioButton>
+                    </buttons>
+                </ButtonBar>
+
+                <VBox fx:id="vBoxParameters" VBox.vgrow="ALWAYS" managed="${vBoxParameters.visible}">
+                    <Text styleClass="text-medium">Parameters</Text>
+                    <!-- Params box: max_dist factor_angle factor_length length -->
+                    <Label>Intersect Tolerance(%):</Label>
+                    <SliderSpinner fx:id="sIntersectTolerance" max="100" min="0" tick="1" type="Integer">
+                        <valueFactory>
+                            <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="0"/>
+                        </valueFactory>
+                    </SliderSpinner>
+                    <Separator prefWidth="${rootParams.width}"/>
+                    <HBox spacing="10">
+                        <Label>
+                            <text>Min Time-Slot filter</text>
+                            <tooltip>
+                                <Tooltip text="Drop areas that only exist in a few time slots"/>
+                            </tooltip>
+                        </Label>
+                        <CheckBox fx:id="chkMinTimeExist">
+                            <tooltip>
+                                <Tooltip text="Drop areas that only exist in a few time slots"/>
+                            </tooltip>
+                        </CheckBox>
+                    </HBox>
+                    <SliderSpinner fx:id="sMinExistArea" max="100" min="1" tick="1" type="Integer">
+                        <valueFactory>
+                            <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="1"/>
+                        </valueFactory>
+                    </SliderSpinner>
+
+
+                    <Separator prefWidth="${rootParams.width}"/>
+                    <HBox spacing="10">
+                        <Label>
+                            <text>Max Time-Slot filter</text>
+                            <tooltip>
+                                <Tooltip text="Drop areas that exist in more time slots than set"/>
+                            </tooltip>
+                        </Label>
+                        <CheckBox fx:id="chkMaxTimeExist">
+                            <tooltip>
+                                <Tooltip text="Drop area that exist in more time slots than set"/>
+                            </tooltip>
+                        </CheckBox>
+                    </HBox>
+                    <SliderSpinner fx:id="sMaxExistArea" max="100" min="1" tick="1" type="Integer">
+                        <valueFactory>
+                            <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="1"/>
+                        </valueFactory>
+                    </SliderSpinner>
+
+                    <Separator prefWidth="${rootParams.width}"/>
+                    <HBox spacing="5">
+                        <Text>Unfiltered Timelines:</Text>
+                        <Text fx:id="tUnfilteredTimeLines"/>
+                    </HBox>
+                    <HBox spacing="5">
+                        <Text>Filtered Timelines:</Text>
+                        <Text fx:id="tFilteredTimeLines"/>
+                    </HBox>
+                    <HBox>
+                        <Text>ImageSize:</Text>
+                        <Text fx:id="tImageSize"/>
+                    </HBox>
+
+
+                    <Separator prefWidth="${rootParams.width}"/>
+
+
+                    <Separator prefWidth="${rootParams.width}"/>
+                    <ButtonBar>
+                        <buttons>
+                            <Button styleClass="dark-blue" onAction="#onTrack">Track</Button>
+                        </buttons>
+                    </ButtonBar>
+
+                </VBox>
+
+                <VBox fx:id="vBoxAreas" managed="${vBoxAreas.visible}">
+                    <Text styleClass="text-medium">Cell Life-Lines</Text>
+                    <TableView fx:id="tableAreas" GridPane.rowIndex="1" GridPane.columnIndex="0"
+                               GridPane.halignment="LEFT"
+                               GridPane.valignment="TOP" GridPane.hgrow="ALWAYS">
+                        <columns>
+                            <TableColumn fx:id="columnBirth" text="Birth"/>
+                            <TableColumn fx:id="columnDeath" text="Death"/>
+                            <TableColumn fx:id="columnLength" text="Length"/>
+                        </columns>
+                    </TableView>
+                    <Separator prefWidth="${vBoxAreas.width}"/>
+                    <Text styleClass="text-medium">Export</Text>
+                    <Button styleClass="dark-blue" onAction="#onExportDynAreasCSV">Export Dyn.Area CSV</Button>
+                    <Button styleClass="dark-blue" onAction="#onExportAreasCSV">Export Cell(grouped by time) CSV
+                    </Button>
+                    <Button styleClass="dark-blue" onAction="#onExportDynAreasImage">Export Dyn.Area Images</Button>
+                    <Separator prefWidth="${vBoxAreas.width}"/>
+                </VBox>
+
+            </VBox>
+        </ScrollPane>
+        <TabPane>
+            <tabs>
+                <Tab text="Overview" closable="false">
+                    <StackImageView fx:id="ivOverview" hideScroller="true"/>
+                </Tab>
+                <Tab text="Cells" closable="false">
+                    <StackImageView fx:id="ivAreas"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </SplitPane>
+    <ProgressBar fx:id="pbProgress" prefWidth="${root.width}" minHeight="20" maxHeight="30"/>
+    <TextArea editable="false" fx:id="taDebugAreaTracking" prefWidth="${root.width}" prefHeight="100" maxHeight="150"
+              VBox.vgrow="NEVER"/>
+</VBox>
