@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<TabPane xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:controller="ui.MainWindow"
+         prefHeight="400.0" prefWidth="600.0" stylesheets="/ui/style.css" fx:id="root">
+
+    <Tab text="Start" closable="false">
+        <VBox prefWidth="${root.width}" alignment="CENTER">
+            <Text styleClass="headline">Analysis Robot</Text>
+            <Button onAction="#onStartAnalyse" VBox.vgrow="ALWAYS" styleClass="button-large" prefWidth="${root.width}"
+                    prefHeight="${root.height}">Analyse!
+            </Button>
+        </VBox>
+    </Tab>
+
+    <Tab text="Composite Image" closable="false">
+        <VBox>
+            <Button onAction="#onStartComposite" VBox.vgrow="ALWAYS" styleClass="button-large" prefWidth="${root.width}"
+                    prefHeight="${root.height}">Start
+            </Button>
+        </VBox>
+    </Tab>
+
+    <Tab text="Composite For Two" closable="false">
+        <VBox>
+            <Button onAction="#onStartCompositeForTwo" VBox.vgrow="ALWAYS" styleClass="button-large"
+                    prefWidth="${root.width}" prefHeight="${root.height}">Start
+            </Button>
+        </VBox>
+    </Tab>
+
+    <Tab text="Composite For Two DB" closable="false">
+        <VBox>
+            <Button onAction="#onStartCompositeForTwoDb" VBox.vgrow="ALWAYS" styleClass="button-large"
+                    prefWidth="${root.width}" prefHeight="${root.height}">Start
+            </Button>
+        </VBox>
+    </Tab>
+
+</TabPane>

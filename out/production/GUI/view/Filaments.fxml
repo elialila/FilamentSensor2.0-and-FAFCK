@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.lang.String?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="control.Filaments"
+          alignment="CENTER" hgap="10" vgap="10">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10"/>
+        <RowConstraints percentHeight="60"/>
+        <RowConstraints percentHeight="30"/>
+    </rowConstraints>
+    <children>
+        <HBox spacing="5" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="LEFT">
+            <Button styleClass="dark-blue"
+                    onAction="#onEvaluateFilaments">Evaluate Filaments
+            </Button>
+            <Button styleClass="dark-blue" onAction="#onOpenSingleFilamentTracking">Open Single Filament Tracking
+            </Button>
+        </HBox>
+
+        <TableView fx:id="tableFilaments" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="LEFT"
+                   GridPane.valignment="TOP" GridPane.hgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="columnNumber" text="Number"/>
+                <TableColumn fx:id="columnKeep" text="Keep"/>
+                <TableColumn fx:id="columnCenterX" text="Center X"/>
+                <TableColumn fx:id="columnCenterY" text="Center Y"/>
+                <TableColumn fx:id="columnLength" text="Length"/>
+                <TableColumn fx:id="columnAngle" text="Angle"/>
+                <TableColumn fx:id="columnWidth" text="Width"/>
+            </columns>
+        </TableView>
+        <VBox GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.valignment="CENTER" GridPane.halignment="CENTER">
+            <HBox>
+                <Button onAction="#onDiscardKeepAll" styleClass="dark-blue">Discard/Keep all</Button>
+                <Button onAction="#onRemoveDiscarded" styleClass="dark-blue">Remove discarded</Button>
+            </HBox>
+
+            <HBox spacing="5" alignment="CENTER_LEFT">
+                <ComboBox fx:id="cbPictureType"/>
+                <CheckBox fx:id="chkIncludeFilaments">Include filaments</CheckBox>
+                <ComboBox fx:id="cbColors"/>
+            </HBox>
+            <HBox spacing="5" alignment="CENTER_LEFT">
+                <CheckBox fx:id="chkIncludeAreaOutline">Include Area Outline</CheckBox>
+                <ComboBox fx:id="cbAreaOutlineColor"/>
+            </HBox>
+            <HBox spacing="10">
+                <CheckBox fx:id="chkExportAll">Export All</CheckBox>
+                <ComboBox fx:id="cbOutputType"/>
+                <Button onAction="#onSaveImage" styleClass="dark-blue">Save Image</Button>
+            </HBox>
+
+            <Button onAction="#onExportFilaments" styleClass="dark-blue">Export filaments as .csv</Button>
+            <Button onAction="#onExportOrientations" styleClass="dark-blue">Export orientations as .csv</Button>
+        </VBox>
+
+
+    </children>
+
+
+</GridPane>

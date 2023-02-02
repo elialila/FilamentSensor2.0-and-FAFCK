@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import fx.custom.SliderSpinner?>
+<?import javafx.scene.text.Text?>
+<?import fx.custom.StackImageView?>
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="control.FilamentEvaluation"
+            prefHeight="400.0" prefWidth="600.0" fx:id="root" stylesheets="@../style/style.css,@../style/buttons.css">
+    <VBox spacing="5" prefWidth="${root.width}">
+        <TitledPane text="Input Section" expanded="true">
+            <VBox spacing="5">
+                <HBox spacing="10">
+                    <Label>Select Project's:</Label>
+                    <ComboBox fx:id="cbProjectOne" HBox.hgrow="ALWAYS" onAction="#onProjectOneSelected"/>
+                    <ComboBox fx:id="cbProjectTwo" HBox.hgrow="ALWAYS" onAction="#onProjectTwoSelected"/>
+                </HBox>
+                <Separator prefWidth="${root.width}"/>
+                <HBox spacing="10">
+                    <Label>Select Image:</Label>
+                    <ComboBox fx:id="cbImageOne" HBox.hgrow="ALWAYS" onAction="#onComboBoxImageSelected"/>
+                    <ComboBox fx:id="cbImageTwo" HBox.hgrow="ALWAYS" onAction="#onComboBoxImageSelected"/>
+                    <CheckBox fx:id="chkAllImages" onAction="#onComboBoxImageSelected" text="Just take all Images (pair-wise 0:0,1:1,...)"/>
+                </HBox>
+
+
+                <Text>Min. matching pixels for Object-Matching (percent values 1000 ->100%; 1->0.1%</Text>
+                <SliderSpinner fx:id="sMatchMinPixels" max="1000" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="1000" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+
+                <Text>Note: if one stack is larger than the other only min(size1,size2) is taken for comparing all.</Text>
+
+
+                <HBox spacing="5">
+                    <Button fx:id="btnComparison" disable="true" onAction="#onStart" styleClass="dark-blue">Start Comparison</Button>
+                    <Button onAction="#onExportResults">Export Results</Button>
+                </HBox>
+            </VBox>
+        </TitledPane>
+        <Separator prefWidth="${root.width}"/>
+        <ProgressBar prefWidth="${root.width}" fx:id="pbEval" minHeight="25"/>
+        <Separator prefWidth="${root.width}"/>
+        <TitledPane text="Table Explanation" expanded="false">
+            <VBox spacing="5" styleClass="text-medium">
+                <Text>Pixel-Values:</Text>
+                <Text>White Pixels Eval: white pixels found in eval-image</Text>
+                <Text>White Pixels Truth: white pixels found in truth-image</Text>
+                <Text>whiteMatches: white pixels from truth-image matched with a white pixel in eval-image</Text>
+                <Text>hitRate: whiteMatches divided by the amount of white pixels in truth-image</Text>
+                <Text>missRate: calculated by (1-hitRate)</Text>
+                <Text>fpMatches: white pixels found in eval-image and not in truth-image</Text>
+                <Text>fpRate: fpMatches divided by the amount of white pixels in eval-image</Text>
+                <Text>fnMatches:white pixels found in truth-image and not in eval-image</Text>
+                <Text>fnRate: fnMatches divided by the amount of black pixels in eval-image</Text>
+                <Text>Object-Values:</Text>
+                <Text>objectsEval: objects found in eval-image</Text>
+                <Text>objectsTruth: objects found in truth-image</Text>
+                <Text>objectsFound: objects of truth-image matched by objects from eval-image(includes multi matches)
+                </Text>
+                <Text>objectsMissed: objects of truth-image not matched by objects from eval-image</Text>
+                <Text>objectsFp: objects of eval-image not matched by objects from truth-image</Text>
+                <Text>multiMatchesOneToN:one object of truth-image matches more than one of eval-image</Text>
+                <Text>for example: truth-image-object is large and contain several objects of eval-image</Text>
+                <Text>multiMatchesNToOne: one object of eval-image matches more than one of truth-image</Text>
+
+
+            </VBox>
+        </TitledPane>
+        <Separator prefWidth="${root.width}"/>
+        <TableView fx:id="tvResults" prefWidth="${root.width}" minHeight="150" maxHeight="200">
+            <columns>
+                <TableColumn text="Nr" fx:id="colNr"/>
+                <TableColumn text="Pixel Comparison" fx:id="colPixelParent">
+                    <columns>
+                        <TableColumn fx:id="colWhiteEval" text="White Pixels Eval"/>
+                        <TableColumn fx:id="colWhiteTruth" text="White Pixels Truth"/>
+                        <TableColumn fx:id="colWhiteMatches" text="whiteMatches"/>
+                        <TableColumn fx:id="colHitRate" text="hitRate"/>
+                        <TableColumn fx:id="colMissRate" text="missRate"/>
+                        <TableColumn fx:id="colFpMatches" text="fpMatches"/>
+                        <TableColumn fx:id="colFpRate" text="fpRate"/>
+                        <TableColumn fx:id="colFnMatches" text="fnMatches"/>
+                        <TableColumn fx:id="colFnRate" text="fnRate"/>
+                    </columns>
+                </TableColumn>
+                <TableColumn text="Object Comparison" fx:id="colObjectParent">
+                    <columns>
+                        <TableColumn fx:id="colObjectsEval" text="objectsEval"/>
+                        <TableColumn fx:id="colObjectsTruth" text="objectsTruth"/>
+                        <TableColumn fx:id="colObjectsFound" text="objectsFound"/>
+                        <TableColumn fx:id="colObjectsMissed" text="objectsMissed"/>
+                        <TableColumn fx:id="colObjectsFp" text="objectsFp"/>
+                        <TableColumn fx:id="colMultiMatchesOneToN" text="multiMatchesOneToN"/>
+                        <TableColumn fx:id="colMultiMatchesNToOne" text="multiMatchesNToOne"/>
+                    </columns>
+                </TableColumn>
+
+            </columns>
+        </TableView>
+        <TitledPane text="Image Section" fx:id="imageSection">
+            <VBox minHeight="100" maxHeight="600">
+                <HBox fx:id="zoomContainer">
+                </HBox>
+                <SplitPane prefWidth="${imageSection.width}" dividerPositions="0.5">
+                    <StackImageView fx:id="ivPixelCmp"/>
+                    <StackImageView fx:id="ivObjectCmp"/>
+                </SplitPane>
+                <VBox fx:id="containerStackScroller"/>
+            </VBox>
+        </TitledPane>
+
+        <TextArea fx:id="taDebug" editable="false" prefHeight="100"/>
+    </VBox>
+</ScrollPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import fx.custom.SliderSpinner?>
+<fx:root xmlns="http://javafx.com/javafx" type="javafx.scene.layout.VBox"
+         xmlns:fx="http://javafx.com/fxml">
+    <TitledPane text="Area-Thresholding">
+        <VBox spacing="5">
+            <HBox spacing="5">
+                <Label>Thresholding-Method</Label>
+                <ComboBox fx:id="cbMethods"/>
+
+            </HBox>
+            <CheckBox fx:id="chkSingleImage" text="Apply only on current Image"/>
+            <HBox>
+                <Label>Do Manual Thresholding</Label>
+                <CheckBox fx:id="chkManualThresholding"/>
+            </HBox>
+            <Label>Threshold</Label>
+            <SliderSpinner fx:id="sThreshold" max="255" min="0" tick="1" type="Integer">
+                <valueFactory>
+                    <SpinnerValueFactory.DoubleSpinnerValueFactory amountToStepBy="1" max="255" min="0"/>
+                </valueFactory>
+            </SliderSpinner>
+        </VBox>
+    </TitledPane>
+    <!-- buttons hidden currently -->
+    <HBox managed="false" visible="false">
+        <Button fx:id="btnApplySingle">Apply Single</Button>
+        <Button fx:id="btnApplyAll">Apply All</Button>
+    </HBox>
+
+</fx:root>

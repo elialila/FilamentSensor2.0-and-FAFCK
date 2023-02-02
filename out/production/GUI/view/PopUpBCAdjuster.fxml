@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import fx.custom.BCAdjusterUI?>
+<?import fx.custom.StackImageView?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.PopUpBCAdjuster">
+    <SplitPane VBox.vgrow="ALWAYS" dividerPositions="0.2" orientation="HORIZONTAL">
+        <items>
+
+            <VBox>
+                <BCAdjusterUI fx:id="bcAdjuster"/>
+            </VBox>
+            <VBox>
+                <StackImageView fx:id="svImage" showControls="true" text="Original"/>
+
+
+            </VBox>
+        </items>
+    </SplitPane>
+</VBox>

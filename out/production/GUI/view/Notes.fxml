@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="control.Notes">
+    <TextFlow VBox.vgrow="ALWAYS" textAlignment="CENTER" disable="true">
+        <Text styleClass="text-medium" text="
+                64bit version of java recommended&#10;
+                >=16GB memory recommended(for stack view)&#10;
+                preview is delayed by 1 sec&#10;
+                memory example 144 images each ~1MB, on stack-view needs approximately 7-8GB RAM&#10;
+                some functions are currently not implemented on image stack(buttons like wizer ...)
+                ">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Text>
+    </TextFlow>
+</VBox>

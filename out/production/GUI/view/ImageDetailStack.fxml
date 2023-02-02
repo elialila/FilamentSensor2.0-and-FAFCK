@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import fx.custom.Area?>
+<?import fx.custom.StackImageView?>
+<SplitPane dividerPositions="0.3" orientation="HORIZONTAL" prefHeight="400.0" prefWidth="600.0"
+           xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="control.ImageDetailStack" fx:id="rootSplitPane">
+    <userData>
+        <fx:reference source="controller" />
+    </userData>
+    <items>
+        <VBox spacing="5">
+            <fx:define>
+                <ToggleGroup fx:id="tgFilter"/>
+            </fx:define>
+            <HBox spacing="10">
+                <Button onAction="#onExportSettings" alignment="TOP_LEFT" text="Export Settings">
+                    <tooltip>
+                        <Tooltip text="the settings do not include the pre-processing filter-list"/>
+                    </tooltip>
+                </Button>
+                <Button onAction="#onImportSettings" alignment="TOP_LEFT" text="Import Settings">
+                    <tooltip>
+                        <Tooltip text="the settings do not include the pre-processing filter-list"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+
+
+            <ButtonBar>
+                <buttons>
+                    <RadioButton toggleGroup="$tgFilter" userData="area" visible="false" managed="false">Area
+                    </RadioButton>
+                    <RadioButton toggleGroup="$tgFilter" userData="pre">Pre-Processing</RadioButton>
+                    <RadioButton toggleGroup="$tgFilter" userData="bin">Line-Sensor</RadioButton>
+                    <RadioButton toggleGroup="$tgFilter" userData="fil">Filaments</RadioButton>
+                </buttons>
+            </ButtonBar>
+            <ScrollPane prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                <VBox>
+                    <Area fx:id="area" visible="false" managed="false"/>
+                    <fx:include source="PreprocessingFilterQueue.fxml" fx:id="preprocessingFilterQueue"/>
+                    <fx:include fx:id="lineSensor" source="LineSensor.fxml"/>
+                    <fx:include fx:id="filaments" source="Filaments.fxml"/>
+                    <Separator orientation="HORIZONTAL"/>
+                    <!--<HBox alignment="CENTER">
+                        <Button styleClass="dark-blue" onAction="#onApply" disable="true">Apply</Button>
+                    </HBox>-->
+                </VBox>
+            </ScrollPane>
+        </VBox>
+        <VBox fx:id="imgViewParentVBox">
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+                <items>
+                    <HBox alignment="CENTER" fx:id="containerZoom"/>
+                    <HBox alignment="CENTER">
+                        <ComboBox promptText="Choose shown Image-Stack" fx:id="cbShownImageStack">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Original"/>
+                                    <String fx:value="Pre Processed"/>
+                                    <String fx:value="Line Sensor"/>
+                                    <String fx:value="Filaments"/>
+                                </FXCollections>
+                            </items>
+                        </ComboBox>
+                    </HBox>
+                    <HBox alignment="CENTER">
+                        <fx:define>
+                            <ToggleGroup fx:id="tgShowMultipleImages"/>
+                        </fx:define>
+                        <children>
+                            <RadioButton text="Only Selected Stack" toggleGroup="$tgShowMultipleImages" fx:id="rbOne"
+                                         userData="0" selected="true"/>
+                            <RadioButton text="Original and Selected" toggleGroup="$tgShowMultipleImages" fx:id="rbTwo"
+                                         userData="1"/>
+                            <RadioButton text="All" toggleGroup="$tgShowMultipleImages" fx:id="rbThree" userData="2"/>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER">
+                        <Button styleClass="dark-blue" onAction="#onUpdateImages">Update Images</Button>
+                        <Button styleClass="dark-blue" onAction="#onUpdatePreview">Update Preview</Button>
+                    </HBox>
+                    <CheckBox fx:id="chkIncludeArea">Include Area-Outline</CheckBox>
+                    <CheckBox selected="true" fx:id="chkPreview" text="Preview">
+                        <tooltip>
+                            <Tooltip
+                                    text="Only Process current element, this is useful for adjusting settings(one picture is processed faster than n>1)"/>
+                        </tooltip>
+                    </CheckBox>
+                </items>
+            </ToolBar>
+
+            <SplitPane HBox.hgrow="ALWAYS" orientation="VERTICAL" fx:id="sPVertical">
+                <SplitPane orientation="HORIZONTAL" fx:id="sPOrigPre">
+                    <StackImageView text="Original" fx:id="svOriginal" showControls="false" HBox.hgrow="ALWAYS"
+                                    VBox.vgrow="ALWAYS"/>
+                    <StackImageView text="Pre Processed" fx:id="svPreProcessed" showControls="false" HBox.hgrow="ALWAYS"
+                                    VBox.vgrow="ALWAYS"/>
+                </SplitPane>
+                <SplitPane orientation="HORIZONTAL" fx:id="sPLineFilaments">
+                    <StackImageView text="Line Sensor" fx:id="svLineSensor" showControls="false" HBox.hgrow="ALWAYS"
+                                    VBox.vgrow="ALWAYS"/>
+                    <StackImageView text="Filaments" fx:id="svFilaments" showControls="false" HBox.hgrow="ALWAYS"
+                                    VBox.vgrow="ALWAYS"/>
+                </SplitPane>
+            </SplitPane>
+
+
+            <Separator orientation="HORIZONTAL"/>
+            <VBox fx:id="containerStackScroller"/>
+        </VBox>
+    </items>
+</SplitPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+
+<?import fx.custom.SliderSpinner?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="control.PopUpWidthMap"
+          prefHeight="400.0" prefWidth="600.0">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="90"/>
+        <RowConstraints percentHeight="10"/>
+    </rowConstraints>
+    <children>
+        <ScrollPane GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <ImageView fx:id="imageView"/>
+        </ScrollPane>
+        <SliderSpinner fx:id="sTolerance" max="50" min="0" tick="1" type="Integer" GridPane.columnIndex="0"
+                       GridPane.rowIndex="1">
+            <valueFactory>
+                <SpinnerValueFactory.DoubleSpinnerValueFactory max="50" min="0" amountToStepBy="1"/>
+            </valueFactory>
+        </SliderSpinner>
+
+    </children>
+
+</GridPane>

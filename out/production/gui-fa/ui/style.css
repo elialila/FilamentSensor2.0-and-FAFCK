@@ -1,0 +1,70 @@
+.text-large {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.headline {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+
+
+Text {
+    -fx-font-size: 16;
+}
+
+Label {
+    -fx-font-size: 16;
+}
+
+TextField {
+    -fx-font-size: 16;
+}
+
+/*Define the Button Standard with dark-blue */
+Button {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+Button:pressed {
+    -fx-background-color: #090a0c,
+    linear-gradient(#4f5962 0%, #33383d 20%, #202429 100%),
+    linear-gradient(#2c3338, #23292e),
+    radial-gradient(center 50% 0%, radius 100%, rgba(138, 156, 173, 0.9), rgba(244, 244, 244, 0));
+}
+
+
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-radius: 3px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #28a3f4;
+}
+
+VBox {
+    -fx-margin: 20px, 20px, 20px, 20px;
+    -fx-padding: 20px, 20px, 20px, 20px;
+}

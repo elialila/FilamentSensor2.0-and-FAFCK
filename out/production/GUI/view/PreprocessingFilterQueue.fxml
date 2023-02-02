@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+
+<?import javafx.scene.layout.HBox?>
+<?import fx.custom.SliderSpinner?>
+<?import fx.custom.BCAdjusterUI?>
+<?import javafx.scene.text.Text?>
+<VBox prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="control.PreprocessingFilterQueue" spacing="10">
+    <children>
+        <HBox>
+            <Label>Saved Filters</Label>
+            <ComboBox fx:id="cbFilters"/>
+        </HBox>
+        <HBox>
+            <Button styleClass="dark-blue" onAction="#onLoadFilterQueue" HBox.hgrow="ALWAYS">Load FilterQueue</Button>
+            <Button styleClass="dark-blue" onAction="#onSaveFilterQueue" HBox.hgrow="ALWAYS">Save FilterQueue</Button>
+        </HBox>
+        <VBox fx:id="containerAreaBCAdjuster" spacing="10">
+            <TitledPane text="Area Settings/Actions" expanded="false">
+                <VBox spacing="5">
+                    <HBox>
+                        <ComboBox fx:id="cbArea"/>
+                    </HBox>
+                    <Separator orientation="HORIZONTAL"/>
+                    <Text>MinArea of 50 means that the cell area</Text>
+                    <Text>has to exceed 0.05% of the whole ImageArea.</Text>
+                    <Text text="Min Area selectable below:"/>
+                    <Separator orientation="HORIZONTAL"/>
+                    <SliderSpinner fx:id="sMinArea" max="10000" min="1" tick="1" type="Integer">
+                        <valueFactory>
+                            <SpinnerValueFactory.DoubleSpinnerValueFactory max="10000" min="1"/>
+                        </valueFactory>
+
+                    </SliderSpinner>
+                    <HBox spacing="5">
+                        <Button styleClass="dark-blue" onAction="#onUpdateArea">Update Area</Button>
+                        <Button styleClass="dark-blue" onAction="#onEvaluateArea">Evaluate Area</Button>
+                    </HBox>
+                    <Button styleClass="dark-blue" onAction="#onOpenAreaTracking">Open Cell-Event Tracking</Button>
+
+                </VBox>
+            </TitledPane>
+            <Separator orientation="HORIZONTAL"/>
+            <Button styleClass="dark-blue" onAction="#onOpenBCAdjuster">Open Brightness-/Contrast-Adjuster</Button>
+        </VBox>
+        <Separator orientation="HORIZONTAL"/>
+        <Accordion>
+            <panes>
+                <TitledPane animated="true" text="Add Filter">
+                    <content>
+                        <VBox fx:id="boxAddFilters"/>
+                    </content>
+                </TitledPane>
+            </panes>
+            <StackPane.margin>
+                <Insets/>
+            </StackPane.margin>
+        </Accordion>
+
+        <HBox fx:id="containerQualityScore">
+            <Label text="Quality Score: "/>
+            <Label fx:id="lQualityScore"/>
+        </HBox>
+
+        <VBox>
+            <Label text="Scale"/>
+            <SliderSpinner fx:id="sScale" max="10" min="1" tick="1" type="Integer">
+                <valueFactory>
+                    <SpinnerValueFactory.DoubleSpinnerValueFactory max="10" min="1"/>
+                </valueFactory>
+            </SliderSpinner>
+            <StackPane.margin>
+                <Insets top="30.0"/>
+            </StackPane.margin>
+        </VBox>
+        <VBox fx:id="containerMinContrast">
+            <Label>Min Contrast</Label>
+            <SliderSpinner fx:id="sMinContrast" max="255" min="0" tick="1" type="Integer">
+                <valueFactory>
+                    <SpinnerValueFactory.DoubleSpinnerValueFactory max="255" min="0"/>
+                </valueFactory>
+            </SliderSpinner>
+        </VBox>
+        <HBox>
+            <Separator orientation="HORIZONTAL" HBox.hgrow="ALWAYS"/>
+        </HBox>
+        <VBox fx:id="boxFilters">
+
+        </VBox>
+        <HBox>
+            <Separator orientation="HORIZONTAL" HBox.hgrow="ALWAYS"/>
+        </HBox>
+    </children>
+</VBox>

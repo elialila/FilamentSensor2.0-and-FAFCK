@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import fx.custom.StackImageView?>
+<?import fx.custom.SliderSpinner?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="control.PopUpSingleFilamentTracking"
+      prefHeight="600.0" prefWidth="800.0"
+      stylesheets="@../style/style.css,@../style/buttons.css" fx:id="root">
+
+    <SplitPane dividerPositions="0.3" VBox.vgrow="ALWAYS" fx:id="splitPane">
+        <ScrollPane fx:id="rootParams" prefHeight="${splitPane.height}">
+            <VBox spacing="5">
+                <fx:define>
+                    <ToggleGroup fx:id="tgFilter"/>
+                </fx:define>
+                <ButtonBar>
+                    <buttons>
+                        <RadioButton alignment="CENTER_LEFT" fx:id="radioParam" toggleGroup="$tgFilter"
+                                     userData="param">
+                            Parameters
+                        </RadioButton>
+                        <RadioButton alignment="CENTER_LEFT" fx:id="radioFilaments" toggleGroup="$tgFilter"
+                                     userData="fil">
+                        Filaments
+                    </RadioButton>
+                </buttons>
+            </ButtonBar>
+
+            <VBox fx:id="vBoxParameters" VBox.vgrow="ALWAYS" managed="${vBoxParameters.visible}">
+                <Text styleClass="text-medium">Parameters</Text>
+                <!-- Params box: max_dist factor_angle factor_length length -->
+                <Label>Maximum Distance:</Label>
+                <SliderSpinner fx:id="sMaxDist" max="10000" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="10000" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+
+                <Label>Factor Angle:</Label>
+                <SliderSpinner fx:id="sFactorAngle" max="100" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+
+                <Label>Factor Length:</Label>
+                <SliderSpinner fx:id="sFactorLength" max="100" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+
+                <Label>Length:</Label>
+                <SliderSpinner fx:id="sLength" max="10000" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="10000" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+                <Separator prefWidth="${rootParams.width}"/>
+                <HBox spacing="10">
+                    <Label>
+                        <text>Min Time-Slot filter</text>
+                        <tooltip>
+                            <Tooltip text="Drop filaments that only exist in a few time slots"/>
+                        </tooltip>
+                    </Label>
+                    <CheckBox fx:id="chkMinTimeExist">
+                        <tooltip>
+                            <Tooltip text="Drop filaments that only exist in a few time slots"/>
+                        </tooltip>
+                    </CheckBox>
+                </HBox>
+                <SliderSpinner fx:id="sMinExistFilament" max="100" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+
+
+                <Separator prefWidth="${rootParams.width}"/>
+                <HBox spacing="10">
+                    <Label>
+                        <text>Max Time-Slot filter</text>
+                        <tooltip>
+                            <Tooltip text="Drop filaments that exist in more time slots than set"/>
+                        </tooltip>
+                    </Label>
+                    <CheckBox fx:id="chkMaxTimeExist">
+                        <tooltip>
+                            <Tooltip text="Drop filaments that exist in more time slots than set"/>
+                        </tooltip>
+                    </CheckBox>
+                </HBox>
+                <SliderSpinner fx:id="sMaxExistFilament" max="100" min="1" tick="1" type="Integer">
+                    <valueFactory>
+                        <SpinnerValueFactory.DoubleSpinnerValueFactory max="100" min="1"/>
+                    </valueFactory>
+                </SliderSpinner>
+
+                <Separator prefWidth="${rootParams.width}"/>
+                <HBox spacing="5">
+                    <Text>Unfiltered Timelines:</Text>
+                    <Text fx:id="tUnfilteredTimeLines"/>
+                </HBox>
+                <HBox spacing="5">
+                    <Text>Filtered Timelines:</Text>
+                    <Text fx:id="tFilteredTimeLines"/>
+                </HBox>
+                <HBox>
+                    <Text>ImageSize:</Text>
+                    <Text fx:id="tImageSize"/>
+                </HBox>
+
+
+                <Separator prefWidth="${rootParams.width}"/>
+
+
+                <Separator prefWidth="${rootParams.width}"/>
+                <ButtonBar>
+                    <buttons>
+                        <Button styleClass="dark-blue" onAction="#onTrack">Track</Button>
+                    </buttons>
+                </ButtonBar>
+
+            </VBox>
+
+            <VBox fx:id="vBoxFilaments" managed="${vBoxFilaments.visible}">
+                <Text styleClass="text-medium">DynamicFilaments</Text>
+                <TableView fx:id="tableFilaments" GridPane.rowIndex="1" GridPane.columnIndex="0"
+                           GridPane.halignment="LEFT"
+                           GridPane.valignment="TOP" GridPane.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="columnKeep" text="Keep"/>
+                        <TableColumn fx:id="columnBirth" text="Birth"/>
+                        <TableColumn fx:id="columnDeath" text="Death"/>
+                        <TableColumn fx:id="columnLength" text="Length"/>
+                    </columns>
+                </TableView>
+                <Separator prefWidth="${vBoxFilaments.width}"/>
+                <Text styleClass="text-medium">Export</Text>
+                <Button styleClass="dark-blue" onAction="#onExportDynFilamentCSV">Export Dyn.Filaments CSV</Button>
+                <Button styleClass="dark-blue" onAction="#onExportFilamentsCSV">Export Filaments(grouped by time) CSV
+                </Button>
+                <Button styleClass="dark-blue" onAction="#onExportDynFilamentsImage">Export Dyn.Filament Images</Button>
+                <Separator prefWidth="${vBoxFilaments.width}"/>
+            </VBox>
+
+        </VBox>
+    </ScrollPane>
+        <TabPane>
+            <tabs>
+                <Tab text="Overview" closable="false">
+                    <StackImageView fx:id="ivOverview" hideScroller="true"/>
+                </Tab>
+                <Tab text="Filaments" closable="false">
+                    <StackImageView fx:id="ivFilaments"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </SplitPane>
+    <ProgressBar fx:id="pbProgress" prefWidth="${root.width}" minHeight="20" maxHeight="30"/>
+    <TextArea editable="false" fx:id="taSingleFilamentDebug" prefWidth="${root.width}" prefHeight="100" maxHeight="150"
+              VBox.vgrow="NEVER"/>
+</VBox>

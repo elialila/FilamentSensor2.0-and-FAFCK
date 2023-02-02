@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/Development/IdeaProjects/FilamentSensor/Sensor/src</OriginalElement>
+  <nodes>
+    <node x="2435.0" y="402.0">filters.FilterClosing</node>
+    <node x="2066.0" y="1002.0">filters.EnhanceContrastLegacy</node>
+    <node x="615.0" y="1159.0">core.FilamentSensor</node>
+    <node x="634.0" y="1002.0">core.image.IBinaryImage</node>
+    <node x="2512.8312908496737" y="721.0">core.tracers.LineSensor.LineInfo</node>
+    <node x="3883.0" y="845.0">focaladhesion.FocalAdhesionProcessor</node>
+    <node x="3236.0" y="402.0">filters.FilterCrossCorrelation</node>
+    <node x="778.5" y="845.0">core.settings.Any</node>
+    <node x="2831.0" y="845.0">core.calculation.OrientationFields</node>
+    <node x="1624.8578431372548" y="769.0">tracking.shape.ShapeEvent.ShapeStartEvent</node>
+    <node x="2821.8312908496737" y="640.0">core.cell.plugins.CellPluginTest</node>
+    <node x="4022.0" y="1159.0">core.FilterQueue</node>
+    <node x="138.0" y="561.0">focaladhesion.FocalAdhesion</node>
+    <node x="1134.0" y="1235.0">core.settings.Settings</node>
+    <node x="573.0" y="402.0">filters.FilterAutomaticThreshold</node>
+    <node x="3688.0" y="1002.0">core.OFIllustratorBatch</node>
+    <node x="0.0" y="926.0">core.settings.Ori</node>
+    <node x="1682.0" y="926.0">core.Misc.Int1D</node>
+    <node x="507.0" y="1235.0">util.io.CsvExport</node>
+    <node x="40.0" y="1002.0">focaladhesion.Verifier</node>
+    <node x="776.0" y="926.0">core.settings.Elog</node>
+    <node x="2784.0" y="926.0">core.calculation.OrientationFields.SimpleField</node>
+    <node x="432.0" y="1083.0">filters.supplier.LaPlaceSupplier</node>
+    <node x="3252.0" y="1002.0">util.io.FilamentCsvExport</node>
+    <node x="2219.8312908496737" y="478.0">core.filaments.AbstractFilament</node>
+    <node x="1991.0" y="1159.0">core.calculation.WrappedSiZer</node>
+    <node x="564.7651143790852" y="478.0">tracking.shape.TrackingShape</node>
+    <node x="3930.125" y="81.0">util.Annotations.NumberFormat</node>
+    <node x="3492.0" y="1159.0">util.PathScanner</node>
+    <node x="0.0" y="561.0">core.cell.CellShape</node>
+    <node x="3067.0" y="926.0">util.fuzzy.vector.Int1D</node>
+    <node x="3175.0" y="926.0">util.fuzzy.vector.Boolean1D</node>
+    <node x="1342.0" y="402.0">filters.FilterManualThreshold</node>
+    <node x="0.0" y="1159.0">core.cell.InteriorContainer</node>
+    <node x="2482.0" y="845.0">core.calculation.OrientationFieldPostProcessing</node>
+    <node x="3652.5" y="845.0">core.image.CorrelationData</node>
+    <node x="2512.5" y="926.0">core.calculation.OrientationFieldPostProcessing.Joint</node>
+    <node x="2986.8312908496737" y="640.0">core.cell.plugins.CellPluginThresholding</node>
+    <node x="1011.0" y="1159.0">core.image.ImageWrapper</node>
+    <node x="2349.0" y="926.0">core.Misc.Int2D</node>
+    <node x="2944.0" y="1159.0">tracking.filament.DataTracking</node>
+    <node x="561.0" y="926.0">core.settings.FocAdh</node>
+    <node x="406.5714869281047" y="561.0">tracking.shape.ShapeTracker</node>
+    <node x="333.20026881720423" y="81.0">filters.IStackFilter</node>
+    <node x="3779.125" y="81.0">util.Annotations.FilterUIType</node>
+    <node x="3847.0" y="1159.0">core.ProjectData</node>
+    <node x="204.0" y="926.0">core.settings.Export</node>
+    <node x="319.0" y="926.0">core.settings.Eval</node>
+    <node x="724.857843137255" y="769.0">tracking.shape.ShapeEvent.ShapeAliveEvent</node>
+    <node x="431.0" y="402.0">filters.FilterInvert</node>
+    <node x="988.0" y="1002.0">util.NotImplementedException</node>
+    <node x="418.0" y="926.0">core.settings.SFTracking</node>
+    <node x="3028.5812908496737" y="478.0">core.cell.CellPlugin</node>
+    <node x="3030.0" y="1002.0">core.image.ImageDependency</node>
+    <node x="1335.0" y="926.0">core.settings.Load</node>
+    <node x="1671.2598039215686" y="561.0">tracking.shape.TimeTable</node>
+    <node x="1208.0" y="1159.0">core.BatchProcessor</node>
+    <node x="2377.0" y="1159.0">core.cell.DataFilaments</node>
+    <node x="0.0" y="1235.0">util.LineIterator</node>
+    <node x="3419.0" y="845.0">util.fuzzy.Fuzzy2D</node>
+    <node x="3021.0" y="402.0">filters.FilterEnhanceContrast</node>
+    <node x="636.0" y="1083.0">core.image.BinaryImage</node>
+    <node x="1515.2432795698924" y="0.0">filters.IFilter</node>
+    <node x="1601.0" y="1159.0">tracking.filament.TrackFilaments</node>
+    <node x="3562.6182795698924" y="0.0">util.Annotations</node>
+    <node x="960.0151143790852" y="561.0">tracking.shape.ShapeEvent</node>
+    <node x="2560.0" y="1002.0">core.orientationfields.OrientationFieldBlock</node>
+    <node x="2241.0" y="926.0">core.Misc.Int3D</node>
+    <node x="812.0" y="402.0">filters.FilterSkeletonize</node>
+    <node x="1561.0" y="402.0">filters.FilterScale</node>
+    <node x="3346.0" y="926.0">util.fuzzy.matrix.Boolean2D</node>
+    <node x="2042.25" y="845.0">core.Misc</node>
+    <node x="1104.0" y="926.0">core.settings.Pre</node>
+    <node x="987.0" y="926.0">core.settings.Hough</node>
+    <node x="3628.125" y="81.0">util.Annotations.FilterUIField</node>
+    <node x="1970.0812908496737" y="721.0">core.filaments.ClusterableFilament</node>
+    <node x="1535.0" y="1002.0">core.cell.OrientationFieldContainer</node>
+    <node x="993.0" y="402.0">filters.FilterOutline</node>
+    <node x="3093.5812908496737" y="559.0">core.cell.plugins.CellPluginBenjamin</node>
+    <node x="1036.3578431372548" y="666.0">tracking.shape.ShapeEvent.ShapeSingleSourceEvent</node>
+    <node x="1440.0" y="926.0">core.settings.Chain</node>
+    <node x="2909.5812908496737" y="559.0">core.cell.plugins.CellPluginSimple</node>
+    <node x="3121.0" y="845.0">util.fuzzy.Fuzzy1D</node>
+    <node x="3500.125" y="81.0">util.Annotations.Nullable</node>
+    <node x="2503.8312908496737" y="640.0">core.tracers.LineSensor</node>
+    <node x="3903.0" y="1002.0">tracking.filament.DynamicFilament</node>
+    <node x="2646.8312908496737" y="640.0">core.tracers.CurveTracer</node>
+    <node x="2732.0" y="402.0">filters.FilterDilate</node>
+    <node x="231.0" y="1083.0">filters.ContrastAdjuster.AdjusterAction</node>
+    <node x="2239.3312908496737" y="640.0">core.filaments.Filament</node>
+    <node x="2101.0" y="926.0">core.Misc.Double1D</node>
+    <node x="1918.3312908496737" y="640.0">core.filaments.Clusterable</node>
+    <node x="1494.2432795698924" y="81.0">filters.IImageFilter</node>
+    <node x="225.0" y="1002.0">filters.ContrastAdjuster</node>
+    <node x="4103.125" y="81.0">util.Annotations.NotNull</node>
+    <node x="487.45833333333326" y="666.0">tracking.shape.ShapeEvent.ShapeFusionEvent</node>
+    <node x="2142.8312908496737" y="559.0">core.filaments.SingleFilament</node>
+    <node x="2757.0" y="1159.0">util.ImageFactory</node>
+    <node x="2846.125" y="81.0">util.Annotations.Max</node>
+    <node x="1146.0" y="402.0">filters.FilterRemovePixels</node>
+    <node x="829.0" y="1235.0">core.tracers.Gatherer</node>
+    <node x="2064.3312908496737" y="640.0">core.filaments.CurvedFilament</node>
+    <node x="3129.0" y="1159.0">core.calculation.OFCalculator</node>
+    <node x="2615.5" y="926.0">core.calculation.OrientationFieldPostProcessing.joinInfo</node>
+    <node x="3158.125" y="81.0">util.Annotations.Step</node>
+    <node x="1284.0" y="1235.0">core.settings.Config</node>
+    <node x="0.0" y="1083.0">focaladhesion.Verifier.VerificationMethod</node>
+    <node x="1790.0" y="926.0">core.Misc.Double2D</node>
+    <node x="813.0" y="1159.0">evaluation.EvaluationData</node>
+    <node x="1425.0" y="1235.0">util.IOUtils</node>
+    <node x="2946.125" y="81.0">util.Annotations.Min</node>
+    <node x="198.0" y="402.0">filters.FilterBrightnessAverager</node>
+    <node x="173.0" y="1235.0">util.MixedUtils</node>
+    <node x="2569.0" y="1159.0">focaladhesion.DataExtractor</node>
+    <node x="1566.0" y="1235.0">core.Const</node>
+    <node x="1264.0" y="1002.0">filters.HistogramMethodsLegacy</node>
+    <node x="983.0" y="1235.0">tracking.filament.Shortlist</node>
+    <node x="413.0" y="1159.0">core.cell.ShapeContainer</node>
+    <node x="934.8578431372549" y="769.0">tracking.shape.ShapeEvent.ShapeEndEvent</node>
+    <node x="2312.8312908496737" y="559.0">core.filaments.FilamentChain</node>
+    <node x="878.0" y="926.0">core.settings.Batch</node>
+    <node x="3450.0" y="402.0">filters.FilterAreaMask</node>
+    <node x="1950.521505376344" y="402.0">filters.FilterOpening</node>
+    <node x="2576.896505376344" y="81.0">filters.IFilterPrecalc</node>
+    <node x="2877.0" y="402.0">filters.FilterErode</node>
+    <node x="669.0" y="1235.0">util.PointUtils</node>
+    <node x="3670.0" y="1159.0">enums.ImageTypes</node>
+    <node x="3790.0" y="402.0">filters.FilterLaPlace</node>
+    <node x="1788.521505376344" y="402.0">filters.FilterFillHoles</node>
+    <node x="92.0" y="926.0">core.settings.WiZer</node>
+    <node x="0.0" y="402.0">filters.FilterCanvasResizer</node>
+    <node x="1830.0" y="1235.0">core.Calc</node>
+    <node x="1803.0" y="1002.0">util.io.FocalAdhesionCSVExport</node>
+    <node x="2589.0" y="402.0">filters.FilterGauss</node>
+    <node x="1930.0" y="926.0">core.Misc.Numbered</node>
+    <node x="209.0" y="1159.0">core.orientationfields.OrientationField</node>
+    <node x="1405.0" y="1159.0">util.ProcessingUtils</node>
+    <node x="1197.0" y="926.0">core.settings.ATracking</node>
+    <node x="340.0" y="1235.0">util.Pair</node>
+    <node x="2800.0" y="1002.0">core.calculation.MeanBrightnessCalc</node>
+    <node x="3381.125" y="81.0">util.Annotations.FilterUI</node>
+    <node x="818.0" y="1083.0">evaluation.Evaluator.ShapeType</node>
+    <node x="1417.8578431372548" y="769.0">tracking.shape.ShapeEvent.ShapeSplitEvent</node>
+    <node x="706.4583333333333" y="666.0">tracking.shape.ShapeEvent.ShapeTouchEvent</node>
+    <node x="2292.125" y="81.0">filters.IImageFilterAreaDependant</node>
+    <node x="1549.0" y="926.0">core.settings.Trace</node>
+    <node x="3620.0" y="402.0">filters.FilterLineGauss</node>
+    <node x="1969.5" y="81.0">filters.IFilterObservable</node>
+    <node x="3890.5" y="926.0">focaladhesion.FocalAdhesionProcessor.FAVerificationMethod</node>
+    <node x="3492.0" y="926.0">util.fuzzy.matrix.Int2D</node>
+    <node x="823.5" y="1002.0">evaluation.Evaluator</node>
+    <node x="2592.0812908496737" y="478.0">core.tracers.Tracer</node>
+    <node x="3043.125" y="81.0">util.Annotations.Values</node>
+    <node x="2934.0" y="926.0">core.calculation.OrientationFields.Block</node>
+    <node x="2112.521505376344" y="402.0">filters.FilterBinarization</node>
+    <node x="1700.0" y="1235.0">core.image.Entry</node>
+    <node x="2564.5812908496737" y="559.0">core.tracers.AbstractTracer</node>
+    <node x="3311.0" y="1159.0">util.StackCreator</node>
+    <node x="434.0" y="1002.0">filters.supplier.CBSupplier</node>
+    <node x="683.0" y="926.0">core.settings.Bin</node>
+    <node x="2319.0" y="1002.0">util.ImageConversionUtils</node>
+    <node x="1796.0" y="1159.0">util.ImageExporter</node>
+    <node x="3625.0" y="926.0">focaladhesion.FocalAdhesionContainer</node>
+    <node x="3260.125" y="81.0">util.Annotations.Default</node>
+    <node x="1181.8578431372548" y="769.0">tracking.shape.ShapeEvent.ShapeDeTouchEvent</node>
+    <node x="3471.0" y="1002.0">filters.CloseHolesLegacy</node>
+    <node x="2184.0" y="1159.0">util.io.AreaCsvExport</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="filters.FilterCanvasResizer" target="filters.IStackFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="89.0" y="382.0" />
+      <point x="395.20026881720423" y="382.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterBinarization" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2194.521505376344" y="382.0" />
+      <point x="2011.1895161290322" y="382.0" />
+      <point x="2011.1895161290322" y="252.0" />
+      <point x="1559.7432795698924" y="252.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Misc.Double1D" target="core.Misc" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2161.0" y="901.0" />
+      <point x="2083.25" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFieldPostProcessing.Joint" target="core.calculation.OrientationFieldPostProcessing" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2554.0" y="901.0" />
+      <point x="2610.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterDilate" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="31.25" y="-15.5" />
+      <point x="2825.75" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.fuzzy.vector.Int1D" target="util.fuzzy.Fuzzy1D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="3111.0" y="901.0" />
+      <point x="3174.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginBenjamin" target="core.cell.CellPlugin" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="3183.5812908496737" y="534.0" />
+      <point x="3087.5812908496737" y="534.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.IImageFilter" target="filters.IFilter" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterCrossCorrelation" target="filters.IFilterObservable" relationship="REALIZATION">
+      <point x="-48.5" y="-15.5" />
+      <point x="3284.5" y="342.0" />
+      <point x="2313.271505376344" y="342.0" />
+      <point x="2313.271505376344" y="202.0" />
+      <point x="2051.5" y="202.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.FilterUIType" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3844.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterManualThreshold" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1441.5" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterFillHoles" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-35.5" y="-15.5" />
+      <point x="1824.021505376344" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeFusionEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="66.33333333333337" y="-15.5" />
+      <point x="653.2916666666666" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="evaluation.Evaluator.ShapeType" target="evaluation.Evaluator" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterInvert" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="492.0" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLineGauss" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="37.5" y="-15.5" />
+      <point x="3732.5" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Misc.Double2D" target="core.Misc" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1850.0" y="901.0" />
+      <point x="2083.25" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionProcessor.FAVerificationMethod" target="focaladhesion.FocalAdhesionProcessor" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterClosing" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-33.5" y="-15.5" />
+      <point x="2468.5" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.CurveTracer" target="core.tracers.AbstractTracer" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2711.8312908496737" y="615.0" />
+      <point x="2638.5812908496737" y="615.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterEnhanceContrast" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="48.75" y="-15.5" />
+      <point x="3167.25" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeDeTouchEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1289.8578431372548" y="738.0" />
+      <point x="1356.3631535947716" y="738.0" />
+      <point x="1356.3631535947716" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLaPlace" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="33.75" y="-15.5" />
+      <point x="3891.25" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.fuzzy.matrix.Boolean2D" target="util.fuzzy.Fuzzy2D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="3409.0" y="901.0" />
+      <point x="3472.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.IImageFilterAreaDependant" target="filters.IFilter" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2410.125" y="56.0" />
+      <point x="1559.7432795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.ATracking" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1256.0" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.fuzzy.vector.Boolean1D" target="util.fuzzy.Fuzzy1D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="3238.0" y="901.0" />
+      <point x="3174.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterAutomaticThreshold" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="682.5" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.ClusterableFilament" target="core.filaments.Clusterable" relationship="REALIZATION">
+      <point x="-45.75" y="-15.5" />
+      <point x="2015.8312908496737" y="696.0" />
+      <point x="1981.3312908496737" y="696.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.supplier.LaPlaceSupplier" target="filters.supplier.CBSupplier" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterCrossCorrelation" target="filters.IFilterPrecalc" relationship="REALIZATION">
+      <point x="-48.5" y="-15.5" />
+      <point x="3284.5" y="342.0" />
+      <point x="2313.271505376344" y="342.0" />
+      <point x="2313.271505376344" y="302.0" />
+      <point x="2364.2002688172042" y="302.0" />
+      <point x="2364.2002688172042" y="142.0" />
+      <point x="2644.896505376344" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeTouchEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="65.66666666666663" y="-15.5" />
+      <point x="870.625" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.settings.Export" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="251.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeEndEvent" target="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" relationship="GENERALIZATION">
+      <point x="60.66666666666674" y="-15.5" />
+      <point x="1086.5245098039218" y="748.0" />
+      <point x="1157.8578431372548" y="748.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Chain" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1484.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterOpening" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-35.5" y="-15.5" />
+      <point x="1986.021505376344" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterScale" target="filters.IFilterObservable" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1621.0" y="272.0" />
+      <point x="2051.5" y="272.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1157.8578431372548" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.settings.Elog" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.FilterUIField" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3693.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Pre" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1140.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterOutline" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1059.5" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeTouchEvent" target="tracking.shape.ShapeEvent" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="804.9583333333333" y="644.0" />
+      <point x="726.2062908496735" y="644.0" />
+      <point x="726.2062908496735" y="614.0" />
+      <point x="999.2651143790852" y="614.0" />
+      <point x="-39.25" y="15.5" />
+    </edge>
+    <edge source="core.settings.Load" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1377.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeSplitEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1511.3578431372548" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesionContainer" target="core.image.CorrelationData" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" target="tracking.shape.ShapeEvent" relationship="GENERALIZATION">
+      <point x="-81.0" y="-15.5" />
+      <point x="1076.8578431372548" y="644.0" />
+      <point x="726.2062908496735" y="644.0" />
+      <point x="726.2062908496735" y="614.0" />
+      <point x="999.2651143790852" y="614.0" />
+      <point x="-39.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLineGauss" target="filters.IImageFilterAreaDependant" relationship="REALIZATION">
+      <point x="-37.5" y="-15.5" />
+      <point x="3657.5" y="332.0" />
+      <point x="2404.2002688172042" y="332.0" />
+      <point x="2404.2002688172042" y="302.0" />
+      <point x="2561.896505376344" y="302.0" />
+      <point x="2561.896505376344" y="132.0" />
+      <point x="2410.125" y="132.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Misc.Numbered" target="core.Misc" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2005.5" y="901.0" />
+      <point x="2083.25" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeSplitEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="62.33333333333326" y="-15.5" />
+      <point x="1573.6911764705883" y="738.0" />
+      <point x="1831.7598039215686" y="738.0" />
+      <point x="1831.7598039215686" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterCrossCorrelation" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="48.5" y="-15.5" />
+      <point x="3381.5" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeStartEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="62.66666666666697" y="-15.5" />
+      <point x="1781.5245098039218" y="748.0" />
+      <point x="1873.3312908496737" y="748.0" />
+      <point x="1873.3312908496737" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.cell.CellShape" target="tracking.shape.TrackingShape" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="59.0" y="540.0" />
+      <point x="107.13480392156873" y="540.0" />
+      <point x="107.13480392156873" y="530.0" />
+      <point x="602.0151143790852" y="530.0" />
+      <point x="-37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterEnhanceContrast" target="filters.IFilterObservable" relationship="REALIZATION">
+      <point x="-48.75" y="-15.5" />
+      <point x="3069.75" y="352.0" />
+      <point x="2174.439516129032" y="352.0" />
+      <point x="2174.439516129032" y="222.0" />
+      <point x="2051.5" y="222.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeTracker" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="491.0714869281047" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterOpening" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="35.5" y="-15.5" />
+      <point x="2057.021505376344" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterBinarization" target="filters.IFilterPrecalc" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2194.521505376344" y="382.0" />
+      <point x="2011.1895161290322" y="382.0" />
+      <point x="2011.1895161290322" y="292.0" />
+      <point x="2364.2002688172042" y="292.0" />
+      <point x="2364.2002688172042" y="142.0" />
+      <point x="2644.896505376344" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterCrossCorrelation" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-48.5" y="-15.5" />
+      <point x="3284.5" y="342.0" />
+      <point x="2313.271505376344" y="342.0" />
+      <point x="2313.271505376344" y="212.0" />
+      <point x="1559.7432795698924" y="212.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLineGauss" target="filters.IFilterPrecalc" relationship="REALIZATION">
+      <point x="-37.5" y="-15.5" />
+      <point x="3657.5" y="332.0" />
+      <point x="2404.2002688172042" y="332.0" />
+      <point x="2404.2002688172042" y="152.0" />
+      <point x="2364.2002688172042" y="152.0" />
+      <point x="2364.2002688172042" y="142.0" />
+      <point x="2644.896505376344" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeStartEvent" target="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" relationship="GENERALIZATION">
+      <point x="-62.666666666666515" y="-15.5" />
+      <point x="1656.1911764705883" y="748.0" />
+      <point x="1157.8578431372548" y="748.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeEndEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1025.8578431372548" y="738.0" />
+      <point x="974.5396241830067" y="738.0" />
+      <point x="974.5396241830067" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeEndEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="-60.66666666666674" y="-15.5" />
+      <point x="965.1911764705882" y="728.0" />
+      <point x="385.5714869281047" y="728.0" />
+      <point x="385.5714869281047" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterSkeletonize" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="892.5" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginTest" target="core.cell.plugins.CellPluginSimple" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2894.3312908496737" y="615.0" />
+      <point x="2991.5812908496737" y="615.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="81.0" y="-15.5" />
+      <point x="1238.8578431372548" y="624.0" />
+      <point x="1650.2598039215686" y="624.0" />
+      <point x="1650.2598039215686" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.Misc.Int1D" target="core.Misc" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1726.0" y="901.0" />
+      <point x="2083.25" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginThresholding" target="core.cell.plugins.CellPluginSimple" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="3088.8312908496737" y="615.0" />
+      <point x="2991.5812908496737" y="615.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.ContrastAdjuster.AdjusterAction" target="filters.ContrastAdjuster" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeTouchEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="-65.66666666666674" y="-15.5" />
+      <point x="739.2916666666666" y="624.0" />
+      <point x="586.0714869281047" y="624.0" />
+      <point x="586.0714869281047" y="540.0" />
+      <point x="1038.5151143790852" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLaPlace" target="filters.IFilterPrecalc" relationship="REALIZATION">
+      <point x="-33.75" y="-15.5" />
+      <point x="3823.75" y="322.0" />
+      <point x="2394.2002688172042" y="322.0" />
+      <point x="2394.2002688172042" y="172.0" />
+      <point x="2364.2002688172042" y="172.0" />
+      <point x="2364.2002688172042" y="142.0" />
+      <point x="2644.896505376344" y="142.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.Verifier.VerificationMethod" target="focaladhesion.Verifier" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterDilate" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-31.25" y="-15.5" />
+      <point x="2763.25" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.fuzzy.matrix.Int2D" target="util.fuzzy.Fuzzy2D" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="3536.0" y="901.0" />
+      <point x="3472.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.Default" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3310.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeStartEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="1718.857843137255" y="718.0" />
+      <point x="1620.1348039215686" y="718.0" />
+      <point x="1620.1348039215686" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.Values" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3090.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.NotNull" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="4155.125" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="focaladhesion.FocalAdhesion" target="tracking.shape.TrackingShape" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="212.5" y="540.0" />
+      <point x="107.13480392156873" y="540.0" />
+      <point x="107.13480392156873" y="530.0" />
+      <point x="602.0151143790852" y="530.0" />
+      <point x="-37.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterBrightnessAverager" target="filters.IStackFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="304.5" y="382.0" />
+      <point x="395.20026881720423" y="382.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.Nullable" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3554.125" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterClosing" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="33.5" y="-15.5" />
+      <point x="2535.5" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeSplitEvent" target="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" relationship="GENERALIZATION">
+      <point x="-62.33333333333326" y="-15.5" />
+      <point x="1449.0245098039218" y="748.0" />
+      <point x="1157.8578431372548" y="748.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.Min" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2984.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.FilterUI" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3430.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.IStackFilter" target="filters.IFilter" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="395.20026881720423" y="56.0" />
+      <point x="1559.7432795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterGauss" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="30.75" y="-15.5" />
+      <point x="2681.25" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLaPlace" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-33.75" y="-15.5" />
+      <point x="3823.75" y="322.0" />
+      <point x="2394.2002688172042" y="322.0" />
+      <point x="2394.2002688172042" y="192.0" />
+      <point x="1559.7432795698924" y="192.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.SFTracking" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="479.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Hough" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1035.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.Misc.Int2D" target="core.Misc" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2393.0" y="901.0" />
+      <point x="2083.25" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeDeTouchEvent" target="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" relationship="GENERALIZATION">
+      <point x="-72.0" y="-15.5" />
+      <point x="1217.8578431372548" y="748.0" />
+      <point x="1157.8578431372548" y="748.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeDeTouchEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="72.0" y="-15.5" />
+      <point x="1361.8578431372548" y="728.0" />
+      <point x="1660.7598039215686" y="728.0" />
+      <point x="1660.7598039215686" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.settings.FocAdh" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="612.0" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeAliveEvent" target="tracking.shape.ShapeEvent.ShapeSingleSourceEvent" relationship="GENERALIZATION">
+      <point x="63.33333333333326" y="-15.5" />
+      <point x="883.1911764705883" y="748.0" />
+      <point x="1157.8578431372548" y="748.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterEnhanceContrast" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-48.75" y="-15.5" />
+      <point x="3069.75" y="352.0" />
+      <point x="2174.439516129032" y="352.0" />
+      <point x="2174.439516129032" y="232.0" />
+      <point x="1559.7432795698924" y="232.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.Max" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2886.125" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.FilamentChain" target="core.filaments.AbstractFilament" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2385.8312908496737" y="534.0" />
+      <point x="2301.8312908496737" y="534.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Eval" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="358.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeAliveEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="-63.33333333333326" y="-15.5" />
+      <point x="756.5245098039218" y="748.0" />
+      <point x="297.5" y="748.0" />
+      <point x="297.5" y="540.0" />
+      <point x="1038.5151143790852" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor" target="core.tracers.AbstractTracer" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2565.3312908496737" y="615.0" />
+      <point x="2638.5812908496737" y="615.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterRemovePixels" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1234.0" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeAliveEvent" target="tracking.shape.ShapeEvent" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="819.857843137255" y="738.0" />
+      <point x="913.9583333333333" y="738.0" />
+      <point x="913.9583333333333" y="634.0" />
+      <point x="1105.9734477124184" y="634.0" />
+      <point x="1105.9734477124184" y="624.0" />
+      <point x="1077.7651143790852" y="624.0" />
+      <point x="39.25" y="15.5" />
+    </edge>
+    <edge source="core.filaments.Filament" target="core.filaments.SingleFilament" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2293.8312908496737" y="615.0" />
+      <point x="2217.8312908496737" y="615.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.WiZer" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="138.0" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterScale" target="filters.IStackFilter" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1621.0" y="262.0" />
+      <point x="395.20026881720423" y="262.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.cell.plugins.CellPluginSimple" target="core.cell.CellPlugin" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2991.5812908496737" y="534.0" />
+      <point x="3087.5812908496737" y="534.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.TimeTable" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="1746.2598039215686" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.Misc.Int3D" target="core.Misc" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2285.0" y="901.0" />
+      <point x="2083.25" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.ClusterableFilament" target="core.filaments.CurvedFilament" relationship="GENERALIZATION">
+      <point x="45.75" y="-15.5" />
+      <point x="2107.3312908496737" y="696.0" />
+      <point x="2141.8312908496737" y="696.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.LineSensor.LineInfo" target="core.tracers.LineSensor" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Bin" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="719.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeFusionEvent" target="tracking.shape.TrackingShape" relationship="DEPENDENCY">
+      <point x="-66.33333333333326" y="-15.5" />
+      <point x="520.625" y="644.0" />
+      <point x="396.0714869281047" y="644.0" />
+      <point x="396.0714869281047" y="540.0" />
+      <point x="1038.515114379085" y="540.0" />
+      <point x="1038.5151143790852" y="530.0" />
+      <point x="676.5151143790852" y="530.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+    <edge source="core.settings.Batch" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="922.5" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Trace" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="1593.0" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields.Block" target="core.calculation.OrientationFields" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2978.0" y="901.0" />
+      <point x="2913.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.CurvedFilament" target="core.filaments.SingleFilament" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2141.8312908496737" y="615.0" />
+      <point x="2217.8312908496737" y="615.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterErode" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-31.0" y="-15.5" />
+      <point x="2908.0" y="362.0" />
+      <point x="1559.7432795698924" y="362.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLineGauss" target="filters.IFilterObservable" relationship="REALIZATION">
+      <point x="-37.5" y="-15.5" />
+      <point x="3657.5" y="332.0" />
+      <point x="2404.2002688172042" y="332.0" />
+      <point x="2404.2002688172042" y="162.0" />
+      <point x="2051.5" y="162.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterGauss" target="filters.IFilterObservable" relationship="REALIZATION">
+      <point x="-30.75" y="-15.5" />
+      <point x="2619.75" y="372.0" />
+      <point x="2021.1895161290322" y="372.0" />
+      <point x="2021.1895161290322" y="282.0" />
+      <point x="2051.5" y="282.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.NumberFormat" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="4006.625" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterFillHoles" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="35.5" y="-15.5" />
+      <point x="1895.021505376344" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterGauss" target="filters.IImageFilter" relationship="REALIZATION">
+      <point x="-30.75" y="-15.5" />
+      <point x="2619.75" y="372.0" />
+      <point x="2021.1895161290322" y="372.0" />
+      <point x="2021.1895161290322" y="242.0" />
+      <point x="1559.7432795698924" y="242.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="util.Annotations.Step" target="util.Annotations" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="3199.125" y="56.0" />
+      <point x="3628.6182795698924" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.filaments.SingleFilament" target="core.filaments.AbstractFilament" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="2217.8312908496737" y="534.0" />
+      <point x="2301.8312908496737" y="534.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFieldPostProcessing.joinInfo" target="core.calculation.OrientationFieldPostProcessing" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2667.0" y="901.0" />
+      <point x="2610.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.settings.Ori" target="core.settings.Any" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="36.0" y="901.0" />
+      <point x="817.0" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterLaPlace" target="filters.IFilterObservable" relationship="REALIZATION">
+      <point x="-33.75" y="-15.5" />
+      <point x="3823.75" y="322.0" />
+      <point x="2394.2002688172042" y="322.0" />
+      <point x="2394.2002688172042" y="182.0" />
+      <point x="2051.5" y="182.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.calculation.OrientationFields.SimpleField" target="core.calculation.OrientationFields" relationship="INNER_CLASS">
+      <point x="0.0" y="-15.5" />
+      <point x="2849.0" y="901.0" />
+      <point x="2913.5" y="901.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterAreaMask" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="37.5" y="-15.5" />
+      <point x="3562.5" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.image.BinaryImage" target="core.image.IBinaryImage" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="tracking.shape.ShapeEvent.ShapeFusionEvent" target="tracking.shape.ShapeEvent" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="586.9583333333333" y="644.0" />
+      <point x="726.2062908496735" y="644.0" />
+      <point x="726.2062908496735" y="614.0" />
+      <point x="999.2651143790852" y="614.0" />
+      <point x="-39.25" y="15.5" />
+    </edge>
+    <edge source="filters.FilterAreaMask" target="filters.IImageFilterAreaDependant" relationship="REALIZATION">
+      <point x="-37.5" y="-15.5" />
+      <point x="3487.5" y="292.0" />
+      <point x="2561.896505376344" y="292.0" />
+      <point x="2561.896505376344" y="132.0" />
+      <point x="2410.125" y="132.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="core.tracers.AbstractTracer" target="core.tracers.Tracer" relationship="REALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="filters.FilterErode" target="util.Annotations.FilterUI" relationship="ANNOTATION">
+      <point x="31.0" y="-15.5" />
+      <point x="2970.0" y="312.0" />
+      <point x="3430.625" y="312.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5134815515610217" showDependencies="false" x="2104.0" y="633.0000000000001" />
+  <SelectedNodes>
+    <node>filters.CloseHolesLegacy</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

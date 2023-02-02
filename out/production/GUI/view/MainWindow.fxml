@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TabPane?>
+<VBox prefHeight="200.0" prefWidth="400.0" stylesheets="@../style/style.css,@../style/buttons.css"
+      xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="control.MainControl" fx:id="root">
+    <children>
+
+
+        <TabPane fx:id="tpContent" VBox.vgrow="ALWAYS" styleClass="body" prefWidth="${root.width}"/>
+
+        <HBox VBox.vgrow="NEVER">
+            <TextArea fx:id="taDebug" editable="false" focusTraversable="false" styleClass="text-area" maxHeight="200"
+                      HBox.hgrow="ALWAYS"/>
+            <HBox fx:id="hBoxProgress" minWidth="100">
+                <ProgressBar fx:id="pbProgress" prefWidth="${hBoxProgress.width}"/>
+            </HBox>
+        </HBox>
+
+
+    </children>
+</VBox>

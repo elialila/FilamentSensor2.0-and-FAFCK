@@ -1,0 +1,129 @@
+.text-large {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.headline {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+
+TabPane{
+    -fx-background-color: #ff80d6;
+}
+Application{
+    -fx-background-color: #ff61ff;
+}
+Tab{
+    -fx-background-color: #ff61ff;
+}
+
+
+Text {
+    -fx-font-size: 16;
+
+}
+
+Label {
+    -fx-font-size: 16;
+}
+
+TextField {
+    -fx-font-size: 16;
+}
+
+.button-large {
+    -fx-font-size: 60px;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+
+/*Define the Button Standard with dark-blue */
+Button {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+Button:pressed {
+    -fx-background-color: #090a0c,
+    linear-gradient(#4f5962 0%, #33383d 20%, #202429 100%),
+    linear-gradient(#2c3338, #23292e),
+    radial-gradient(center 50% 0%, radius 100%, rgba(138, 156, 173, 0.9), rgba(244, 244, 244, 0));
+}
+
+
+.check-box .box {
+
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-radius: 3px;
+
+}
+
+.check-box:selected .mark {
+
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+    -fx-background-color: #28a3f4;
+}
+
+VBox {
+    -fx-margin: 20px, 20px, 20px, 20px;
+    -fx-padding: 20px, 20px, 20px, 20px;
+}
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 90px;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1, 0, 0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #3c3c3c;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black /*#828282*/;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+}

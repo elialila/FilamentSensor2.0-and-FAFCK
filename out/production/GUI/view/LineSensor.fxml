@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import fx.custom.SliderSpinner?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="control.LineSensor"
+      prefHeight="500.0" prefWidth="300.0" spacing="5">
+    <Label>Binarization method</Label>
+    <HBox spacing="5">
+        <RadioButton userData="area" text="Area" selected="true">
+            <toggleGroup>
+                <ToggleGroup fx:id="tgBinarizationMethod"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton toggleGroup="$tgBinarizationMethod" userData="directions">Directions</RadioButton>
+    </HBox>
+    <Label>Minimum mean value</Label>
+    <SliderSpinner fx:id="sMinMeanValue" max="75" min="0" tick="1" type="Integer">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="75" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Label>Sigma</Label>
+    <SliderSpinner fx:id="sSigma" max="20" min="0" tick="1" type="Double">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="20" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Label>Minimum standard deviation</Label>
+    <SliderSpinner fx:id="sMinStandardDeviation" max="20" min="0" tick="1" type="Double">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="20" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <CheckBox fx:id="chkThickenLines">Thicken lines</CheckBox>
+    <CheckBox fx:id="chkRestrictToAreaMask">Restrict to area mask</CheckBox>
+    <CheckBox fx:id="chkIsAreaOrExt">Take true-Area for Restriction</CheckBox>
+    <Button onAction="#onViewWidthMap" styleClass="dark-blue">View width map</Button>
+
+    <Separator orientation="HORIZONTAL"/>
+    <CheckBox fx:id="chkRemoveBoundaryFilaments">Remove boundary filaments</CheckBox>
+    <HBox spacing="5">
+        <CheckBox fx:id="chkCurvedFilaments">Curved filaments</CheckBox>
+        <CheckBox fx:id="chkAsStraightPieces">As straight pieces</CheckBox>
+    </HBox>
+
+    <Label>Minimum filament length</Label>
+    <SliderSpinner fx:id="sMinFilamentLength" max="200" min="0" tick="1" type="Integer">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="200" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Label>Length of straight pieces</Label>
+    <SliderSpinner fx:id="sLengthStraightPieces" max="20" min="0" tick="1" type="Integer">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="20" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Label>Minimum angle difference</Label>
+    <SliderSpinner fx:id="sMinAngleDifference" max="90" min="0" tick="1" type="Integer">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="90" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Label>Tolerance(%)</Label>
+    <SliderSpinner fx:id="sTolerance" max="50" min="0" tick="1" type="Integer">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="50" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <HBox spacing="5" alignment="CENTER">
+
+    </HBox>
+    <Separator orientation="HORIZONTAL"/>
+    <HBox spacing="5" alignment="CENTER">
+        <CheckBox fx:id="chkLogScale">Log Scale</CheckBox>
+        <ComboBox fx:id="cbSamples"/>
+    </HBox>
+    <Button onAction="#onWiZer" styleClass="dark-blue">WiZer</Button>
+    <Separator orientation="HORIZONTAL"/>
+
+    <Label>Minimum area(%)</Label>
+    <SliderSpinner fx:id="sMinArea" max="10" min="0" tick="1" type="Double">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="10" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Label>Minimum filaments</Label>
+    <SliderSpinner fx:id="sMinFilaments" max="20" min="0" tick="1" type="Integer">
+        <valueFactory>
+            <SpinnerValueFactory.DoubleSpinnerValueFactory max="20" min="0" amountToStepBy="1"/>
+        </valueFactory>
+    </SliderSpinner>
+
+    <Button onAction="#onOrientations" styleClass="dark-blue">Orientations</Button>
+</VBox>
