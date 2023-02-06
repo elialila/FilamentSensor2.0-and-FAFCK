@@ -15,6 +15,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA or see
 
 Please cite
 - for the FAFCK:
+Hauke, L., Narasimhan, S., Primeßnig, A., Kaverina, I., Rehfeldt, F.
+A Focal Adhesion Filament Cross-correlation Kit for fast, automated segmentation and correlation of focal adhesions and actin stress fibers in cells
+PLoS One, doi: 10.1371/journal.pone.0250749
 
+- for the FilamentSensor2.0:
 
-- for the FilamentSensor2.0
