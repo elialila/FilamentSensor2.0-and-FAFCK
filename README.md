@@ -20,4 +20,6 @@ A Focal Adhesion Filament Cross-correlation Kit for fast, automated segmentation
 PLoS One, doi: 10.1371/journal.pone.0250749
 
 - for the FilamentSensor2.0:
-
+Hauke, L., Primeßnig, A., Radwitz, J., Huckemann, S.F., Rehfeldt, F.
+FilamentSensor 2.0: An open-source modular toolbox for 2D/3D cytoskeletal filament tracking
+PLoS One, doi: 10.1371/journal.pone.0279336
